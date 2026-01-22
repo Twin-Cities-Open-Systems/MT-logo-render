@@ -1,0 +1,45 @@
+# Rust build artifacts
+target/
+Cargo.lock
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Asset cache (for development)
+assets/logo/generated/
+assets/logo/index.yaml
+
+# Test artifacts
+test_output/
+test_assets/
+
+# Documentation build artifacts
+docs/build/
+docs/.doctrees/
+
+# Pre-commit cache
+.pre-commit/
+
+# CI artifacts
+.github/coverage/
+.github/test-results/
