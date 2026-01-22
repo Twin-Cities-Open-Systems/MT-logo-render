@@ -116,6 +116,81 @@ jobs:
     - name: Run security audit
       run: cargo audit
 
+  # HEE Security scanning
+  hee-security:
+    name: HEE Security Scan
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Install Python dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
+
+    - name: Run HEE Security Scanner
+      run: python scripts/security_scanner.py --directory . --output-format json --output-file security-report.json
+
+    - name: Upload security report
+      uses: actions/upload-artifact@v3
+      with:
+        name: hee-security-report
+        path: security-report.json
+
+    - name: Check security scan results
+      run: |
+        if [ -f security-report.json ]; then
+          # If the file exists and has content, it means there were security issues
+          if [ -s security-report.json ] && [ "$(cat security-report.json)" != "[]" ]; then
+            echo "❌ Security issues found!"
+            cat security-report.json
+            exit 1
+          else
+            echo "✅ No security issues found"
+          fi
+        else
+          echo "⚠️ Security report not generated"
+          exit 1
+        fi
+
+  # HEE Recipe validation
+  hee-recipe-validation:
+    name: HEE Recipe Validation
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Validate HEE Recipe Security
+      run: |
+        # Test recipe validation with Python security validator
+        python -c "
+        from scripts.security_validator import validate_recipe
+        test_recipes = [
+            '{\"shape\": \"circle\", \"size\": \"256x256\"}',  # Valid
+            '{\"size\": \"256x256\"}',  # Invalid - missing shape
+            '{\"shape\": \"circle\", \"size\": \"256x256\"}\u200B',  # Invalid - zero width char
+        ]
+        for recipe in test_recipes:
+            result = validate_recipe(recipe)
+            print(f'Recipe: {repr(recipe[:50])}... Valid: {result}')
+            if not result:
+                print('❌ Invalid recipe found')
+                exit(1)
+        print('✅ All recipes passed validation')
+        "
+
   # Performance benchmarking (future)
   benchmark:
     name: Performance Benchmark
