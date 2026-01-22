@@ -16,6 +16,9 @@ serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 serde_yaml = "0.9"
 
+# Date/time handling
+chrono = { version = "0.4", features = ["serde"] }
+
 # Image processing
 image = "0.24"
 rusttype = "0.9"
@@ -36,7 +39,6 @@ regex = "1.10"
 unicode-security = "0.1"
 unicode-normalization = "0.1"
 walkdir = "2.3"
-chrono = { version = "0.4", features = ["serde"] }
 sha2 = "0.10"
 
 [dev-dependencies]

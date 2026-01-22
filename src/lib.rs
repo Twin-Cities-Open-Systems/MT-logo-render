@@ -5,6 +5,7 @@
 
 pub mod security;
 pub mod recipe;
+pub mod cache;
 
 use thiserror::Error;
 
