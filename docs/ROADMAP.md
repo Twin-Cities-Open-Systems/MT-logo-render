@@ -26,10 +26,34 @@ MT-logo-render follows a structured, phase-based development approach adapted fr
 **Success Criteria**:
 - All prompts created and adapted for render engine requirements
 - Documentation structure matches tick-task methodology
-- Repository ready for specification phase
+- Repository ready for CI/CD setup
 
-## Phase 2: Specification & Architecture 🚧
-**Status**: In Progress - Starting specification development
+## Phase 1.5: Quality Infrastructure 🚧
+**Status**: In Progress - CI/CD and testing setup
+
+**Objectives**:
+- Establish CI/CD pipeline immediately after bootstrap
+- Set up pre-commit hooks and quality gates
+- Create basic test framework that passes before any implementation
+- Ensure no mock data - all tests use real functionality
+
+**Deliverables**:
+- ⏳ .pre-commit-config.yaml with Rust tools (rustfmt, clippy, cargo check)
+- ⏳ GitHub Actions workflow for CI/CD
+- ⏳ Basic test structure that passes (cargo test succeeds)
+- ⏳ Pre-commit hooks functional
+
+**Success Criteria**:
+- Pre-commit hooks run successfully on all files
+- CI pipeline passes on main branch
+- Basic cargo test command succeeds
+- Quality gates established before specification work
+- **NO MOCK DATA** - Tests use real implementations only
+
+**Critical Priority**: This phase must complete before any specification or implementation work begins.
+
+## Phase 2: Specification & Architecture ⏳
+**Status**: Planned - Quality infrastructure required first
 
 **Objectives**:
 - Define complete v1.0 requirements with acceptance criteria

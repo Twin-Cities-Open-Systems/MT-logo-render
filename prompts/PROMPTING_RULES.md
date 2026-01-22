@@ -1,12 +1,25 @@
 # Agent Prompting Rules (global for this repo)
 
 ## Scope discipline
-- No implementation code until prompts/spec are merged to main.
+- No implementation code until CI/CD is set up and basic tests pass.
+- CI/CD setup is IMMEDIATE priority after repository bootstrap.
 - Optimize for free tier usage: short tool calls, avoid repeated loops, prefer reading files over regenerating.
 
 ## Safety
 - Agent may run safe commands (ls, cat, rg, git status, tests, formatters).
 - If any command requires sudo, the agent must ask first and explain why.
+
+## Testing discipline (CRITICAL)
+- **NO MOCK DATA EVER** - All tests must use real data and real implementations.
+- Tests are established immediately after bootstrap, before any implementation.
+- Basic tests must pass before proceeding to specification work.
+- Test failures block all progress until resolved.
+
+## CI/CD discipline (CRITICAL)
+- CI/CD setup is mandatory and immediate after bootstrap.
+- Pre-commit hooks must be working before any code changes.
+- CI must pass for all commits before implementation begins.
+- Quality gates are established before specification work starts.
 
 ## Dependency discipline
 - Prefer stdlib-first and minimal dependencies.
@@ -16,14 +29,15 @@
   - Why minimal/necessary
 
 ## Quality discipline
-- Tests are first-class.
-- Pre-commit gating required.
-- CI required.
+- Tests are first-class and real (never mocked).
+- Pre-commit gating required and immediate.
+- CI required and immediate.
 
 ## Process
 - Work on feature branches only.
 - Use gh for PR lifecycle when possible.
 - Commits must include model disclosure in the subject line: [model: ...]
+- **CI/CD must be green before any implementation work begins**
 
 ---
 

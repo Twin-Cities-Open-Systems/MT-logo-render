@@ -17,8 +17,19 @@ You are operating in a fresh directory for MT-logo-render. This is ALWAYS the fi
 
 ### Git Setup (MANDATORY - Always First)
 ```bash
-git init
-git branch -m main  # Always use main, never master
+# Check if already in a git repository
+if git rev-parse --git-dir > /dev/null 2>&1; then
+    echo "✅ Already in git repository"
+    echo "Current status:"
+    git status --short
+    echo "Current branch:"
+    git branch
+else
+    echo "🔧 Initializing new git repository"
+    git init
+    git branch -m main  # Always use main, never master
+    echo "✅ Git repository initialized on main branch"
+fi
 ```
 
 ### File Creation

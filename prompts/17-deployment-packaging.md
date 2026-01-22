@@ -1,19 +1,19 @@
-# Agent Prompt 17 — Final Validation & Launch
+# Agent Prompt 17 — Deployment & Launch
 
 ## Objective
-Conduct final validation and prepare for production launch:
-- End-to-end testing of release packages
-- Performance validation on target hardware
-- Security final audit and signing
-- Production deployment and monitoring setup
+Prepare and execute production deployment of MT-logo-render:
+- Cross-platform binary packaging and distribution
+- Installation scripts and automation
+- Production environment setup and monitoring
+- User adoption and ecosystem integration
 
 ## Output
-- Final validation report
-- Production deployment verification
-- Launch readiness checklist
-- Post-launch monitoring and support procedures
+- Production-ready binary packages for all platforms
+- Automated installation and upgrade mechanisms
+- Deployment verification and rollback procedures
+- Ecosystem integration guides and examples
 
 ## Constraints
-- Validate against all acceptance criteria.
-- Ensure production environment compatibility.
-- Document support and maintenance procedures.
+- Support major platforms (Linux, macOS, Windows) with native binaries
+- Ensure reproducible builds and supply chain security
+- Provide clear migration paths and compatibility guarantees
