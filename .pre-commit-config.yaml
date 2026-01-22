@@ -1,0 +1,94 @@
+# Pre-commit hooks for MT-logo-render Rust project
+# Ensures code quality and consistency before commits
+
+repos:
+  # Rust formatting and linting (when Rust code exists)
+  - repo: https://github.com/pre-commit/mirrors-rustfmt
+    rev: v1.6.0
+    hooks:
+      - id: rustfmt
+        name: rustfmt
+        description: Format Rust code with rustfmt
+        types: [rust]
+        args: [--verbose]
+
+  - repo: https://github.com/pre-commit/mirrors-clippy
+    rev: v1.0.0
+    hooks:
+      - id: clippy
+        name: clippy
+        description: Lint Rust code with clippy
+        types: [rust]
+        args: [--verbose, --all-targets, --all-features, -- -D warnings]
+
+  # Cargo check when Cargo.toml exists
+  - repo: local
+    hooks:
+      - id: cargo-check
+        name: cargo-check
+        description: Check Rust code compilation with cargo
+        entry: cargo check --all-targets --all-features
+        language: system
+        types: [rust]
+        pass_filenames: false
+        files: Cargo.toml
+
+  # General code quality
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: trailing-whitespace
+        name: Trim trailing whitespace
+        description: Remove trailing whitespace from all files
+
+      - id: end-of-file-fixer
+        name: Fix end of files
+        description: Ensure files end with a newline
+
+      - id: check-yaml
+        name: Check YAML syntax
+        description: Validate YAML file syntax
+        files: \.(yaml|yml)$
+
+      - id: check-merge-conflict
+        name: Check for merge conflicts
+        description: Prevent committing merge conflict markers
+
+      - id: check-added-large-files
+        name: Check for large files
+        description: Prevent committing large files
+        args: ['--maxkb=500']
+
+  # TOML validation for Cargo.toml
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v3.0.3
+    hooks:
+      - id: prettier
+        name: Format TOML files
+        description: Format TOML configuration files
+        types: [toml]
+        files: (Cargo\.toml|\.toml)$
+
+  # Markdown formatting
+  - repo: https://github.com/executablebooks/mdformat
+    rev: 0.7.16
+    hooks:
+      - id: mdformat
+        name: Format Markdown
+        description: Format Markdown files consistently
+        additional_dependencies:
+          - mdformat-gfm
+          - mdformat-frontmatter
+          - mdformat-footnote
+
+ci:
+  autofix_commit_msg: |
+    [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+    for more information, see https://pre-commit.ci
+  autofix_prs: true
+  autoupdate_branch: ''
+  autoupdate_commit_msg: '[pre-commit.ci] pre-commit autoupdate'
+  autoupdate_schedule: weekly
+  skip: []
+  submodules: false

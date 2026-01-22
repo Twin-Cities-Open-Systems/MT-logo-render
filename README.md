@@ -4,9 +4,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Rust 1.70+](https://img.shields.io/badge/rust-1.70+-orange.svg)](https://www.rust-lang.org/)
 
-> **Deterministic logo asset generation for the Market Thesis ecosystem**
+> **A Human Execution Engine (HEE) for deterministic logo asset generation**
 >
-> A Rust-native render engine that generates deterministic PNG and ANSI terminal logo assets on demand. Zero external dependencies, full offline capability, and comprehensive security.
+> Pioneering Human Execution Engines where humans are the primary runtime. MT-logo-render treats human operators as the core execution engine, providing deterministic orchestration semantics for logo asset generation. A bounded, stateful system where human-AI collaboration produces identical outputs from identical inputs.
 
 ## 🤖 Quick Agent Bootstrap
 **For AI Models & Agents - Get productive in 5 minutes:**
