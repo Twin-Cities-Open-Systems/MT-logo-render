@@ -33,6 +33,13 @@
 - Pre-commit gating required and immediate.
 - CI required and immediate.
 
+## Git Infrastructure (NON-NEGOTIABLE)
+- **SSH ONLY**: Always use SSH for GitHub, never HTTPS
+  - `git@github.com:username/repo.git` ✅
+  - `https://github.com/username/repo.git` ❌
+- SSH keys must be properly configured and tested
+- No exceptions for GitHub operations
+
 ## Process
 - Work on feature branches only.
 - Use gh for PR lifecycle when possible.
