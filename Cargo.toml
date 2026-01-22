@@ -1,0 +1,68 @@
+[package]
+name = "mt-logo-render"
+version = "0.1.0"
+edition = "2021"
+authors = ["Spencer Butler <spencer@marketthesis.ai>"]
+description = "A Human Execution Engine (HEE) for deterministic logo asset generation"
+license = "MIT"
+repository = "https://github.com/spencerbutler/MT-logo-render"
+keywords = ["logo", "rendering", "hee", "deterministic", "cli"]
+categories = ["command-line-utilities", "graphics", "rendering"]
+
+[dependencies]
+# CLI parsing
+clap = { version = "4.0", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+serde_yaml = "0.9"
+
+# Image processing
+image = "0.24"
+rusttype = "0.9"
+
+# Error handling
+anyhow = "1.0"
+thiserror = "1.0"
+
+# Async runtime (if needed later)
+tokio = { version = "1.0", features = ["full"], optional = true }
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+# Security and validation
+regex = "1.10"
+unicode-security = "0.1"
+unicode-normalization = "0.1"
+walkdir = "2.3"
+chrono = { version = "0.4", features = ["serde"] }
+sha2 = "0.10"
+
+[dev-dependencies]
+# Testing
+assert_cmd = "2.0"
+predicates = "3.0"
+tempfile = "3.8"
+
+# Property-based testing
+proptest = "1.0"
+
+[features]
+default = []
+async = ["tokio"]
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+
+[profile.dev]
+opt-level = 0
+debug = true
+overflow-checks = true
+
+[[bin]]
+name = "logo-render"
+path = "src/main.rs"
