@@ -5,6 +5,7 @@
 
 pub mod security;
 pub mod recipe;
+pub mod cache;
 
 use thiserror::Error;
 
@@ -39,3 +40,6 @@ pub use security::{SecurityValidator, ValidationResult};
 
 // Re-export recipe types
 pub use recipe::{Recipe, resolve_effective_recipe};
+
+// Re-export cache types
+pub use cache::{Cache, CacheFilters, CacheEntry, OutputInfo};
