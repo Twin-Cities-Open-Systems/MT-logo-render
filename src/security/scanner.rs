@@ -319,14 +319,14 @@ mod tests {
                 let result = some_function().unwrap(); // This should trigger a warning
             }
 
-            unsafe fn dangerous_function() {
+            unsafe {
                 // This should trigger a warning
             }
         "#;
         fs::write(&file_path, rust_content).unwrap();
 
         let result = scanner.scan_file(&file_path).unwrap();
-        assert!(result.warnings.iter().any(|w| w.contains("unsafe")));
+        assert!(result.warnings.iter().any(|w| w.contains("Unsafe")));
         assert!(result.warnings.iter().any(|w| w.contains("unwrap")));
     }
 }

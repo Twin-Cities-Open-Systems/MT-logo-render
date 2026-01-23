@@ -340,9 +340,9 @@ mod tests {
     fn test_malicious_recipe_content() {
         let rules = HEERules::new();
 
-        // Recipe with zero-width character
-        let malicious_recipe = format!(r#"{{"shape": "circle", "label": "safe\u{{200B}}hidden"}}"#);
-        let check = rules.validate_recipe(&malicious_recipe).unwrap();
+        // Recipe with zero-width character (JSON escape syntax)
+        let malicious_recipe = r#"{"shape": "circle", "label": "safe\u200Bhidden"}"#;
+        let check = rules.validate_recipe(malicious_recipe).unwrap();
         assert!(!check.passed);
         assert!(check.violations.iter().any(|v| v.contains("Zero-width")));
     }
@@ -372,8 +372,8 @@ mod tests {
         let rules = HEERules::new();
 
         let valid_entries = vec![
-            ("a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3".to_string(), "hash1".to_string()),
-            ("b665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3".to_string(), "hash2".to_string()),
+            ("a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3".to_string(), "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3".to_string()),
+            ("b665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3".to_string(), "b665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3".to_string()),
         ];
 
         let check = rules.validate_cache_integrity(&valid_entries);
@@ -385,8 +385,8 @@ mod tests {
         let rules = HEERules::new();
 
         let poisoned_entries = vec![
-            ("a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3".to_string(), "hash1".to_string()),
-            ("a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3".to_string(), "different_hash".to_string()),
+            ("a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3".to_string(), "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3".to_string()),
+            ("a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3".to_string(), "b665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3".to_string()),
         ];
 
         let check = rules.validate_cache_integrity(&poisoned_entries);
