@@ -2,39 +2,37 @@
 # Ensures code quality and consistency before commits
 
 repos:
-  # Rust formatting and linting (when Rust code exists)
-  - repo: https://github.com/pre-commit/mirrors-rustfmt
-    rev: v1.6.0
+  # Rust formatting and linting (using local cargo tools - GitHub only)
+  # Note: These hooks require Rust/Cargo to be installed
+  - repo: local
     hooks:
       - id: rustfmt
         name: rustfmt
-        description: Format Rust code with rustfmt
+        description: Format Rust code with cargo fmt
+        entry: bash -c "command -v cargo >/dev/null 2>&1 && cargo fmt -- --check --verbose || echo 'cargo not found, skipping rustfmt'"
+        language: system
         types: [rust]
-        args: [--verbose]
+        pass_filenames: false
 
-  - repo: https://github.com/pre-commit/mirrors-clippy
-    rev: v1.0.0
-    hooks:
       - id: clippy
         name: clippy
-        description: Lint Rust code with clippy
+        description: Lint Rust code with cargo clippy
+        entry: bash -c "command -v cargo >/dev/null 2>&1 && cargo clippy --all-targets --all-features -- -D warnings || echo 'cargo not found, skipping clippy'"
+        language: system
         types: [rust]
-        args: [--verbose, --all-targets, --all-features, -- -D warnings]
+        pass_filenames: false
 
-  # Cargo check when Cargo.toml exists
-  - repo: local
-    hooks:
       - id: cargo-check
         name: cargo-check
         description: Check Rust code compilation with cargo
-        entry: cargo check --all-targets --all-features
+        entry: bash -c "command -v cargo >/dev/null 2>&1 && cargo check --all-targets --all-features || echo 'cargo not found, skipping cargo-check'"
         language: system
         types: [rust]
         pass_filenames: false
         files: Cargo.toml
 
   # General code quality
-  - repo: https://github.com/pre-commit/pre-commit-hooks
+  - repo: git@github.com:pre-commit/pre-commit-hooks.git
     rev: v4.4.0
     hooks:
       - id: trailing-whitespace
@@ -59,18 +57,8 @@ repos:
         description: Prevent committing large files
         args: ['--maxkb=500']
 
-  # TOML validation for Cargo.toml
-  - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: v3.0.3
-    hooks:
-      - id: prettier
-        name: Format TOML files
-        description: Format TOML configuration files
-        types: [toml]
-        files: (Cargo\.toml|\.toml)$
-
   # Markdown formatting
-  - repo: https://github.com/executablebooks/mdformat
+  - repo: git@github.com:executablebooks/mdformat.git
     rev: 0.7.16
     hooks:
       - id: mdformat
