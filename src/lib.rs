@@ -19,6 +19,9 @@ pub enum Error {
     #[error("JSON parsing error: {0}")]
     Json(#[from] serde_json::Error),
 
+    #[error("YAML parsing error: {0}")]
+    Yaml(#[from] serde_yaml::Error),
+
     #[error("Image processing error: {0}")]
     Image(#[from] image::ImageError),
 
@@ -33,3 +36,6 @@ pub type Result<T> = std::result::Result<T, Error>;
 
 // Re-export security types
 pub use security::{SecurityValidator, ValidationResult};
+
+// Re-export recipe types
+pub use recipe::{Recipe, resolve_effective_recipe};

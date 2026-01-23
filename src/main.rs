@@ -3,7 +3,7 @@
 //! A Human Execution Engine (HEE) for deterministic logo asset generation.
 
 use clap::{Parser, Subcommand};
-use mt_logo_render::{Error, Result};
+use mt_logo_render::{Error, Result, Recipe, resolve_effective_recipe};
 use std::path::PathBuf;
 use tracing_subscriber::{layer::SubscriberExt, util::SubscriberInitExt};
 
@@ -103,8 +103,7 @@ enum Commands {
     },
 }
 
-#[tokio::main]
-async fn main() -> Result<()> {
+fn main() -> Result<()> {
     // Initialize tracing
     tracing_subscriber::registry()
         .with(tracing_subscriber::EnvFilter::new(
@@ -128,9 +127,7 @@ async fn main() -> Result<()> {
 
     match cli.command {
         Commands::Resolve { recipe, file } => {
-            // TODO: Implement resolve command
-            println!("Resolve command not yet implemented");
-            std::process::exit(1);
+            handle_resolve(recipe, file, &ctx)?;
         }
         Commands::Render { recipe, file, targets } => {
             // TODO: Implement render command
@@ -156,4 +153,58 @@ struct CliContext {
     asset_root: PathBuf,
     format: OutputFormat,
     force: bool,
+}
+
+fn handle_resolve(recipe: Option<String>, file: Option<PathBuf>, ctx: &CliContext) -> Result<()> {
+    use mt_logo_render::{Recipe, resolve_effective_recipe};
+    use std::fs;
+    use std::io::{self, Read};
+
+    // Get recipe content
+    let recipe_content = if let Some(recipe_str) = recipe {
+        recipe_str
+    } else if let Some(file_path) = file {
+        fs::read_to_string(file_path)?
+    } else {
+        // Read from stdin
+        let mut buffer = String::new();
+        io::stdin().read_to_string(&mut buffer)?;
+        buffer
+    };
+
+    // Parse recipe
+    let recipe: Recipe = if recipe_content.trim().starts_with('{') {
+        Recipe::from_json(&recipe_content)?
+    } else {
+        Recipe::from_yaml(&recipe_content)?
+    };
+
+    // Validate recipe
+    recipe.validate()?;
+
+    // Resolve effective recipe
+    let effective = resolve_effective_recipe(&recipe);
+
+    // Generate stem
+    let stem = recipe.generate_stem()?;
+
+    // Prepare output
+    let output = serde_json::json!({
+        "stem": stem,
+        "requested": effective.requested,
+        "effective": effective.effective,
+        "notes": effective.notes
+    });
+
+    // Output in requested format
+    match ctx.format {
+        OutputFormat::Json => {
+            println!("{}", serde_json::to_string_pretty(&output)?);
+        }
+        OutputFormat::Yaml => {
+            println!("{}", serde_yaml::to_string(&output)?);
+        }
+    }
+
+    Ok(())
 }

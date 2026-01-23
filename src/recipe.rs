@@ -192,7 +192,7 @@ pub enum Badge {
 }
 
 /// Canonicalized recipe with normalized values.
-#[derive(Clone, Debug, PartialEq, Eq, Hash)]
+#[derive(Clone, Debug, PartialEq, Eq, Hash, Serialize)]
 pub struct CanonicalRecipe {
     pub shape: Shape,
     pub size: Size,
@@ -278,8 +278,8 @@ impl Recipe {
     pub fn generate_stem(&self) -> Result<String> {
         let canonical = self.canonicalize()?;
         let recipe_id = generate_recipe_id(&canonical);
-        let base_color = canonical.base_color;
         let accent_token = canonical.accent_color
+            .as_ref()
             .map(|c| format!("-{}", c))
             .unwrap_or_default();
 
@@ -287,7 +287,7 @@ impl Recipe {
         let token_string = tokens.join("-");
         let size = format!("{}x{}", canonical.size.width, canonical.size.height);
 
-        Ok(format!("{}-{}-{}-{}-{}", recipe_id, base_color, accent_token, token_string, size))
+        Ok(format!("{}-{}-{}-{}-{}", recipe_id, canonical.base_color, accent_token, token_string, size))
     }
 }
 
@@ -342,7 +342,8 @@ fn generate_recipe_id(canonical: &CanonicalRecipe) -> String {
         .unwrap(); // Should not fail for valid data
 
     let hash = Sha256::digest(canonical_json.as_bytes());
-    format!("recipe-{:x}", hash[0..8].iter().fold(0u64, |acc, &x| (acc << 8) | x as u64))
+    let hash_bytes = hash.as_slice();
+    format!("recipe-{:x}", hash_bytes[0..8].iter().fold(0u64, |acc, &x| (acc << 8) | x as u64))
 }
 
 /// Generate token list for stem creation.
@@ -386,7 +387,7 @@ fn generate_tokens(canonical: &CanonicalRecipe) -> Result<Vec<String>> {
     // Font token (only if external font used)
     if let Some(font_path) = &canonical.font_path {
         let hash = compute_font_hash(font_path)?;
-        tokens.push(format!("font-{:x}", hash[0..8].iter().fold(0u64, |acc, &x| (acc << 8) | x as u64)));
+        tokens.push(format!("font-{}", &hash[0..16])); // Take first 16 chars of hex string
     }
 
     Ok(tokens)
@@ -405,7 +406,8 @@ fn compute_font_hash(font_path: &PathBuf) -> Result<String> {
     use std::fs;
     let content = fs::read(font_path)?;
     let hash = Sha256::digest(&content);
-    Ok(format!("{:x}", hash[0..8].iter().fold(0u64, |acc, &x| (acc << 8) | x as u64)))
+    let hash_bytes = hash.as_slice();
+    Ok(format!("{:x}", hash_bytes[0..8].iter().fold(0u64, |acc, &x| (acc << 8) | x as u64)))
 }
 
 /// Resolve effective recipe with degradation logic.

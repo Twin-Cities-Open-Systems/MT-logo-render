@@ -7,7 +7,7 @@ use regex::Regex;
 use std::collections::HashMap;
 use std::process::{Command, Stdio};
 use thiserror::Error;
-use unicode_security::{is_invisible_char, is_zero_width_char};
+// Removed unicode_security imports - using regex patterns instead
 
 #[derive(Error, Debug)]
 pub enum Error {
@@ -31,7 +31,7 @@ pub enum Error {
 }
 
 /// Result of security validation
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub struct ValidationResult {
     pub is_safe: bool,
     pub violations: Vec<String>,
