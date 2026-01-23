@@ -428,4 +428,53 @@ All errors include actionable suggestions:
 - **Atomic renames**: POSIX-compliant file systems
 - **Permissions**: Read/write access to asset root
 
+## Development Commands
+
+### Recommended Cargo Commands
+For development work, use the `--quiet` flag to reduce output noise:
+
+```bash
+# Clean build output
+cargo build --quiet
+
+# Run tests with minimal noise
+cargo test --quiet
+
+# Lint with reduced verbosity
+cargo clippy --quiet
+
+# Format code
+cargo fmt --quiet
+
+# Run specific tests
+cargo test --quiet -- resolve_command
+cargo test --quiet -- render_command
+
+# Benchmark performance
+cargo bench --quiet
+
+# Check for security vulnerabilities
+cargo audit --quiet
+```
+
+### Development Workflow
+1. **Build**: `cargo build --quiet`
+2. **Test**: `cargo test --quiet`
+3. **Lint**: `cargo clippy --quiet`
+4. **Format**: `cargo fmt --quiet`
+5. **Audit**: `cargo audit --quiet`
+
+### Debug Commands
+For debugging, you can override the quiet mode:
+```bash
+# Verbose build for debugging
+cargo build --verbose
+
+# Debug logging
+RUST_LOG=debug ./target/debug/logo-render render --file recipe.json
+
+# Profile build
+cargo build --profile=dev --quiet
+```
+
 This contract provides a stable, machine-readable interface for integrating MT-logo-render into build systems, scripts, and other tools.

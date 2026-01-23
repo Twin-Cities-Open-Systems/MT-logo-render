@@ -82,13 +82,28 @@ impl SecurityValidator {
             zero_width_chars: Regex::new(r"[\u{200B}-\u{200D}\u{FEFF}]").unwrap(),
             dangerous_control_chars: Regex::new(r"[\x00-\x08\x0B-\x0C\x0E-\x1F\x7F-\x9F]").unwrap(),
             rtl_override: '\u{202E}',
-            invisible_chars: Regex::new(r"[\u{200E}-\u{200F}\u{202A}-\u{202E}\u{2060}-\u{206F}]").unwrap(),
+            invisible_chars: Regex::new(r"[\u{200E}-\u{200F}\u{202A}-\u{202E}\u{2060}-\u{206F}]")
+                .unwrap(),
 
             // Homoglyph detection
             homoglyph_map: [
-                ('а', 'a'), ('е', 'e'), ('о', 'o'), ('р', 'p'), ('с', 'c'), ('у', 'y'), ('х', 'x'),
-                ('А', 'A'), ('Е', 'E'), ('О', 'O'), ('Р', 'P'), ('С', 'C'), ('У', 'Y'), ('Х', 'X'),
-            ].into_iter().collect(),
+                ('а', 'a'),
+                ('е', 'e'),
+                ('о', 'o'),
+                ('р', 'p'),
+                ('с', 'c'),
+                ('у', 'y'),
+                ('х', 'x'),
+                ('А', 'A'),
+                ('Е', 'E'),
+                ('О', 'O'),
+                ('Р', 'P'),
+                ('С', 'C'),
+                ('У', 'Y'),
+                ('Х', 'X'),
+            ]
+            .into_iter()
+            .collect(),
 
             // Safe Unicode blocks (whitelist approach)
             safe_unicode_blocks: vec![
@@ -130,24 +145,32 @@ impl SecurityValidator {
         // Check for inherently dangerous commands
         for pattern in &self.dangerous_commands {
             if pattern.is_match(command) {
-                result.add_violation(format!("Dangerous command pattern detected: {}", pattern.as_str()));
+                result.add_violation(format!(
+                    "Dangerous command pattern detected: {}",
+                    pattern.as_str()
+                ));
             }
         }
 
         // Check for dangerous shell metacharacters
-        let dangerous_chars = [';', '&', '|', '`', '$', '(', ')', '<', '>', '{', '}', '[', ']', '*', '?', '~'];
+        let dangerous_chars = [
+            ';', '&', '|', '`', '$', '(', ')', '<', '>', '{', '}', '[', ']', '*', '?', '~',
+        ];
         for &char in &dangerous_chars {
             if command.contains(char) && !self.is_safe_metachar_usage(command, char) {
-                result.add_violation(format!("Dangerous shell metacharacter detected: '{}'", char));
+                result.add_violation(format!(
+                    "Dangerous shell metacharacter detected: '{}'",
+                    char
+                ));
             }
         }
 
-    // Skip shell syntax validation for now - the regex patterns are too complex
-    // and the dangerous command detection is more important for security
-    // TODO: Implement simpler syntax validation that doesn't break valid commands
-    // if let Err(e) = self.validate_shell_syntax_safe(command) {
-    //     result.add_violation(format!("Shell syntax error: {}", e));
-    // }
+        // Skip shell syntax validation for now - the regex patterns are too complex
+        // and the dangerous command detection is more important for security
+        // TODO: Implement simpler syntax validation that doesn't break valid commands
+        // if let Err(e) = self.validate_shell_syntax_safe(command) {
+        //     result.add_violation(format!("Shell syntax error: {}", e));
+        // }
 
         Ok(result)
     }
@@ -157,9 +180,7 @@ impl SecurityValidator {
         // First validate the command
         let validation = self.validate_shell_command(command)?;
         if !validation.is_safe {
-            return Err(Error::SecurityViolation(
-                validation.violations.join("; ")
-            ));
+            return Err(Error::SecurityViolation(validation.violations.join("; ")));
         }
 
         // Execute command with timeout and restrictions
@@ -175,7 +196,11 @@ impl SecurityValidator {
     }
 
     /// Validate content for security issues
-    pub fn validate_content(&self, content: &str, content_type: &str) -> Result<ValidationResult, Error> {
+    pub fn validate_content(
+        &self,
+        content: &str,
+        content_type: &str,
+    ) -> Result<ValidationResult, Error> {
         let mut result = ValidationResult::new();
 
         // Normalize Unicode for detection
@@ -188,12 +213,16 @@ impl SecurityValidator {
 
         // Check for dangerous control characters
         if self.dangerous_control_chars.is_match(&normalized) {
-            result.add_violation("Dangerous control characters detected (potential terminal manipulation)");
+            result.add_violation(
+                "Dangerous control characters detected (potential terminal manipulation)",
+            );
         }
 
         // Check for RTL override
         if normalized.contains(self.rtl_override) {
-            result.add_violation("Right-to-left override character detected (text direction manipulation)");
+            result.add_violation(
+                "Right-to-left override character detected (text direction manipulation)",
+            );
         }
 
         // Check for invisible characters
@@ -204,7 +233,10 @@ impl SecurityValidator {
         // Check for homoglyph attacks
         let homoglyph_issues = self.detect_homoglyphs(&normalized);
         if !homoglyph_issues.is_empty() {
-            result.add_warning(format!("Potential homoglyph characters: {}", homoglyph_issues.join(", ")));
+            result.add_warning(format!(
+                "Potential homoglyph characters: {}",
+                homoglyph_issues.join(", ")
+            ));
         }
 
         // Content-type specific validation
@@ -231,7 +263,10 @@ impl SecurityValidator {
 
         if strict {
             // Remove all suspicious Unicode
-            sanitized = self.zero_width_chars.replace_all(&sanitized, "").to_string();
+            sanitized = self
+                .zero_width_chars
+                .replace_all(&sanitized, "")
+                .to_string();
             sanitized = self.invisible_chars.replace_all(&sanitized, "").to_string();
             sanitized = sanitized.replace(self.rtl_override, "");
         }
@@ -249,7 +284,10 @@ impl SecurityValidator {
             // Unbalanced single quotes
             (Regex::new(r"'[^']*$").unwrap(), "Unbalanced single quotes"),
             // Unbalanced double quotes (accounting for escaped quotes)
-            (Regex::new(r#""(?:[^"\\]|\\.)*[^"\\]?$"#).unwrap(), "Unbalanced double quotes"),
+            (
+                Regex::new(r#""(?:[^"\\]|\\.)*[^"\\]?$"#).unwrap(),
+                "Unbalanced double quotes",
+            ),
             // Unbalanced parentheses
             (Regex::new(r"\([^)]*$").unwrap(), "Unbalanced parentheses"),
             // Unbalanced brackets
@@ -257,11 +295,20 @@ impl SecurityValidator {
             // Unbalanced braces
             (Regex::new(r"\{[^}]*$").unwrap(), "Unbalanced braces"),
             // Missing command after operators
-            (Regex::new(r"(?:\|\||&&|;)\s*$").unwrap(), "Missing command after operator"),
+            (
+                Regex::new(r"(?:\|\||&&|;)\s*$").unwrap(),
+                "Missing command after operator",
+            ),
             // Redirection without target
-            (Regex::new(r"(?:>|<|>>|<<)\s*$").unwrap(), "Missing target for redirection"),
+            (
+                Regex::new(r"(?:>|<|>>|<<)\s*$").unwrap(),
+                "Missing target for redirection",
+            ),
             // Invalid pipe chains
-            (Regex::new(r"(?:\|\||&&)\s*(?:\|\||&&)").unwrap(), "Invalid operator chaining"),
+            (
+                Regex::new(r"(?:\|\||&&)\s*(?:\|\||&&)").unwrap(),
+                "Invalid operator chaining",
+            ),
             // Trailing backslash
             (Regex::new(r"\\$").unwrap(), "Trailing backslash"),
         ];
@@ -350,7 +397,9 @@ impl SecurityValidator {
 
     fn is_basic_command(&self, command: &str) -> bool {
         let safe_commands = ["git", "cargo", "rustc", "cat", "echo", "mkdir", "ls"];
-        safe_commands.iter().any(|&cmd| command.starts_with(&format!("{} ", cmd)))
+        safe_commands
+            .iter()
+            .any(|&cmd| command.starts_with(&format!("{} ", cmd)))
     }
 
     fn normalize_unicode(&self, text: &str) -> String {
@@ -393,7 +442,9 @@ mod tests {
         let validator = SecurityValidator::new();
 
         // Safe commands should pass
-        let result = validator.validate_shell_command("echo 'hello world'").unwrap();
+        let result = validator
+            .validate_shell_command("echo 'hello world'")
+            .unwrap();
         assert!(result.is_safe);
 
         let result = validator.validate_shell_command("git status").unwrap();
@@ -407,7 +458,10 @@ mod tests {
         // Dangerous commands should be blocked
         let result = validator.validate_shell_command("rm -rf /").unwrap();
         assert!(!result.is_safe);
-        assert!(result.violations.iter().any(|v| v.contains("Dangerous command")));
+        assert!(result
+            .violations
+            .iter()
+            .any(|v| v.contains("Dangerous command")));
 
         let result = validator.validate_shell_command("sudo rm -rf *").unwrap();
         assert!(!result.is_safe);
@@ -418,12 +472,16 @@ mod tests {
         let validator = SecurityValidator::new();
 
         // Zero-width characters should be detected
-        let result = validator.validate_content("hello\u{200B}world", "content").unwrap();
+        let result = validator
+            .validate_content("hello\u{200B}world", "content")
+            .unwrap();
         assert!(!result.is_safe);
         assert!(result.violations.iter().any(|v| v.contains("Zero-width")));
 
         // RTL override should be detected
-        let result = validator.validate_content(&format!("hello{}world", '\u{202E}'), "content").unwrap();
+        let result = validator
+            .validate_content(&format!("hello{}world", '\u{202E}'), "content")
+            .unwrap();
         assert!(!result.is_safe);
     }
 

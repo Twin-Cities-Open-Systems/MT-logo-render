@@ -3,9 +3,8 @@
 //! Codebase security scanning system for MT-logo-render.
 //! Scans for malicious characters, patterns, and security vulnerabilities.
 
-use crate::security::{SecurityValidator, SecurityCheck};
+use crate::security::SecurityValidator;
 use regex::Regex;
-use std::collections::HashMap;
 use std::fs;
 use std::path::{Path, PathBuf};
 use walkdir::WalkDir;
@@ -46,28 +45,46 @@ impl SecurityScanner {
         Self {
             validator: SecurityValidator::new(),
             scan_extensions: vec![
-                ".rs".to_string(), ".toml".to_string(), ".md".to_string(),
-                ".txt".to_string(), ".json".to_string(), ".yml".to_string(),
-                ".yaml".to_string(), ".js".to_string(), ".jsx".to_string(),
-                ".ts".to_string(), ".tsx".to_string(),
+                ".rs".to_string(),
+                ".toml".to_string(),
+                ".md".to_string(),
+                ".txt".to_string(),
+                ".json".to_string(),
+                ".yml".to_string(),
+                ".yaml".to_string(),
+                ".js".to_string(),
+                ".jsx".to_string(),
+                ".ts".to_string(),
+                ".tsx".to_string(),
             ],
             exclude_dirs: vec![
-                ".git".to_string(), "target".to_string(), "node_modules".to_string(),
-                "__pycache__".to_string(), ".next".to_string(), "build".to_string(),
+                ".git".to_string(),
+                "target".to_string(),
+                "node_modules".to_string(),
+                "__pycache__".to_string(),
+                ".next".to_string(),
+                "build".to_string(),
                 "dist".to_string(),
             ],
             patterns: SecurityPatterns {
                 zero_width_chars: Regex::new(r"[\u{200B}-\u{200D}\u{FEFF}]").unwrap(),
-                dangerous_control_chars: Regex::new(r"[\x00-\x08\x0B-\x0C\x0E-\x1F\x7F-\x9F]").unwrap(),
+                dangerous_control_chars: Regex::new(r"[\x00-\x08\x0B-\x0C\x0E-\x1F\x7F-\x9F]")
+                    .unwrap(),
                 rtl_override: Regex::new(r"\u{202E}").unwrap(),
-                invisible_chars: Regex::new(r"[\u{200E}-\u{200F}\u{202A}-\u{202E}\u{2060}-\u{206F}]").unwrap(),
+                invisible_chars: Regex::new(
+                    r"[\u{200E}-\u{200F}\u{202A}-\u{202E}\u{2060}-\u{206F}]",
+                )
+                .unwrap(),
                 homoglyph_cyrillic: Regex::new(r"[аеорсухАЕОРСУХ]").unwrap(),
             },
         }
     }
 
     /// Scan a single file for security issues
-    pub fn scan_file(&self, file_path: &Path) -> Result<FileScanResult, Box<dyn std::error::Error>> {
+    pub fn scan_file(
+        &self,
+        file_path: &Path,
+    ) -> Result<FileScanResult, Box<dyn std::error::Error>> {
         let content = match fs::read_to_string(file_path) {
             Ok(content) => content,
             Err(e) => {
@@ -133,7 +150,10 @@ impl SecurityScanner {
     }
 
     /// Scan an entire directory recursively
-    pub fn scan_directory(&self, directory: &Path) -> Result<Vec<FileScanResult>, Box<dyn std::error::Error>> {
+    pub fn scan_directory(
+        &self,
+        directory: &Path,
+    ) -> Result<Vec<FileScanResult>, Box<dyn std::error::Error>> {
         let mut results = Vec::new();
 
         for entry in WalkDir::new(directory).into_iter().filter_map(|e| e.ok()) {
@@ -142,7 +162,10 @@ impl SecurityScanner {
             // Skip directories we should exclude
             if path.is_dir() {
                 if let Some(dir_name) = path.file_name() {
-                    if self.exclude_dirs.contains(&dir_name.to_string_lossy().to_string()) {
+                    if self
+                        .exclude_dirs
+                        .contains(&dir_name.to_string_lossy().to_string())
+                    {
                         continue;
                     }
                 }
@@ -178,7 +201,10 @@ impl SecurityScanner {
     pub fn generate_report(&self, results: &[FileScanResult]) -> String {
         let mut report = String::new();
         report.push_str("# Security Scan Report\n\n");
-        report.push_str(&format!("Generated: {}\n\n", chrono::Utc::now().format("%Y-%m-%d %H:%M:%S UTC")));
+        report.push_str(&format!(
+            "Generated: {}\n\n",
+            chrono::Utc::now().format("%Y-%m-%d %H:%M:%S UTC")
+        ));
 
         if results.is_empty() {
             report.push_str("✅ No security issues found in scanned codebase!\n");
@@ -199,7 +225,10 @@ impl SecurityScanner {
             report.push_str(&format!("### {}\n\n", result.file_path.display()));
             report.push_str(&format!("- **Lines**: {}\n", result.line_count));
             report.push_str(&format!("- **Characters**: {}\n", result.char_count));
-            report.push_str(&format!("- **Safe**: {}\n", if result.is_safe { "✅" } else { "❌" }));
+            report.push_str(&format!(
+                "- **Safe**: {}\n",
+                if result.is_safe { "✅" } else { "❌" }
+            ));
 
             if !result.violations.is_empty() {
                 report.push_str("\n**Violations:**\n");
@@ -236,31 +265,54 @@ impl SecurityScanner {
     }
 
     // File-type specific scanning methods
-    fn scan_rust_file(&self, content: &str, violations: &mut Vec<String>, warnings: &mut Vec<String>) {
+    fn scan_rust_file(
+        &self,
+        content: &str,
+        _violations: &mut Vec<String>,
+        warnings: &mut Vec<String>,
+    ) {
         // Check for unsafe code blocks
         if content.contains("unsafe {") {
-            warnings.push("Unsafe code block detected - ensure proper safety guarantees".to_string());
+            warnings
+                .push("Unsafe code block detected - ensure proper safety guarantees".to_string());
         }
 
         // Check for potential command injection patterns
         if content.contains("Command::new") && content.contains("shell") {
-            warnings.push("Shell command execution detected - ensure proper validation".to_string());
+            warnings
+                .push("Shell command execution detected - ensure proper validation".to_string());
         }
 
         // Check for proper error handling
         if content.contains("unwrap()") && !content.contains("#[cfg(test)]") {
-            warnings.push("unwrap() usage in non-test code - consider proper error handling".to_string());
+            warnings.push(
+                "unwrap() usage in non-test code - consider proper error handling".to_string(),
+            );
         }
     }
 
-    fn scan_toml_file(&self, content: &str, violations: &mut Vec<String>, warnings: &mut Vec<String>) {
+    fn scan_toml_file(
+        &self,
+        content: &str,
+        _violations: &mut Vec<String>,
+        warnings: &mut Vec<String>,
+    ) {
         // Check for potentially dangerous dependency sources
-        if content.contains("git = ") && !content.contains("github.com") && !content.contains("gitlab.com") {
-            warnings.push("Non-standard git dependency source - verify trustworthiness".to_string());
+        if content.contains("git = ")
+            && !content.contains("github.com")
+            && !content.contains("gitlab.com")
+        {
+            warnings
+                .push("Non-standard git dependency source - verify trustworthiness".to_string());
         }
     }
 
-    fn scan_json_file(&self, content: &str, violations: &mut Vec<String>, warnings: &mut Vec<String>) {
+    fn scan_json_file(
+        &self,
+        content: &str,
+        violations: &mut Vec<String>,
+        _warnings: &mut Vec<String>,
+    ) {
         // Try to parse JSON to check for validity
         if serde_json::from_str::<serde_json::Value>(content).is_err() {
             violations.push("Invalid JSON syntax".to_string());

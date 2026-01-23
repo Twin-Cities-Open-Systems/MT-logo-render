@@ -149,7 +149,9 @@ impl FromStr for Color {
                 Err("Hex colors must be 3 or 6 digits".to_string())
             }
         } else {
-            if s.chars().all(|c| c.is_alphanumeric() || c == '_' || c == '-') {
+            if s.chars()
+                .all(|c| c.is_alphanumeric() || c == '_' || c == '-')
+            {
                 Ok(Color::Named(s.to_string()))
             } else {
                 Err("Invalid named color".to_string())
@@ -231,7 +233,9 @@ impl Recipe {
             return Err(Error::Validation("Size must be at least 16x16".to_string()));
         }
         if self.size.width > 4096 || self.size.height > 4096 {
-            return Err(Error::Validation("Size must not exceed 4096x4096".to_string()));
+            return Err(Error::Validation(
+                "Size must not exceed 4096x4096".to_string(),
+            ));
         }
 
         // Label constraints
@@ -240,14 +244,19 @@ impl Recipe {
                 return Err(Error::Validation("Label cannot be empty".to_string()));
             }
             if label.chars().count() > 4 {
-                return Err(Error::Validation("Label must be 4 characters or less".to_string()));
+                return Err(Error::Validation(
+                    "Label must be 4 characters or less".to_string(),
+                ));
             }
         }
 
         // Font path validation
         if let Some(path) = &self.font_path {
             if !path.exists() {
-                return Err(Error::Validation(format!("Font path does not exist: {}", path.display())));
+                return Err(Error::Validation(format!(
+                    "Font path does not exist: {}",
+                    path.display()
+                )));
             }
         }
 
@@ -257,7 +266,11 @@ impl Recipe {
     /// Canonicalize recipe for deterministic processing.
     pub fn canonicalize(&self) -> Result<CanonicalRecipe> {
         let base_color = normalize_color(&self.base_color)?;
-        let accent_color = self.accent_color.as_ref().map(|c| normalize_color(c)).transpose()?;
+        let accent_color = self
+            .accent_color
+            .as_ref()
+            .map(|c| normalize_color(c))
+            .transpose()?;
         let label = self.label.as_ref().map(|l| sanitize_label(l)).flatten();
 
         Ok(CanonicalRecipe {
@@ -278,7 +291,8 @@ impl Recipe {
     pub fn generate_stem(&self) -> Result<String> {
         let canonical = self.canonicalize()?;
         let recipe_id = generate_recipe_id(&canonical);
-        let accent_token = canonical.accent_color
+        let accent_token = canonical
+            .accent_color
             .as_ref()
             .map(|c| format!("-{}", c))
             .unwrap_or_default();
@@ -287,7 +301,10 @@ impl Recipe {
         let token_string = tokens.join("-");
         let size = format!("{}x{}", canonical.size.width, canonical.size.height);
 
-        Ok(format!("{}-{}-{}-{}-{}", recipe_id, canonical.base_color, accent_token, token_string, size))
+        Ok(format!(
+            "{}-{}-{}-{}-{}",
+            recipe_id, canonical.base_color, accent_token, token_string, size
+        ))
     }
 }
 
@@ -313,7 +330,15 @@ fn normalize_color(color: &Color) -> Result<String> {
             let hex = hex.strip_prefix('#').unwrap_or(hex);
             let hex = hex.to_lowercase();
             match hex.len() {
-                3 => Ok(format!("{}{}{}{}{}{}", &hex[0..1], &hex[0..1], &hex[1..2], &hex[1..2], &hex[2..3], &hex[2..3])),
+                3 => Ok(format!(
+                    "{}{}{}{}{}{}",
+                    &hex[0..1],
+                    &hex[0..1],
+                    &hex[1..2],
+                    &hex[1..2],
+                    &hex[2..3],
+                    &hex[2..3]
+                )),
                 6 => Ok(hex),
                 _ => Err(Error::Validation("Invalid hex length".to_string())),
             }
@@ -323,7 +348,8 @@ fn normalize_color(color: &Color) -> Result<String> {
 
 /// Sanitize label text for deterministic output.
 fn sanitize_label(label: &str) -> Option<String> {
-    let sanitized: String = label.chars()
+    let sanitized: String = label
+        .chars()
         .filter(|c| c.is_ascii_alphanumeric() || *c == '_' || *c == '.' || *c == '-')
         .take(4)
         .collect();
@@ -343,7 +369,12 @@ fn generate_recipe_id(canonical: &CanonicalRecipe) -> String {
 
     let hash = Sha256::digest(canonical_json.as_bytes());
     let hash_bytes = hash.as_slice();
-    format!("recipe-{:x}", hash_bytes[0..8].iter().fold(0u64, |acc, &x| (acc << 8) | x as u64))
+    format!(
+        "recipe-{:x}",
+        hash_bytes[0..8]
+            .iter()
+            .fold(0u64, |acc, &x| (acc << 8) | x as u64)
+    )
 }
 
 /// Generate token list for stem creation.
@@ -395,7 +426,8 @@ fn generate_tokens(canonical: &CanonicalRecipe) -> Result<Vec<String>> {
 
 /// Encode Unicode glyph for deterministic tokens.
 fn encode_unicode_glyph(glyph: &str) -> String {
-    glyph.chars()
+    glyph
+        .chars()
         .map(|c| format!("U{:08X}", c as u32))
         .collect::<Vec<_>>()
         .join("_")
@@ -407,7 +439,12 @@ fn compute_font_hash(font_path: &PathBuf) -> Result<String> {
     let content = fs::read(font_path)?;
     let hash = Sha256::digest(&content);
     let hash_bytes = hash.as_slice();
-    Ok(format!("{:x}", hash_bytes[0..8].iter().fold(0u64, |acc, &x| (acc << 8) | x as u64)))
+    Ok(format!(
+        "{:x}",
+        hash_bytes[0..8]
+            .iter()
+            .fold(0u64, |acc, &x| (acc << 8) | x as u64)
+    ))
 }
 
 /// Resolve effective recipe with degradation logic.
@@ -467,23 +504,41 @@ mod tests {
 
     #[test]
     fn test_size_parsing() {
-        assert_eq!("256x256".parse::<Size>().unwrap(), Size { width: 256, height: 256 });
+        assert_eq!(
+            "256x256".parse::<Size>().unwrap(),
+            Size {
+                width: 256,
+                height: 256
+            }
+        );
         assert!("invalid".parse::<Size>().is_err());
         assert!("10x10".parse::<Size>().is_err()); // Too small
     }
 
     #[test]
     fn test_color_normalization() {
-        assert_eq!(normalize_color(&Color::Named("red".to_string())).unwrap(), "ff0000");
-        assert_eq!(normalize_color(&Color::Hex("#ff0000".to_string())).unwrap(), "ff0000");
-        assert_eq!(normalize_color(&Color::Hex("#f00".to_string())).unwrap(), "ff0000");
+        assert_eq!(
+            normalize_color(&Color::Named("red".to_string())).unwrap(),
+            "ff0000"
+        );
+        assert_eq!(
+            normalize_color(&Color::Hex("#ff0000".to_string())).unwrap(),
+            "ff0000"
+        );
+        assert_eq!(
+            normalize_color(&Color::Hex("#f00".to_string())).unwrap(),
+            "ff0000"
+        );
     }
 
     #[test]
     fn test_recipe_validation() {
         let valid_recipe = Recipe {
             shape: Shape::Circle,
-            size: Size { width: 256, height: 256 },
+            size: Size {
+                width: 256,
+                height: 256,
+            },
             base_color: Color::Named("blue".to_string()),
             accent_color: None,
             fill: Fill::Solid,
@@ -496,7 +551,10 @@ mod tests {
         assert!(valid_recipe.validate().is_ok());
 
         let invalid_recipe = Recipe {
-            size: Size { width: 10, height: 10 }, // Too small
+            size: Size {
+                width: 10,
+                height: 10,
+            }, // Too small
             ..valid_recipe
         };
         assert!(invalid_recipe.validate().is_err());

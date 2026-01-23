@@ -3,9 +3,28 @@
 //! A Human Execution Engine (HEE) for deterministic logo asset generation.
 
 use clap::{Parser, Subcommand};
-use mt_logo_render::{Error, Result, Recipe, resolve_effective_recipe};
+use mt_logo_render::recipe::{Badge, CanonicalRecipe, Color, Fill, Mark, Shape, Size};
+use mt_logo_render::{resolve_effective_recipe, Error, Recipe, Result};
 use std::path::PathBuf;
 use tracing_subscriber::{layer::SubscriberExt, util::SubscriberInitExt};
+
+#[derive(Clone, Debug)]
+enum OutputFormat {
+    Json,
+    Yaml,
+}
+
+impl std::str::FromStr for OutputFormat {
+    type Err = String;
+
+    fn from_str(s: &str) -> std::result::Result<Self, Self::Err> {
+        match s.to_lowercase().as_str() {
+            "json" => Ok(OutputFormat::Json),
+            "yaml" => Ok(OutputFormat::Yaml),
+            _ => Err(format!("Invalid format: {}. Use 'json' or 'yaml'", s)),
+        }
+    }
+}
 
 #[derive(Parser)]
 #[command(name = "logo-render")]
@@ -26,24 +45,6 @@ struct Cli {
 
     #[command(subcommand)]
     command: Commands,
-}
-
-#[derive(Clone, Debug)]
-enum OutputFormat {
-    Json,
-    Yaml,
-}
-
-impl std::str::FromStr for OutputFormat {
-    type Err = String;
-
-    fn from_str(s: &str) -> std::result::Result<Self, Self::Err> {
-        match s.to_lowercase().as_str() {
-            "json" => Ok(OutputFormat::Json),
-            "yaml" => Ok(OutputFormat::Yaml),
-            _ => Err(format!("Invalid format: {}. Use 'json' or 'yaml'", s)),
-        }
-    }
 }
 
 #[derive(Subcommand)]
@@ -129,7 +130,11 @@ fn main() -> Result<()> {
         Commands::Resolve { recipe, file } => {
             handle_resolve(recipe, file, &ctx)?;
         }
-        Commands::Render { recipe, file, targets } => {
+        Commands::Render {
+            recipe,
+            file,
+            targets,
+        } => {
             handle_render(recipe, file, targets, &ctx)?;
         }
         Commands::Doctor => {
@@ -137,7 +142,14 @@ fn main() -> Result<()> {
             println!("Doctor command not yet implemented");
             std::process::exit(1);
         }
-        Commands::List { shape, size, base_color, fill, exists, missing } => {
+        Commands::List {
+            shape,
+            size,
+            base_color,
+            fill,
+            exists,
+            missing,
+        } => {
             // TODO: Implement list command
             println!("List command not yet implemented");
             std::process::exit(1);
@@ -158,15 +170,17 @@ fn render_png(recipe: &Recipe, output_path: &PathBuf) -> Result<()> {
     }
 
     let canonical = recipe.canonicalize()?;
-    let width = canonical.size.width as u32;
-    let height = canonical.size.height as u32;
+    let width = canonical.size.width;
+    let height = canonical.size.height;
 
     // Create image buffer
     let mut img = ImageBuffer::new(width, height);
 
     // Parse base color
     let base_color = parse_hex_color(&canonical.base_color)?;
-    let accent_color = canonical.accent_color.as_ref()
+    let accent_color = canonical
+        .accent_color
+        .as_ref()
         .and_then(|c| parse_hex_color(c).ok())
         .unwrap_or(base_color);
 
@@ -177,10 +191,10 @@ fn render_png(recipe: &Recipe, output_path: &PathBuf) -> Result<()> {
 
     // Render shape
     match canonical.shape {
-        mt_logo_render::Shape::Circle => render_circle(&mut img, &canonical, base_color, accent_color),
-        mt_logo_render::Shape::Square => render_square(&mut img, &canonical, base_color, accent_color),
-        mt_logo_render::Shape::Triangle => render_triangle(&mut img, &canonical, base_color, accent_color),
-        mt_logo_render::Shape::Hex => render_hex(&mut img, &canonical, base_color, accent_color),
+        Shape::Circle => render_circle(&mut img, &canonical, base_color, accent_color),
+        Shape::Square => render_square(&mut img, &canonical, base_color, accent_color),
+        Shape::Triangle => render_triangle(&mut img, &canonical, base_color, accent_color),
+        Shape::Hex => render_hex(&mut img, &canonical, base_color, accent_color),
     }
 
     // Render mark if present
@@ -198,10 +212,8 @@ fn render_png(recipe: &Recipe, output_path: &PathBuf) -> Result<()> {
         render_label(&mut img, label, &canonical)?;
     }
 
-    // Save PNG with atomic write
-    let temp_path = output_path.with_extension("tmp");
-    img.save(&temp_path)?;
-    std::fs::rename(temp_path, output_path)?;
+    // Save PNG directly
+    img.save(output_path)?;
 
     Ok(())
 }
@@ -221,14 +233,19 @@ fn render_ansi(recipe: &Recipe, output_path: &PathBuf) -> Result<()> {
 
     // Parse colors
     let base_color = parse_hex_color(&canonical.base_color)?;
-    let accent_color = canonical.accent_color.as_ref()
+    let accent_color = canonical
+        .accent_color
+        .as_ref()
         .and_then(|c| parse_hex_color(c).ok())
         .unwrap_or(base_color);
 
     // Generate ANSI art (simplified - just text representation for now)
     let mut ansi_output = format!("Logo: {}x{}\n", width, height);
     ansi_output.push_str(&format!("Shape: {:?}\n", canonical.shape));
-    ansi_output.push_str(&format!("Base Color: #{:02x}{:02x}{:02x}\n", base_color.0, base_color.1, base_color.2));
+    ansi_output.push_str(&format!(
+        "Base Color: #{:02x}{:02x}{:02x}\n",
+        base_color.0, base_color.1, base_color.2
+    ));
 
     if let Some(accent) = canonical.accent_color {
         ansi_output.push_str(&format!("Accent Color: {}\n", accent));
@@ -239,7 +256,7 @@ fn render_ansi(recipe: &Recipe, output_path: &PathBuf) -> Result<()> {
     }
 
     // Write to file atomically
-    let temp_path = output_path.with_extension("tmp");
+    let temp_path = output_path.with_extension("ansi.tmp");
     fs::write(&temp_path, ansi_output)?;
     std::fs::rename(temp_path, output_path)?;
 
@@ -250,14 +267,20 @@ fn render_ansi(recipe: &Recipe, output_path: &PathBuf) -> Result<()> {
 fn parse_hex_color(hex: &str) -> Result<(u8, u8, u8)> {
     let hex = hex.strip_prefix('#').unwrap_or(hex);
     if hex.len() == 6 {
-        let r = u8::from_str_radix(&hex[0..2], 16)?;
-        let g = u8::from_str_radix(&hex[2..4], 16)?;
-        let b = u8::from_str_radix(&hex[4..6], 16)?;
+        let r = u8::from_str_radix(&hex[0..2], 16)
+            .map_err(|_| Error::Validation(format!("Invalid hex color: {}", hex)))?;
+        let g = u8::from_str_radix(&hex[2..4], 16)
+            .map_err(|_| Error::Validation(format!("Invalid hex color: {}", hex)))?;
+        let b = u8::from_str_radix(&hex[4..6], 16)
+            .map_err(|_| Error::Validation(format!("Invalid hex color: {}", hex)))?;
         Ok((r, g, b))
     } else if hex.len() == 3 {
-        let r = u8::from_str_radix(&hex[0..1].repeat(2), 16)?;
-        let g = u8::from_str_radix(&hex[1..2].repeat(2), 16)?;
-        let b = u8::from_str_radix(&hex[2..3].repeat(2), 16)?;
+        let r = u8::from_str_radix(&hex[0..1].repeat(2), 16)
+            .map_err(|_| Error::Validation(format!("Invalid hex color: {}", hex)))?;
+        let g = u8::from_str_radix(&hex[1..2].repeat(2), 16)
+            .map_err(|_| Error::Validation(format!("Invalid hex color: {}", hex)))?;
+        let b = u8::from_str_radix(&hex[2..3].repeat(2), 16)
+            .map_err(|_| Error::Validation(format!("Invalid hex color: {}", hex)))?;
         Ok((r, g, b))
     } else {
         Err(Error::Validation(format!("Invalid hex color: {}", hex)))
@@ -265,10 +288,12 @@ fn parse_hex_color(hex: &str) -> Result<(u8, u8, u8)> {
 }
 
 /// Render circle shape
-fn render_circle(img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
-                 recipe: &mt_logo_render::CanonicalRecipe,
-                 base_color: (u8, u8, u8),
-                 accent_color: (u8, u8, u8)) {
+fn render_circle(
+    img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
+    recipe: &mt_logo_render::CanonicalRecipe,
+    base_color: (u8, u8, u8),
+    accent_color: (u8, u8, u8),
+) {
     let width = recipe.size.width as f32;
     let height = recipe.size.height as f32;
     let center_x = width / 2.0;
@@ -289,10 +314,12 @@ fn render_circle(img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
 }
 
 /// Render square shape
-fn render_square(img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
-                 recipe: &mt_logo_render::CanonicalRecipe,
-                 base_color: (u8, u8, u8),
-                 accent_color: (u8, u8, u8)) {
+fn render_square(
+    img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
+    recipe: &mt_logo_render::CanonicalRecipe,
+    base_color: (u8, u8, u8),
+    accent_color: (u8, u8, u8),
+) {
     let width = recipe.size.width as u32;
     let height = recipe.size.height as u32;
     let margin = (width.min(height) as f32 * 0.1) as u32;
@@ -310,10 +337,12 @@ fn render_square(img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
 }
 
 /// Render triangle shape
-fn render_triangle(img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
-                   recipe: &mt_logo_render::CanonicalRecipe,
-                   base_color: (u8, u8, u8),
-                   accent_color: (u8, u8, u8)) {
+fn render_triangle(
+    img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
+    recipe: &mt_logo_render::CanonicalRecipe,
+    base_color: (u8, u8, u8),
+    accent_color: (u8, u8, u8),
+) {
     let width = recipe.size.width as f32;
     let height = recipe.size.height as f32;
     let center_x = width / 2.0;
@@ -325,8 +354,7 @@ fn render_triangle(img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
         let yf = y as f32;
 
         // Simple triangle check (point-in-triangle)
-        let area = 0.5 * (center_x - center_x) * (top_y - base_y) -
-                   0.5 * (center_x - center_x) * (base_y - base_y);
+        let area = 0.0; // Simplified calculation for now
 
         if yf >= top_y && yf <= base_y {
             let progress = (yf - top_y) / (base_y - top_y);
@@ -342,10 +370,12 @@ fn render_triangle(img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
 }
 
 /// Render hexagon shape
-fn render_hex(img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
-              recipe: &mt_logo_render::CanonicalRecipe,
-              base_color: (u8, u8, u8),
-              accent_color: (u8, u8, u8)) {
+fn render_hex(
+    img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
+    recipe: &mt_logo_render::CanonicalRecipe,
+    base_color: (u8, u8, u8),
+    accent_color: (u8, u8, u8),
+) {
     let width = recipe.size.width as f32;
     let height = recipe.size.height as f32;
     let center_x = width / 2.0;
@@ -365,40 +395,60 @@ fn render_hex(img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
 }
 
 /// Render overlay mark
-fn render_mark(img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
-               mark: mt_logo_render::Mark,
-               recipe: &mt_logo_render::CanonicalRecipe,
-               color: (u8, u8, u8)) {
+fn render_mark(
+    img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
+    mark: Mark,
+    recipe: &mt_logo_render::CanonicalRecipe,
+    color: (u8, u8, u8),
+) {
     let center_x = recipe.size.width as i32 / 2;
     let center_y = recipe.size.height as i32 / 2;
     let size = (recipe.size.width.min(recipe.size.height) as i32 / 4).max(10);
 
     match mark {
-        mt_logo_render::Mark::Check => {
+        Mark::Check => {
             // Draw checkmark
             let points = [
-                (center_x - size/2, center_y),
-                (center_x - size/6, center_y + size/3),
-                (center_x + size/2, center_y - size/2),
+                (center_x - size / 2, center_y),
+                (center_x - size / 6, center_y + size / 3),
+                (center_x + size / 2, center_y - size / 2),
             ];
             draw_line(img, points[0], points[1], color);
             draw_line(img, points[1], points[2], color);
         }
-        mt_logo_render::Mark::X => {
+        Mark::X => {
             // Draw X
-            draw_line(img, (center_x - size/2, center_y - size/2), (center_x + size/2, center_y + size/2), color);
-            draw_line(img, (center_x + size/2, center_y - size/2), (center_x - size/2, center_y + size/2), color);
+            draw_line(
+                img,
+                (center_x - size / 2, center_y - size / 2),
+                (center_x + size / 2, center_y + size / 2),
+                color,
+            );
+            draw_line(
+                img,
+                (center_x + size / 2, center_y - size / 2),
+                (center_x - size / 2, center_y + size / 2),
+                color,
+            );
         }
-        mt_logo_render::Mark::Dot => {
+        Mark::Dot => {
             // Draw dot
             let radius = size / 4;
             for dy in -radius..=radius {
                 for dx in -radius..=radius {
-                    if dx*dx + dy*dy <= radius*radius {
+                    if dx * dx + dy * dy <= radius * radius {
                         let x = center_x + dx;
                         let y = center_y + dy;
-                        if x >= 0 && x < recipe.size.width as i32 && y >= 0 && y < recipe.size.height as i32 {
-                            img.put_pixel(x as u32, y as u32, image::Rgba([color.0, color.1, color.2, 255]));
+                        if x >= 0
+                            && x < recipe.size.width as i32
+                            && y >= 0
+                            && y < recipe.size.height as i32
+                        {
+                            img.put_pixel(
+                                x as u32,
+                                y as u32,
+                                image::Rgba([color.0, color.1, color.2, 255]),
+                            );
                         }
                     }
                 }
@@ -408,41 +458,51 @@ fn render_mark(img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
 }
 
 /// Render corner badge
-fn render_badge(img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
-                badge: mt_logo_render::Badge,
-                recipe: &mt_logo_render::CanonicalRecipe,
-                color: (u8, u8, u8)) {
+fn render_badge(
+    img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
+    badge: Badge,
+    recipe: &mt_logo_render::CanonicalRecipe,
+    color: (u8, u8, u8),
+) {
     let size = (recipe.size.width.min(recipe.size.height) as i32 / 8).max(8);
     let margin = size / 2;
 
     let (start_x, start_y) = match badge {
-        mt_logo_render::Badge::CornerDot => (recipe.size.width as i32 - size - margin, margin),
-        mt_logo_render::Badge::CornerCheck => (margin, margin),
+        Badge::CornerDot => (recipe.size.width as i32 - size - margin, margin),
+        Badge::CornerCheck => (margin, margin),
     };
 
     match badge {
-        mt_logo_render::Badge::CornerDot => {
+        Badge::CornerDot => {
             // Draw small circle
             let radius = size / 2;
             for dy in -radius..=radius {
                 for dx in -radius..=radius {
-                    if dx*dx + dy*dy <= radius*radius {
+                    if dx * dx + dy * dy <= radius * radius {
                         let x = start_x + radius + dx;
                         let y = start_y + radius + dy;
-                        if x >= 0 && x < recipe.size.width as i32 && y >= 0 && y < recipe.size.height as i32 {
-                            img.put_pixel(x as u32, y as u32, image::Rgba([color.0, color.1, color.2, 255]));
+                        if x >= 0
+                            && x < recipe.size.width as i32
+                            && y >= 0
+                            && y < recipe.size.height as i32
+                        {
+                            img.put_pixel(
+                                x as u32,
+                                y as u32,
+                                image::Rgba([color.0, color.1, color.2, 255]),
+                            );
                         }
                     }
                 }
             }
         }
-        mt_logo_render::Badge::CornerCheck => {
+        Badge::CornerCheck => {
             // Draw small checkmark
             let half_size = size / 2;
             let points = [
-                (start_x + half_size/2, start_y + half_size),
-                (start_x + half_size*3/4, start_y + half_size*3/4),
-                (start_x + half_size*3/2, start_y + half_size/2),
+                (start_x + half_size / 2, start_y + half_size),
+                (start_x + half_size * 3 / 4, start_y + half_size * 3 / 4),
+                (start_x + half_size * 3 / 2, start_y + half_size / 2),
             ];
             draw_line(img, points[0], points[1], color);
             draw_line(img, points[1], points[2], color);
@@ -451,9 +511,11 @@ fn render_badge(img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
 }
 
 /// Render text label (simplified - just draw a colored rectangle for now)
-fn render_label(img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
-                label: &str,
-                recipe: &mt_logo_render::CanonicalRecipe) -> Result<()> {
+fn render_label(
+    img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
+    label: &str,
+    recipe: &mt_logo_render::CanonicalRecipe,
+) -> Result<()> {
     // For now, just draw a colored rectangle in the bottom area
     // TODO: Implement proper text rendering with rusttype
     let width = recipe.size.width as u32;
@@ -474,10 +536,12 @@ fn render_label(img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
 }
 
 /// Draw a line between two points
-fn draw_line(img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
-             start: (i32, i32),
-             end: (i32, i32),
-             color: (u8, u8, u8)) {
+fn draw_line(
+    img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
+    start: (i32, i32),
+    end: (i32, i32),
+    color: (u8, u8, u8),
+) {
     let (x1, y1) = start;
     let (x2, y2) = end;
 
@@ -492,7 +556,11 @@ fn draw_line(img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
 
     loop {
         if x >= 0 && x < img.width() as i32 && y >= 0 && y < img.height() as i32 {
-            img.put_pixel(x as u32, y as u32, image::Rgba([color.0, color.1, color.2, 255]));
+            img.put_pixel(
+                x as u32,
+                y as u32,
+                image::Rgba([color.0, color.1, color.2, 255]),
+            );
         }
 
         if x == x2 && y == y2 {
@@ -511,8 +579,13 @@ fn draw_line(img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
     }
 }
 
-fn handle_render(recipe: Option<String>, file: Option<PathBuf>, targets: String, ctx: &CliContext) -> Result<()> {
-    use mt_logo_render::{Recipe, Cache, CacheFilters};
+fn handle_render(
+    recipe: Option<String>,
+    file: Option<PathBuf>,
+    targets: String,
+    ctx: &CliContext,
+) -> Result<()> {
+    use mt_logo_render::{Cache, CacheFilters, Recipe};
     use std::fs;
     use std::io::{self, Read};
 
@@ -554,12 +627,15 @@ fn handle_render(recipe: Option<String>, file: Option<PathBuf>, targets: String,
         match target {
             "png" => {
                 let output_path = ctx.asset_root.join(format!("{}.png", stem));
-                
+
                 // Check cache first
                 if !ctx.force {
                     if let Some(output_info) = cache.check_output(&stem, "png") {
                         if output_info.exists {
-                            println!("PNG already exists (use --force to override): {}", output_path.display());
+                            println!(
+                                "PNG already exists (use --force to override): {}",
+                                output_path.display()
+                            );
                             continue;
                         }
                     }
@@ -567,10 +643,10 @@ fn handle_render(recipe: Option<String>, file: Option<PathBuf>, targets: String,
 
                 // Render PNG
                 render_png(&recipe, &output_path)?;
-                
-                // Update cache
+
+                // Update cache with the actual output path
                 cache.update_entry(&stem, &recipe, "png", &output_path)?;
-                
+
                 // Compute fingerprint
                 if let Ok(hash) = compute_file_hash(&output_path) {
                     fingerprints.insert(output_path.display().to_string(), hash.clone());
@@ -580,12 +656,15 @@ fn handle_render(recipe: Option<String>, file: Option<PathBuf>, targets: String,
             }
             "ansi" => {
                 let output_path = ctx.asset_root.join(format!("{}.ansi", stem));
-                
+
                 // Check cache first
                 if !ctx.force {
                     if let Some(output_info) = cache.check_output(&stem, "ansi") {
                         if output_info.exists {
-                            println!("ANSI already exists (use --force to override): {}", output_path.display());
+                            println!(
+                                "ANSI already exists (use --force to override): {}",
+                                output_path.display()
+                            );
                             continue;
                         }
                     }
@@ -593,10 +672,10 @@ fn handle_render(recipe: Option<String>, file: Option<PathBuf>, targets: String,
 
                 // Render ANSI
                 render_ansi(&recipe, &output_path)?;
-                
+
                 // Update cache
                 cache.update_entry(&stem, &recipe, "ansi", &output_path)?;
-                
+
                 // Compute fingerprint
                 if let Ok(hash) = compute_file_hash(&output_path) {
                     fingerprints.insert(output_path.display().to_string(), hash.clone());
@@ -627,10 +706,10 @@ fn handle_render(recipe: Option<String>, file: Option<PathBuf>, targets: String,
 
     // Output in requested format
     match ctx.format {
-        mt_logo_render::OutputFormat::Json => {
+        OutputFormat::Json => {
             println!("{}", serde_json::to_string_pretty(&output)?);
         }
-        mt_logo_render::OutputFormat::Yaml => {
+        OutputFormat::Yaml => {
             println!("{}", serde_yaml::to_string(&output)?);
         }
     }
@@ -653,7 +732,7 @@ struct CliContext {
 }
 
 fn handle_resolve(recipe: Option<String>, file: Option<PathBuf>, ctx: &CliContext) -> Result<()> {
-    use mt_logo_render::{Recipe, resolve_effective_recipe};
+    use mt_logo_render::{resolve_effective_recipe, Recipe};
     use std::fs;
     use std::io::{self, Read};
 

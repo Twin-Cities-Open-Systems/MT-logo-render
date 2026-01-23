@@ -3,9 +3,9 @@
 //! A Human Execution Engine (HEE) for deterministic logo asset generation.
 //! This crate provides secure, deterministic rendering of logo assets from recipes.
 
-pub mod security;
-pub mod recipe;
 pub mod cache;
+pub mod recipe;
+pub mod security;
 
 use thiserror::Error;
 
@@ -39,7 +39,7 @@ pub type Result<T> = std::result::Result<T, Error>;
 pub use security::{SecurityValidator, ValidationResult};
 
 // Re-export recipe types
-pub use recipe::{Recipe, resolve_effective_recipe};
+pub use recipe::{resolve_effective_recipe, CanonicalRecipe, Recipe};
 
 // Re-export cache types
-pub use cache::{Cache, CacheFilters, CacheEntry, OutputInfo};
+pub use cache::{Cache, CacheEntry, CacheFilters, OutputInfo};

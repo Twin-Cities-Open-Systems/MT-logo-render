@@ -2,14 +2,14 @@
 //!
 //! Manages deterministic asset caching with atomic operations and YAML index.
 
-use crate::{Error, Result, Recipe};
-use crate::recipe::{Fill, Color};
+use crate::recipe::{Color, Fill};
+use crate::{Error, Recipe, Result};
+use chrono::{DateTime, Utc};
 use serde::{Deserialize, Serialize};
 use sha2::{Digest, Sha256};
 use std::collections::HashMap;
 use std::fs;
 use std::path::{Path, PathBuf};
-use chrono::{DateTime, Utc};
 
 /// Cache index entry for tracking generated assets
 #[derive(Deserialize, Serialize, Clone, Debug)]
@@ -65,6 +65,11 @@ impl Cache {
         // Load existing index or create new one
         let index = CacheIndex::load(&index_path)?;
 
+        // Ensure index file exists (create if it doesn't)
+        if !index_path.exists() {
+            index.save(&index_path)?;
+        }
+
         Ok(Cache {
             index_path,
             generated_dir,
@@ -80,7 +85,7 @@ impl Cache {
     /// Check if an output file exists and is valid
     pub fn check_output(&self, stem: &str, format: &str) -> Option<OutputInfo> {
         let path = self.get_output_path(stem, format);
-        
+
         if path.exists() {
             let metadata = path.metadata().ok()?;
             let size_bytes = metadata.len();
@@ -103,7 +108,13 @@ impl Cache {
     }
 
     /// Update cache entry for a rendered output
-    pub fn update_entry(&mut self, stem: &str, recipe: &Recipe, format: &str, path: &PathBuf) -> Result<()> {
+    pub fn update_entry(
+        &mut self,
+        stem: &str,
+        recipe: &Recipe,
+        format: &str,
+        path: &PathBuf,
+    ) -> Result<()> {
         let effective = crate::resolve_effective_recipe(recipe);
         let recipe_pair = RecipePair {
             requested: recipe.clone(),
@@ -119,7 +130,7 @@ impl Cache {
 
         // Check if entry exists
         let entry_exists = self.index.entries.iter().any(|e| e.stem == stem);
-        
+
         if entry_exists {
             // Update existing entry
             for entry in self.index.entries.iter_mut() {
@@ -157,7 +168,9 @@ impl Cache {
 
     /// Find entries matching filters
     pub fn find_entries(&self, filters: &CacheFilters) -> Vec<&CacheEntry> {
-        self.index.entries.iter()
+        self.index
+            .entries
+            .iter()
             .filter(|entry| {
                 if let Some(shape) = &filters.shape {
                     let requested_shape = entry.recipe.requested.shape;
@@ -167,7 +180,10 @@ impl Cache {
                 }
 
                 if let Some(size) = &filters.size {
-                    let expected_size = format!("{}x{}", entry.recipe.requested.size.width, entry.recipe.requested.size.height);
+                    let expected_size = format!(
+                        "{}x{}",
+                        entry.recipe.requested.size.width, entry.recipe.requested.size.height
+                    );
                     if expected_size != *size {
                         return false;
                     }
@@ -227,9 +243,12 @@ impl CacheIndex {
     pub fn load(path: &Path) -> Result<Self> {
         if path.exists() {
             let content = fs::read_to_string(path)?;
-            serde_yaml::from_str(&content).map_err(|e| Error::Validation(format!("Failed to parse cache index: {}", e)))
+            serde_yaml::from_str(&content)
+                .map_err(|e| Error::Validation(format!("Failed to parse cache index: {}", e)))
         } else {
-            Ok(CacheIndex { entries: Vec::new() })
+            Ok(CacheIndex {
+                entries: Vec::new(),
+            })
         }
     }
 
@@ -278,7 +297,15 @@ fn normalize_color(color: &Color) -> Result<String> {
             let hex = hex.strip_prefix('#').unwrap_or(hex);
             let hex = hex.to_lowercase();
             match hex.len() {
-                3 => Ok(format!("{}{}{}{}{}{}", &hex[0..1], &hex[0..1], &hex[1..2], &hex[1..2], &hex[2..3], &hex[2..3])),
+                3 => Ok(format!(
+                    "{}{}{}{}{}{}",
+                    &hex[0..1],
+                    &hex[0..1],
+                    &hex[1..2],
+                    &hex[1..2],
+                    &hex[2..3],
+                    &hex[2..3]
+                )),
                 6 => Ok(hex),
                 _ => Err(Error::Validation("Invalid hex length".to_string())),
             }
@@ -289,14 +316,14 @@ fn normalize_color(color: &Color) -> Result<String> {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::recipe::{Shape, Size, Color, Fill};
+    use crate::recipe::{Color, Fill, Shape, Size};
     use tempfile::tempdir;
 
     #[test]
     fn test_cache_creation() {
         let temp_dir = tempdir().unwrap();
         let cache = Cache::new(temp_dir.path()).unwrap();
-        
+
         assert!(cache.index_path.exists());
         assert!(cache.generated_dir.exists());
     }
@@ -305,7 +332,7 @@ mod tests {
     fn test_output_path_generation() {
         let temp_dir = tempdir().unwrap();
         let cache = Cache::new(temp_dir.path()).unwrap();
-        
+
         let path = cache.get_output_path("test-stem", "png");
         assert_eq!(path.file_name().unwrap(), "test-stem.png");
     }
@@ -314,11 +341,14 @@ mod tests {
     fn test_cache_entry_update() {
         let temp_dir = tempdir().unwrap();
         let mut cache = Cache::new(temp_dir.path()).unwrap();
-        
+
         // Create a test recipe
         let recipe = Recipe {
             shape: Shape::Circle,
-            size: Size { width: 256, height: 256 },
+            size: Size {
+                width: 256,
+                height: 256,
+            },
             base_color: Color::Named("red".to_string()),
             accent_color: None,
             fill: Fill::Solid,
@@ -334,7 +364,9 @@ mod tests {
         fs::write(&test_file, b"test content").unwrap();
 
         // Update cache entry
-        cache.update_entry("test-stem", &recipe, "png", &test_file).unwrap();
+        cache
+            .update_entry("test-stem", &recipe, "png", &test_file)
+            .unwrap();
 
         // Verify entry was created
         assert_eq!(cache.index.entries.len(), 1);

@@ -3,13 +3,13 @@
 //! Comprehensive security validation system for MT-logo-render HEE component.
 //! Implements defense-in-depth security following tick-task security patterns.
 
-pub mod validator;
-pub mod scanner;
 pub mod hee_rules;
+pub mod scanner;
+pub mod validator;
 
-pub use validator::{SecurityValidator, ValidationResult, Error};
-pub use scanner::SecurityScanner;
 pub use hee_rules::HEERules;
+pub use scanner::SecurityScanner;
+pub use validator::{Error, SecurityValidator, ValidationResult};
 
 /// Comprehensive security validation result
 #[derive(Debug, Clone)]

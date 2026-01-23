@@ -82,12 +82,18 @@ cat prompts/$(ls prompts/ | grep $(cat docs/ROADMAP.md | grep "Phase.*In Progres
 git clone https://github.com/spencerbutler/MT-logo-render.git
 cd MT-logo-render
 
-# Build and install
-cargo build --release
+# Build and install (use --quiet for cleaner output)
+cargo build --release --quiet
 # Binary available at target/release/logo-render
 
 # Development setup
 cargo install cargo-watch  # For auto-rebuilding during development
+
+# Recommended cargo commands for development
+cargo build --quiet        # Clean build output
+cargo test --quiet         # Run tests with minimal noise
+cargo clippy --quiet       # Lint with reduced verbosity
+cargo fmt --quiet          # Format code
 ```
 
 ### Basic Usage
