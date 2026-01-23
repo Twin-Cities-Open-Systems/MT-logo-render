@@ -142,9 +142,10 @@ impl SecurityValidator {
             }
         }
 
-    // Skip shell syntax validation for now - it's too restrictive
-    // TODO: Implement a safer syntax validation that doesn't execute commands
-    // if let Err(e) = self.validate_shell_syntax(command) {
+    // Skip shell syntax validation for now - the regex patterns are too complex
+    // and the dangerous command detection is more important for security
+    // TODO: Implement simpler syntax validation that doesn't break valid commands
+    // if let Err(e) = self.validate_shell_syntax_safe(command) {
     //     result.add_violation(format!("Shell syntax error: {}", e));
     // }
 
@@ -242,6 +243,88 @@ impl SecurityValidator {
     }
 
     // Helper methods
+    fn validate_shell_syntax_safe(&self, command: &str) -> Result<(), String> {
+        // Regex patterns for common shell syntax issues
+        let patterns = vec![
+            // Unbalanced single quotes
+            (Regex::new(r"'[^']*$").unwrap(), "Unbalanced single quotes"),
+            // Unbalanced double quotes (accounting for escaped quotes)
+            (Regex::new(r#""(?:[^"\\]|\\.)*[^"\\]?$"#).unwrap(), "Unbalanced double quotes"),
+            // Unbalanced parentheses
+            (Regex::new(r"\([^)]*$").unwrap(), "Unbalanced parentheses"),
+            // Unbalanced brackets
+            (Regex::new(r"\[[^\]]*$").unwrap(), "Unbalanced brackets"),
+            // Unbalanced braces
+            (Regex::new(r"\{[^}]*$").unwrap(), "Unbalanced braces"),
+            // Missing command after operators
+            (Regex::new(r"(?:\|\||&&|;)\s*$").unwrap(), "Missing command after operator"),
+            // Redirection without target
+            (Regex::new(r"(?:>|<|>>|<<)\s*$").unwrap(), "Missing target for redirection"),
+            // Invalid pipe chains
+            (Regex::new(r"(?:\|\||&&)\s*(?:\|\||&&)").unwrap(), "Invalid operator chaining"),
+            // Trailing backslash
+            (Regex::new(r"\\$").unwrap(), "Trailing backslash"),
+        ];
+
+        for (pattern, error_msg) in patterns {
+            if pattern.is_match(command) {
+                return Err(error_msg.to_string());
+            }
+        }
+
+        // Additional checks for balanced quotes and parentheses
+        let mut single_quotes = 0;
+        let mut double_quotes = 0;
+        let mut parens = 0;
+        let mut brackets = 0;
+        let mut braces = 0;
+
+        let mut escaped = false;
+        for ch in command.chars() {
+            if escaped {
+                escaped = false;
+                continue;
+            }
+
+            match ch {
+                '\\' => escaped = true,
+                '\'' if double_quotes == 0 => single_quotes = 1 - single_quotes,
+                '"' if single_quotes == 0 => double_quotes = 1 - double_quotes,
+                '(' if single_quotes == 0 && double_quotes == 0 => parens += 1,
+                ')' if single_quotes == 0 && double_quotes == 0 => parens -= 1,
+                '[' if single_quotes == 0 && double_quotes == 0 => brackets += 1,
+                ']' if single_quotes == 0 && double_quotes == 0 => brackets -= 1,
+                '{' if single_quotes == 0 && double_quotes == 0 => braces += 1,
+                '}' if single_quotes == 0 && double_quotes == 0 => braces -= 1,
+                _ => {}
+            }
+
+            // Check for negative counts (unbalanced)
+            if parens < 0 || brackets < 0 || braces < 0 {
+                return Err("Unbalanced brackets/parentheses/braces".to_string());
+            }
+        }
+
+        // Check final balance
+        if single_quotes != 0 {
+            return Err("Unbalanced single quotes".to_string());
+        }
+        if double_quotes != 0 {
+            return Err("Unbalanced double quotes".to_string());
+        }
+        if parens != 0 {
+            return Err("Unbalanced parentheses".to_string());
+        }
+        if brackets != 0 {
+            return Err("Unbalanced brackets".to_string());
+        }
+        if braces != 0 {
+            return Err("Unbalanced braces".to_string());
+        }
+
+        Ok(())
+    }
+
     fn validate_shell_syntax(&self, command: &str) -> Result<(), String> {
         let output = Command::new("bash")
             .arg("-n")
