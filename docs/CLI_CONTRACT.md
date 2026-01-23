@@ -457,6 +457,38 @@ cargo bench --quiet
 cargo audit --quiet
 ```
 
+### Non-Interactive Command Requirements
+**CRITICAL**: All commands must be fully automated and never trigger user's editor or pager.
+
+#### Git Commands
+- Always use `git --no-pager` to prevent pager activation
+- Use `GIT_EDITOR=true` or `GIT_EDITOR=:` to prevent editor activation
+- Add `--no-edit` to skip editor for commit operations
+- Use `--quiet` flags to reduce output and prevent pager
+
+#### Safe Command Examples
+```bash
+git --no-pager status
+git --no-pager diff --name-only
+git --no-pager log --oneline -10
+GIT_EDITOR=true git commit --no-edit -m "message"
+git --no-pager push origin HEAD --force-with-lease
+```
+
+#### Unsafe Command Examples (AVOID)
+```bash
+git status          # Can trigger pager
+git diff            # Can trigger pager
+git commit          # Can trigger editor
+git rebase          # Can trigger editor
+```
+
+#### Other Commands
+- Use `--quiet` flags to reduce output
+- Redirect output to `/dev/null` when not needed
+- Use `HEAD` instead of branch names to avoid editor prompts
+- Use `--force`, `--assume-yes` flags to avoid interactive prompts
+
 ### Development Workflow
 1. **Build**: `cargo build --quiet`
 2. **Test**: `cargo test --quiet`
