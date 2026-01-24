@@ -20,6 +20,12 @@ pub struct SecurityCheck {
     pub recommendations: Vec<String>,
 }
 
+impl Default for SecurityCheck {
+    fn default() -> Self {
+        Self::new()
+    }
+}
+
 impl SecurityCheck {
     pub fn new() -> Self {
         Self {

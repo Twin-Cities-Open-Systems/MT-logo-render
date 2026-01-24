@@ -215,11 +215,11 @@ impl SecurityScanner {
         let unsafe_files = results.iter().filter(|r| !r.is_safe).count();
         let warning_files = results.iter().filter(|r| !r.warnings.is_empty()).count();
 
-        report.push_str(&format!("## Summary\n\n"));
+        report.push_str("## Summary\n\n");
         report.push_str(&format!("- **Total files scanned**: {}\n", total_files));
         report.push_str(&format!("- **Files with violations**: {}\n", unsafe_files));
         report.push_str(&format!("- **Files with warnings**: {}\n", warning_files));
-        report.push_str("\n");
+        report.push('\n');
 
         for result in results {
             report.push_str(&format!("### {}\n\n", result.file_path.display()));
@@ -244,7 +244,7 @@ impl SecurityScanner {
                 }
             }
 
-            report.push_str("\n");
+            report.push('\n');
         }
 
         report.push_str("## Recommendations\n\n");

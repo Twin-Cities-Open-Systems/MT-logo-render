@@ -59,7 +59,7 @@ repos:
 
   # Markdown formatting
   - repo: git@github.com:executablebooks/mdformat.git
-    rev: 0.7.16
+    rev: 0.7.19
     hooks:
       - id: mdformat
         name: Format Markdown

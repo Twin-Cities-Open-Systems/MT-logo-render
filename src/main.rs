@@ -3,8 +3,8 @@
 //! A Human Execution Engine (HEE) for deterministic logo asset generation.
 
 use clap::{Parser, Subcommand};
-use mt_logo_render::recipe::{Badge, CanonicalRecipe, Color, Fill, Mark, Shape, Size};
-use mt_logo_render::{resolve_effective_recipe, Error, Recipe, Result};
+use mt_logo_render::recipe::{Badge, Mark, Shape};
+use mt_logo_render::{Error, Recipe, Result};
 use std::path::PathBuf;
 use tracing_subscriber::{layer::SubscriberExt, util::SubscriberInitExt};
 
@@ -585,7 +585,7 @@ fn handle_render(
     targets: String,
     ctx: &CliContext,
 ) -> Result<()> {
-    use mt_logo_render::{Cache, CacheFilters, Recipe};
+    use mt_logo_render::{Cache, Recipe};
     use std::fs;
     use std::io::{self, Read};
 

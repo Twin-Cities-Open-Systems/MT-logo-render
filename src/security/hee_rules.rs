@@ -222,7 +222,7 @@ impl HEERules {
                         }
                     }
 
-                    report.push_str("\n");
+                    report.push('\n');
                 }
             }
         }

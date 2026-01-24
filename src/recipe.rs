@@ -136,8 +136,7 @@ impl FromStr for Color {
     type Err = String;
 
     fn from_str(s: &str) -> std::result::Result<Self, Self::Err> {
-        if s.starts_with('#') {
-            let hex = &s[1..];
+        if let Some(hex) = s.strip_prefix('#') {
             if hex.len() == 3 || hex.len() == 6 {
                 for ch in hex.chars() {
                     if !ch.is_ascii_hexdigit() {
@@ -148,14 +147,12 @@ impl FromStr for Color {
             } else {
                 Err("Hex colors must be 3 or 6 digits".to_string())
             }
+        } else if s.chars()
+            .all(|c| c.is_alphanumeric() || c == '_' || c == '-')
+        {
+            Ok(Color::Named(s.to_string()))
         } else {
-            if s.chars()
-                .all(|c| c.is_alphanumeric() || c == '_' || c == '-')
-            {
-                Ok(Color::Named(s.to_string()))
-            } else {
-                Err("Invalid named color".to_string())
-            }
+            Err("Invalid named color".to_string())
         }
     }
 }
@@ -163,18 +160,15 @@ impl FromStr for Color {
 /// Fill pattern specifications.
 #[derive(Deserialize, Serialize, Clone, Debug, PartialEq, Eq, Hash)]
 #[serde(rename_all = "snake_case")]
+#[derive(Default)]
 pub enum Fill {
+    #[default]
     Solid,
     Pie(u16),   // Degrees (circle only)
     Split(u8),  // Number of segments
     Stripe(u8), // Number of stripes
 }
 
-impl Default for Fill {
-    fn default() -> Self {
-        Fill::Solid
-    }
-}
 
 /// Overlay mark types.
 #[derive(Deserialize, Serialize, Clone, Copy, Debug, PartialEq, Eq, Hash)]
@@ -218,7 +212,7 @@ pub struct EffectiveRecipe {
 impl Recipe {
     /// Parse recipe from JSON string.
     pub fn from_json(json: &str) -> Result<Self> {
-        serde_json::from_str(json).map_err(|e| Error::Json(e))
+        serde_json::from_str(json).map_err(Error::Json)
     }
 
     /// Parse recipe from YAML string.
@@ -269,9 +263,9 @@ impl Recipe {
         let accent_color = self
             .accent_color
             .as_ref()
-            .map(|c| normalize_color(c))
+            .map(normalize_color)
             .transpose()?;
-        let label = self.label.as_ref().map(|l| sanitize_label(l)).flatten();
+        let label = self.label.as_ref().and_then(|l| sanitize_label(l));
 
         Ok(CanonicalRecipe {
             shape: self.shape,
@@ -364,7 +358,7 @@ fn sanitize_label(label: &str) -> Option<String> {
 /// Generate deterministic recipe ID from canonical recipe.
 fn generate_recipe_id(canonical: &CanonicalRecipe) -> String {
     let canonical_json = serde_json::to_string(canonical)
-        .map_err(|e| Error::Json(e))
+        .map_err(Error::Json)
         .unwrap(); // Should not fail for valid data
 
     let hash = Sha256::digest(canonical_json.as_bytes());
@@ -495,7 +489,7 @@ pub fn resolve_effective_recipe(requested: &Recipe) -> EffectiveRecipe {
 
 /// Check if string contains only ASCII characters.
 fn is_ascii_only(s: &str) -> bool {
-    s.chars().all(|c| c.is_ascii())
+    s.is_ascii()
 }
 
 #[cfg(test)]
