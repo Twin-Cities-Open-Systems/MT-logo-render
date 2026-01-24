@@ -1,0 +1,299 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created_at": "2026-01-24T04:06:12.918830+00:00",
+    "updated_at": "2026-01-24T04:23:31.261438+00:00",
+    "capsule_id": "ci-monitoring-daffa401"
+  },
+  "monitoring_state": {
+    "system_status": "degraded",
+    "last_healthy_check": "2026-01-24T04:06:12.919037+00:00",
+    "current_alert_level": "normal",
+    "monitoring_mode": "continuous",
+    "polling_interval": 30,
+    "last_poll_time": null,
+    "consecutive_failures": 12,
+    "github_api_status": "operational",
+    "last_workflow_run_id": null,
+    "active_alerts": 4,
+    "suppressed_alerts": [],
+    "updated_at": "2026-01-24T04:23:31.261431+00:00"
+  },
+  "coverage_state": {
+    "current_metrics": {
+      "line": 0.0,
+      "branch": 0.0,
+      "function": 0.0,
+      "integration": 0.0,
+      "total": 0.0
+    },
+    "target_metrics": {
+      "line": 100.0,
+      "branch": 100.0,
+      "function": 100.0,
+      "integration": 100.0,
+      "total": 100.0
+    },
+    "improvement_trend": "0%",
+    "coverage_gaps": [],
+    "last_analysis": null,
+    "analysis_frequency": "daily",
+    "coverage_trend": [],
+    "test_generation_queue": []
+  },
+  "failure_history": [
+    {
+      "workflow_run_id": 21308532399,
+      "job_id": 61340886552,
+      "job_name": "HEE Security Scan",
+      "failure_type": "Security Vulnerability",
+      "severity": "critical",
+      "pattern_id": "PAT-003",
+      "impact": {
+        "affected_components": [
+          "HEE Security Scan"
+        ],
+        "downtime": "unknown",
+        "recovery_time": "unknown"
+      },
+      "root_cause": "Analysis pending",
+      "preventive_actions": [],
+      "failure_id": "fail-000",
+      "detected_at": "2026-01-24T04:06:13.564112+00:00",
+      "status": "detected"
+    },
+    {
+      "workflow_run_id": 21308532399,
+      "job_id": 61340886559,
+      "job_name": "Code Quality",
+      "failure_type": "Timeout",
+      "severity": "medium",
+      "pattern_id": "PAT-005",
+      "impact": {
+        "affected_components": [
+          "Code Quality"
+        ],
+        "downtime": "unknown",
+        "recovery_time": "unknown"
+      },
+      "root_cause": "Analysis pending",
+      "preventive_actions": [],
+      "failure_id": "fail-001",
+      "detected_at": "2026-01-24T04:06:13.568381+00:00",
+      "status": "detected"
+    },
+    {
+      "workflow_run_id": 21308532399,
+      "job_id": 61340886562,
+      "job_name": "Pre-commit Hooks",
+      "failure_type": "Timeout",
+      "severity": "medium",
+      "pattern_id": "PAT-005",
+      "impact": {
+        "affected_components": [
+          "Pre-commit Hooks"
+        ],
+        "downtime": "unknown",
+        "recovery_time": "unknown"
+      },
+      "root_cause": "Analysis pending",
+      "preventive_actions": [],
+      "failure_id": "fail-002",
+      "detected_at": "2026-01-24T04:06:13.572371+00:00",
+      "status": "detected"
+    },
+    {
+      "workflow_run_id": 21308532399,
+      "job_id": 61340886580,
+      "job_name": "Release Build (windows-latest, x86_64-pc-windows-msvc, windows-x64)",
+      "failure_type": "Compilation Failure",
+      "severity": "critical",
+      "pattern_id": "PAT-001",
+      "impact": {
+        "affected_components": [
+          "Release Build (windows-latest, x86_64-pc-windows-msvc, windows-x64)"
+        ],
+        "downtime": "unknown",
+        "recovery_time": "unknown"
+      },
+      "root_cause": "Analysis pending",
+      "preventive_actions": [],
+      "failure_id": "fail-003",
+      "detected_at": "2026-01-24T04:06:13.576820+00:00",
+      "status": "detected"
+    },
+    {
+      "workflow_run_id": 21308532399,
+      "job_id": 61340886552,
+      "job_name": "HEE Security Scan",
+      "failure_type": "Security Vulnerability",
+      "severity": "critical",
+      "pattern_id": "PAT-003",
+      "impact": {
+        "affected_components": [
+          "HEE Security Scan"
+        ],
+        "downtime": "unknown",
+        "recovery_time": "unknown"
+      },
+      "root_cause": "Analysis pending",
+      "preventive_actions": [],
+      "failure_id": "fail-004",
+      "detected_at": "2026-01-24T04:23:30.109978+00:00",
+      "status": "detected"
+    },
+    {
+      "workflow_run_id": 21308532399,
+      "job_id": 61340886559,
+      "job_name": "Code Quality",
+      "failure_type": "Timeout",
+      "severity": "medium",
+      "pattern_id": "PAT-005",
+      "impact": {
+        "affected_components": [
+          "Code Quality"
+        ],
+        "downtime": "unknown",
+        "recovery_time": "unknown"
+      },
+      "root_cause": "Analysis pending",
+      "preventive_actions": [],
+      "failure_id": "fail-005",
+      "detected_at": "2026-01-24T04:23:30.115026+00:00",
+      "status": "detected"
+    },
+    {
+      "workflow_run_id": 21308532399,
+      "job_id": 61340886562,
+      "job_name": "Pre-commit Hooks",
+      "failure_type": "Timeout",
+      "severity": "medium",
+      "pattern_id": "PAT-005",
+      "impact": {
+        "affected_components": [
+          "Pre-commit Hooks"
+        ],
+        "downtime": "unknown",
+        "recovery_time": "unknown"
+      },
+      "root_cause": "Analysis pending",
+      "preventive_actions": [],
+      "failure_id": "fail-006",
+      "detected_at": "2026-01-24T04:23:30.118604+00:00",
+      "status": "detected"
+    },
+    {
+      "workflow_run_id": 21308532399,
+      "job_id": 61340886580,
+      "job_name": "Release Build (windows-latest, x86_64-pc-windows-msvc, windows-x64)",
+      "failure_type": "Compilation Failure",
+      "severity": "critical",
+      "pattern_id": "PAT-001",
+      "impact": {
+        "affected_components": [
+          "Release Build (windows-latest, x86_64-pc-windows-msvc, windows-x64)"
+        ],
+        "downtime": "unknown",
+        "recovery_time": "unknown"
+      },
+      "root_cause": "Analysis pending",
+      "preventive_actions": [],
+      "failure_id": "fail-007",
+      "detected_at": "2026-01-24T04:23:30.121861+00:00",
+      "status": "detected"
+    },
+    {
+      "workflow_run_id": 21308532399,
+      "job_id": 61340886552,
+      "job_name": "HEE Security Scan",
+      "failure_type": "Security Vulnerability",
+      "severity": "critical",
+      "pattern_id": "PAT-003",
+      "impact": {
+        "affected_components": [
+          "HEE Security Scan"
+        ],
+        "downtime": "unknown",
+        "recovery_time": "unknown"
+      },
+      "root_cause": "Analysis pending",
+      "preventive_actions": [],
+      "failure_id": "fail-008",
+      "detected_at": "2026-01-24T04:23:31.251220+00:00",
+      "status": "detected"
+    },
+    {
+      "workflow_run_id": 21308532399,
+      "job_id": 61340886559,
+      "job_name": "Code Quality",
+      "failure_type": "Timeout",
+      "severity": "medium",
+      "pattern_id": "PAT-005",
+      "impact": {
+        "affected_components": [
+          "Code Quality"
+        ],
+        "downtime": "unknown",
+        "recovery_time": "unknown"
+      },
+      "root_cause": "Analysis pending",
+      "preventive_actions": [],
+      "failure_id": "fail-009",
+      "detected_at": "2026-01-24T04:23:31.255168+00:00",
+      "status": "detected"
+    },
+    {
+      "workflow_run_id": 21308532399,
+      "job_id": 61340886562,
+      "job_name": "Pre-commit Hooks",
+      "failure_type": "Timeout",
+      "severity": "medium",
+      "pattern_id": "PAT-005",
+      "impact": {
+        "affected_components": [
+          "Pre-commit Hooks"
+        ],
+        "downtime": "unknown",
+        "recovery_time": "unknown"
+      },
+      "root_cause": "Analysis pending",
+      "preventive_actions": [],
+      "failure_id": "fail-010",
+      "detected_at": "2026-01-24T04:23:31.257438+00:00",
+      "status": "detected"
+    },
+    {
+      "workflow_run_id": 21308532399,
+      "job_id": 61340886580,
+      "job_name": "Release Build (windows-latest, x86_64-pc-windows-msvc, windows-x64)",
+      "failure_type": "Compilation Failure",
+      "severity": "critical",
+      "pattern_id": "PAT-001",
+      "impact": {
+        "affected_components": [
+          "Release Build (windows-latest, x86_64-pc-windows-msvc, windows-x64)"
+        ],
+        "downtime": "unknown",
+        "recovery_time": "unknown"
+      },
+      "root_cause": "Analysis pending",
+      "preventive_actions": [],
+      "failure_id": "fail-011",
+      "detected_at": "2026-01-24T04:23:31.259878+00:00",
+      "status": "detected"
+    }
+  ],
+  "auto_fix_history": [],
+  "recovery_state": {
+    "last_recovery": null,
+    "recovery_count": 0,
+    "mttr": null,
+    "recovery_trend": [],
+    "recovery_capabilities": {
+      "automatic_recovery": true,
+      "manual_recovery": true,
+      "rollback_capability": true,
+      "state_restoration": true
+    }
+  }
+}
