@@ -147,7 +147,8 @@ impl FromStr for Color {
             } else {
                 Err("Hex colors must be 3 or 6 digits".to_string())
             }
-        } else if s.chars()
+        } else if s
+            .chars()
             .all(|c| c.is_alphanumeric() || c == '_' || c == '-')
         {
             Ok(Color::Named(s.to_string()))
@@ -168,7 +169,6 @@ pub enum Fill {
     Split(u8),  // Number of segments
     Stripe(u8), // Number of stripes
 }
-
 
 /// Overlay mark types.
 #[derive(Deserialize, Serialize, Clone, Copy, Debug, PartialEq, Eq, Hash)]
