@@ -267,11 +267,12 @@ jobs:
 
     - name: Test release binary
       run: |
-        if [ "${{ matrix.os }}" == "windows-latest" ]; then
+        if ("${{ matrix.os }}" -eq "windows-latest") {
           ./target/${{ matrix.target }}/release/logo-render.exe --help
-        else
+        } else {
           ./target/${{ matrix.target }}/release/logo-render --help
-        fi
+        }
+      shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
 
     - name: Upload release artifacts
       uses: actions/upload-artifact@v4
@@ -298,7 +299,7 @@ jobs:
         ssh-keyscan github.com >> ~/.ssh/known_hosts
         # Configure SSH to use the GitHub Actions token
         echo "Host github.com" >> ~/.ssh/config
-        echo "  IdentityFile ~/.ssh/id_rsa" >> ~/.ssh/config
+        echo "  IdentityFile ~/.ssh/id_rsa" >> ~/.ssh.config
         echo "  IdentitiesOnly yes" >> ~/.ssh/config
 
     - name: Cache pre-commit

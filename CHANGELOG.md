@@ -33,6 +33,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Line 344: Changed `accent_color` parameter to `_accent_color` in `render_triangle`
   - Line 357: Changed `area` variable to `_area` in triangle rendering
   - Line 516: Changed `label` parameter to `_label` in `render_label`
+- **Security Scanner Test**: Fixed `test_scan_rust_file` by removing SAFETY comment that was preventing proper unsafe code detection, resolving CI/CD test failures across all platforms (Ubuntu, macOS, Windows)
 
 ### Technical
 
