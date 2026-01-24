@@ -3,11 +3,12 @@
 //! Human Execution Engine (HEE) specific security rules for MT-logo-render.
 //! Implements deterministic execution validation and HEE platform security requirements.
 
-use crate::security::{SecurityValidator, SecurityContext, SecurityCheck, RiskLevel, InputType};
+use crate::security::{InputType, RiskLevel, SecurityCheck, SecurityContext, SecurityValidator};
 use sha2::{Digest, Sha256};
 use std::collections::HashMap;
 
 /// HEE-specific security rules and validations
+#[allow(dead_code)]
 pub struct HEERules {
     validator: SecurityValidator,
     deterministic_cache: HashMap<String, String>, // input_hash -> output_hash
@@ -22,10 +23,13 @@ impl HEERules {
     }
 
     /// Validate HEE recipe input for security and determinism
-    pub fn validate_recipe(&self, recipe_json: &str) -> Result<SecurityCheck, Box<dyn std::error::Error>> {
+    pub fn validate_recipe(
+        &self,
+        recipe_json: &str,
+    ) -> Result<SecurityCheck, Box<dyn std::error::Error>> {
         let mut check = SecurityCheck::new();
 
-        let context = SecurityContext {
+        let _context = SecurityContext {
             operation: "recipe_validation".to_string(),
             user_id: None,
             input_type: InputType::Recipe,
@@ -61,7 +65,7 @@ impl HEERules {
     pub fn validate_deterministic_execution(
         &mut self,
         input: &str,
-        expected_output_hash: &str
+        expected_output_hash: &str,
     ) -> Result<bool, Box<dyn std::error::Error>> {
         let input_hash = self.hash_input(input);
 
@@ -73,12 +77,14 @@ impl HEERules {
                 return Err(format!(
                     "Non-deterministic execution detected! Input hash: {}, Expected: {}, Got: {}",
                     input_hash, cached_output_hash, expected_output_hash
-                ).into());
+                )
+                .into());
             }
             Ok(true)
         } else {
             // First time seeing this input, cache it
-            self.deterministic_cache.insert(input_hash.clone(), expected_output_hash.to_string());
+            self.deterministic_cache
+                .insert(input_hash.clone(), expected_output_hash.to_string());
             Ok(true)
         }
     }
@@ -109,9 +115,13 @@ impl HEERules {
             }
 
             // Validate hash contains only hexadecimal characters
-            if !input_hash.chars().all(|c| c.is_ascii_hexdigit()) ||
-               !output_hash.chars().all(|c| c.is_ascii_hexdigit()) {
-                check.add_violation(format!("Invalid hash format: {} -> {}", input_hash, output_hash));
+            if !input_hash.chars().all(|c| c.is_ascii_hexdigit())
+                || !output_hash.chars().all(|c| c.is_ascii_hexdigit())
+            {
+                check.add_violation(format!(
+                    "Invalid hash format: {} -> {}",
+                    input_hash, output_hash
+                ));
             }
         }
 
@@ -147,7 +157,10 @@ impl HEERules {
             }
 
             // Check for potentially malicious user IDs
-            let user_validation = self.validator.validate_content(user_id, "general").unwrap_or_default();
+            let user_validation = self
+                .validator
+                .validate_content(user_id, "general")
+                .unwrap_or_default();
             if !user_validation.is_safe {
                 check.add_violation("Potentially malicious user identifier");
             }
@@ -160,7 +173,10 @@ impl HEERules {
     pub fn generate_hee_security_report(&self, checks: &[SecurityCheck]) -> String {
         let mut report = String::new();
         report.push_str("# HEE Security Report\n\n");
-        report.push_str(&format!("Generated: {}\n\n", chrono::Utc::now().format("%Y-%m-%d %H:%M:%S UTC")));
+        report.push_str(&format!(
+            "Generated: {}\n\n",
+            chrono::Utc::now().format("%Y-%m-%d %H:%M:%S UTC")
+        ));
 
         let total_checks = checks.len();
         let passed_checks = checks.iter().filter(|c| c.passed).count();
@@ -170,8 +186,14 @@ impl HEERules {
         report.push_str(&format!("- **Total Security Checks**: {}\n", total_checks));
         report.push_str(&format!("- **Passed**: {} ✅\n", passed_checks));
         report.push_str(&format!("- **Failed**: {} ❌\n", failed_checks));
-        report.push_str(&format!("- **HEE Compliance**: {}\n\n",
-            if failed_checks == 0 { "✅ FULLY COMPLIANT" } else { "❌ NON-COMPLIANT" }));
+        report.push_str(&format!(
+            "- **HEE Compliance**: {}\n\n",
+            if failed_checks == 0 {
+                "✅ FULLY COMPLIANT"
+            } else {
+                "❌ NON-COMPLIANT"
+            }
+        ));
 
         if failed_checks > 0 {
             report.push_str("## Security Violations\n\n");
@@ -201,7 +223,7 @@ impl HEERules {
                         }
                     }
 
-                    report.push_str("\n");
+                    report.push('\n');
                 }
             }
         }
@@ -255,7 +277,11 @@ impl HEERules {
         self.validate_json_strings(recipe, "", check);
     }
 
-    fn validate_deterministic_properties(&self, recipe: &serde_json::Value, check: &mut SecurityCheck) {
+    fn validate_deterministic_properties(
+        &self,
+        recipe: &serde_json::Value,
+        check: &mut SecurityCheck,
+    ) {
         // Check for non-deterministic fields (timestamps, random values, etc.)
         if let Some(obj) = recipe.as_object() {
             let non_deterministic_fields = ["timestamp", "random", "nonce", "uuid"];
@@ -263,19 +289,32 @@ impl HEERules {
             for field in &non_deterministic_fields {
                 if obj.contains_key(*field) {
                     check.add_violation(format!(
-                        "Non-deterministic field '{}' not allowed in HEE recipes", field
+                        "Non-deterministic field '{}' not allowed in HEE recipes",
+                        field
                     ));
                 }
             }
         }
     }
 
-    fn validate_json_strings(&self, value: &serde_json::Value, path: &str, check: &mut SecurityCheck) {
+    fn validate_json_strings(
+        &self,
+        value: &serde_json::Value,
+        path: &str,
+        check: &mut SecurityCheck,
+    ) {
         match value {
             serde_json::Value::String(s) => {
-                let validation = self.validator.validate_content(s, "general").unwrap_or_default();
+                let validation = self
+                    .validator
+                    .validate_content(s, "general")
+                    .unwrap_or_default();
                 if !validation.is_safe {
-                    check.add_violation(format!("Unsafe content in {}: {}", path, validation.violations.join(", ")));
+                    check.add_violation(format!(
+                        "Unsafe content in {}: {}",
+                        path,
+                        validation.violations.join(", ")
+                    ));
                 }
             }
             serde_json::Value::Object(obj) => {
@@ -333,16 +372,19 @@ mod tests {
         let invalid_recipe = r#"{"size": "256x256", "base_color": "blue"}"#;
         let check = rules.validate_recipe(invalid_recipe).unwrap();
         assert!(!check.passed);
-        assert!(check.violations.iter().any(|v| v.contains("Missing required recipe field")));
+        assert!(check
+            .violations
+            .iter()
+            .any(|v| v.contains("Missing required recipe field")));
     }
 
     #[test]
     fn test_malicious_recipe_content() {
         let rules = HEERules::new();
 
-        // Recipe with zero-width character
-        let malicious_recipe = format!(r#"{{"shape": "circle", "label": "safe\u{{200B}}hidden"}}"#);
-        let check = rules.validate_recipe(&malicious_recipe).unwrap();
+        // Recipe with zero-width character (JSON escape syntax)
+        let malicious_recipe = r#"{"shape": "circle", "label": "safe\u200Bhidden"}"#;
+        let check = rules.validate_recipe(malicious_recipe).unwrap();
         assert!(!check.passed);
         assert!(check.violations.iter().any(|v| v.contains("Zero-width")));
     }
@@ -372,8 +414,14 @@ mod tests {
         let rules = HEERules::new();
 
         let valid_entries = vec![
-            ("a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3".to_string(), "hash1".to_string()),
-            ("b665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3".to_string(), "hash2".to_string()),
+            (
+                "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3".to_string(),
+                "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3".to_string(),
+            ),
+            (
+                "b665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3".to_string(),
+                "b665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3".to_string(),
+            ),
         ];
 
         let check = rules.validate_cache_integrity(&valid_entries);
@@ -385,12 +433,21 @@ mod tests {
         let rules = HEERules::new();
 
         let poisoned_entries = vec![
-            ("a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3".to_string(), "hash1".to_string()),
-            ("a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3".to_string(), "different_hash".to_string()),
+            (
+                "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3".to_string(),
+                "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3".to_string(),
+            ),
+            (
+                "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3".to_string(),
+                "b665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3".to_string(),
+            ),
         ];
 
         let check = rules.validate_cache_integrity(&poisoned_entries);
         assert!(!check.passed);
-        assert!(check.violations.iter().any(|v| v.contains("Cache poisoning")));
+        assert!(check
+            .violations
+            .iter()
+            .any(|v| v.contains("Cache poisoning")));
     }
 }

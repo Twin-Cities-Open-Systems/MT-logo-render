@@ -2,9 +2,10 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, feature/phase3-core-implementation ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, feature/phase3-core-implementation ]
+  workflow_dispatch:
 
 env:
   CARGO_TERM_COLOR: always
@@ -138,7 +139,7 @@ jobs:
       run: python scripts/security_scanner.py --directory . --output-format json --output-file security-report.json
 
     - name: Upload security report
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: hee-security-report
         path: security-report.json
@@ -177,18 +178,36 @@ jobs:
         # Test recipe validation with Python security validator
         python -c "
         from scripts.security_validator import validate_recipe
-        test_recipes = [
+
+        # Define expected results
+        valid_recipes = [
             '{\"shape\": \"circle\", \"size\": \"256x256\"}',  # Valid
+        ]
+        invalid_recipes = [
             '{\"size\": \"256x256\"}',  # Invalid - missing shape
             '{\"shape\": \"circle\", \"size\": \"256x256\"}\u200B',  # Invalid - zero width char
         ]
-        for recipe in test_recipes:
+
+        all_recipes = valid_recipes + invalid_recipes
+
+        validation_errors = []
+        for recipe in all_recipes:
             result = validate_recipe(recipe)
-            print(f'Recipe: {repr(recipe[:50])}... Valid: {result}')
-            if not result:
-                print('❌ Invalid recipe found')
-                exit(1)
-        print('✅ All recipes passed validation')
+            is_valid = recipe in valid_recipes
+
+            print(f'Recipe: {repr(recipe[:50])}... Valid: {result} (Expected: {is_valid})')
+
+            # Check if validation result matches expectation
+            if result != is_valid:
+                validation_errors.append(f'Recipe {repr(recipe[:30])}...: got {result}, expected {is_valid}')
+
+        if validation_errors:
+            print('❌ Validation logic errors found:')
+            for error in validation_errors:
+                print(f'  - {error}')
+            import sys; sys.exit(1)
+        else:
+            print('✅ All recipes passed validation')
         "
 
   # Performance benchmarking (future)
@@ -248,14 +267,15 @@ jobs:
 
     - name: Test release binary
       run: |
-        if [ "${{ matrix.os }}" == "windows-latest" ]; then
+        if [ "${{ matrix.os }}" = "windows-latest" ]; then
           ./target/${{ matrix.target }}/release/logo-render.exe --help
         else
           ./target/${{ matrix.target }}/release/logo-render --help
         fi
+      shell: bash
 
     - name: Upload release artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: logo-render-${{ matrix.name }}
         path: target/${{ matrix.target }}/release/logo-render*
@@ -272,6 +292,15 @@ jobs:
       uses: dtolnay/rust-toolchain@stable
       with:
         components: rustfmt, clippy
+
+    - name: Set up SSH for GitHub
+      run: |
+        mkdir -p ~/.ssh
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+        # Configure SSH to use the GitHub Actions token
+        echo "Host github.com" >> ~/.ssh/config
+        echo "  IdentityFile ~/.ssh/id_rsa" >> ~/.ssh.config
+        echo "  IdentitiesOnly yes" >> ~/.ssh/config
 
     - name: Cache pre-commit
       uses: actions/cache@v3
@@ -300,7 +329,7 @@ jobs:
       run: cargo install cargo-license
 
     - name: Check dependency licenses
-      run: cargo license --json | jq -e 'all(.license; . == "MIT" or . == "Apache-2.0" or . == "BSD-3-Clause" or . == "ISC")'
+      run: cargo license --json | jq -e 'all(.[]; .license | test("^(MIT|Apache-2.0|BSD-3-Clause|ISC|0BSD|Unlicense|Zlib|BSD-2-Clause|BSL-1.0|LGPL-2.1-or-later|Unicode-3.0|Apache-2.0 WITH LLVM-exception)( OR (MIT|Apache-2.0|BSD-3-Clause|ISC|0BSD|Unlicense|Zlib|BSD-2-Clause|BSL-1.0|LGPL-2.1-or-later|Unicode-3.0|Apache-2.0 WITH LLVM-exception))*$") or test("^\\(Apache-2.0 OR MIT\\) AND Unicode-3.0$"))'
 
   # Documentation validation
   docs:

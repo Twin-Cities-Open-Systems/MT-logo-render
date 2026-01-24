@@ -1,0 +1,2251 @@
+# Auto-Fix Execution Report
+
+\============================================================
+Date: 2026-01-24 03:29:31
+
+## ✅ Successfully Applied Fixes:
+
+- **markdown**: /home/spencer/git/MT-logo-render/CHANGELOG.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/TASK_NEXT.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/auto_fix_report.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/README.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/CORNER_CUTS.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/PR_SUMMARY.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/docs/VERSIONING.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/docs/CLI_CONTRACT.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/docs/DEPENDENCIES.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/docs/ARCHITECTURE.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/docs/SPEC.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/docs/STATE_CAPSULE_TEMPLATE.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/docs/SECURITY.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/docs/RENDER_ENGINE_SPEC_RUST_NATIVE.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/docs/ROADMAP.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/docs/GITHUB_CI_TROUBLESHOOTING.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/docs/RECIPE_CANONICALIZATION.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/docs/DATA_MODEL.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/docs/STATE_CAPSULES/README.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/docs/STATE_CAPSULES/2026-01-23/SECURITY_SCANNER_STATE_CAPSULE.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/docs/STATE_CAPSULES/2026-01-23/template.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/docs/STATE_CAPSULES/2026-01-23/MT-logo-render-Phase3-CI-Troubleshooting.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/prompts/04-data-model.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/prompts/15-release-preparation.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/prompts/17-deployment-packaging.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/prompts/14-documentation-completion.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/prompts/01-spec-editor.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/prompts/10-render-engine-implementation.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/prompts/08-cli-implementation.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/prompts/03-api-contract.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/prompts/09-data-model-implementation.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/prompts/06-precommit-ci.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/prompts/PROMPTING_RULES.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/prompts/13-security-performance-audit.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/prompts/07-testing-implementation.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/prompts/05-ux-ui.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/prompts/12-architecture-refinement.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/prompts/18-ci-monitor-autofix.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/prompts/00-repo-bootstrap.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/prompts/STATE_CAPSULE_GUIDE.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/prompts/AGENT_STATE_HANDOFF.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/prompts/02-architecture.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/prompts/16-final-validation.md - Formatted markdown file
+- **markdown**: /home/spencer/git/MT-logo-render/prompts/11-integration-testing.md - Formatted markdown file
+- **whitespace**: /home/spencer/git/MT-logo-render/Cargo.lock - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/Cargo.toml - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/.pre-commit-config.yaml - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/CHANGELOG.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/TASK_NEXT.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/auto_fix_report.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/security-report.json - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/README.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/.gitignore - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/CORNER_CUTS.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/PR_SUMMARY.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/docs/VERSIONING.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/docs/CLI_CONTRACT.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/docs/DEPENDENCIES.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/docs/ARCHITECTURE.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/docs/SPEC.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/docs/STATE_CAPSULE_TEMPLATE.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/docs/SECURITY.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/docs/RENDER_ENGINE_SPEC_RUST_NATIVE.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/docs/ROADMAP.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/docs/GITHUB_CI_TROUBLESHOOTING.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/docs/RECIPE_CANONICALIZATION.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/docs/DATA_MODEL.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/docs/STATE_CAPSULES/README.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/docs/STATE_CAPSULES/2026-01-23/SECURITY_SCANNER_STATE_CAPSULE.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/docs/STATE_CAPSULES/2026-01-23/template.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/docs/STATE_CAPSULES/2026-01-23/MT-logo-render-Phase3-CI-Troubleshooting.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/CACHEDIR.TAG - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/.rustc_info.json - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/.cargo-lock - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0mise6fepoyip/s-hf567tgbm9-1uwqzsm.lock - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2su9ow849z013/s-hf56y2btw8-02894py.lock - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/incremental/logo_render-3chuphtsax7rv/s-hf56nogtar-16eq61a.lock - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-1z9r5aw6og2mr/s-hf56zgzeba-01cana3.lock - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-1o1uj7k894fkb/s-hf56nmi8uf-135hocl.lock - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/incremental/logo_render-2t4s4fv8sf6vv/s-hf58opc7sz-0cumd7i.lock - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa.lock - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/incremental/logo_render-2qk7ryqwzi9th/s-hf56v6x6p6-1ooigez.lock - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/incremental/logo_render-2fc4rp6439d51/s-hf56zhcjpx-08rtxvq.lock - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/incremental/logo_render-1qbcn4rle5z3a/s-hf56nogvvt-14ldwrg.lock - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam.lock - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/incremental/logo_render-0psil4yshlc57/s-hf56y2ywja-0xr96gh.lock - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u.lock - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-3u9r9eor3vzls/s-hf56nmi7zh-03hjhzf.lock - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/incremental/logo_render-0t8al1z5qe800/s-hf56y2yztb-1k7folr.lock - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/incremental/logo_render-15zx81a3mvbxa/s-hf5690nuji-023xky1.lock - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-3dlnwejogq5sv/s-hf56y2btwh-0kerz1s.lock - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx.lock - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/bitflags-e149a816959374b3.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/parking_lot_core-b8913f30449992f1.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/difflib-10217bbd9dc6410f.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/crossbeam_utils-469f46b385614a3a.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/mt_logo_render-84517f5abb0a78e8.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/liblogo_render-911e62af97763e46.rmeta - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/liblogo_render-fc70147352dfbd17.rmeta - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/jpeg_decoder-dc0ee97acd112184.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/fastrand-7fa766553e92fbf7.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/crypto_common-a2528af24cf7c31c.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/rayon_core-7d3da976dad6dea2.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/bitflags-72760085f07d754c.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/logo_render-1f21500e0776bcf3.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/rusty_fork-24eae5a0eef5069c.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/serde_yaml-08ed107869de7c6b.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/serde_core-8439ad37fcc7fc7b.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/once_cell-4341f4892c685a22.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/thiserror_impl-902d0cb9567594a4.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/lock_api-a1f5271005d3aff0.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/clap_builder-4b1ac8818007c051.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/scopeguard-90ffa7c9631b7eab.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/crc32fast-9484996ed116c1bc.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/predicates_tree-6a139ff6639d6dc3.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/linux_raw_sys-7de15d2f42241369.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/logo_render-fc70147352dfbd17.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/rustix-80ce181554e60dd7.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/clap_lex-98587f52585c224f.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/bytes-120c6aa5aa9e1f48.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/nu_ansi_term-7610f7e730fb5a26.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/mt_logo_render-1373bb418b07701a.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/serde-62ce481452690d80.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/cfg_if-f2a8d03081acc6ca.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/bytes-507bc832444940da.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/tracing_log-73879507102a308c.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/tracing_core-e5e4e93b5146b4a9.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/bit_field-260587b81fb6f470.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/indexmap-7c2b97e06b6eea89.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/parking_lot-b916ed803a6e4cea.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/thread_local-237f7814f352720f.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/libmt_logo_render-e7db4fae80343cfa.rmeta - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/mt_logo_render-30c9536133c8515e.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/unicode_security-983306f94dea1661.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/bit_set-b3c6b4d2c99ff40a.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/quote-3018a85c90b8e52e.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/logo_render-644b188d73947436.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/anstyle_parse-22c9e24bbeac8565.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/proc_macro2-c02a7e776fa2043c.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/mt_logo_render-4d46a259c4bb8a54.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/zmij-29b78cdae1927913.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/byteorder-4beed3d5b8d0dfa7.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/color_quant-1d8abda26d39af25.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/regex_automata-f21581c10494c15f.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/rayon-da5f6db289e4aa80.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/tracing-851c1d1c005cf12e.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/hashbrown-64b65b5d8985f843.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/equivalent-ffae6dac19e18ae4.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/indexmap-11ff43ad9f14caa2.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/ttf_parser-aec6cd651f8e061f.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/mt_logo_render-3777f8ca53605e99.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/anstyle_query-30b249d7b73c87c3.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/fdeflate-e2816363150c924e.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/iana_time_zone-876ff0728c646462.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/num_traits-afc4ad36262395b1.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/tracing_core-820b253d9337c87d.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/qoi-67139f7830df1106.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/unsafe_libyaml-936545d2aaf20698.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/lazy_static-8601acb9c9b44a36.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/strsim-95fe3d2fe164b720.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/predicates-c5d1706a95302865.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/liblogo_render-589bba4e0221e57a.rmeta - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/bstr-3af63c928c5d3d7c.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/zerocopy-119e7b82199893a0.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/qoi-ec499952c03b14f2.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/regex_automata-6f43fd1b731aebfb.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/tokio-29c1073018809c87.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/unicode_normalization-766b6f7883da1c59.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/proptest-371c62dd3b025a36.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/anstyle_parse-927b3a1924883143.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/regex-56d52b87b650b4dc.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/difflib-aebe56be18cf8ce3.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/aho_corasick-1b033bbd021e907e.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/proptest-58adba183a33257d.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/mt_logo_render-6ac6c1d9923c1916.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/fdeflate-6a9a13138fda94bd.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/assert_cmd-2c1864142457d7d1.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/pin_project_lite-6a2a50506e74f982.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/rusty_fork-395cad651e66eee2.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/anyhow-98ef2bc94004cb3d.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/miniz_oxide-87fc99044cab366b.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/half-cd543d96bd722c46.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/itoa-81bc74c7417e3a77.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/quick_error-288aa8015494b792.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/normalize_line_endings-b16565f1023ac5cb.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/rusttype-7ee7e5b0ab5aaf6e.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/scopeguard-5df82cf6cb271c5b.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/socket2-6a4cb75c3045040e.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/assert_cmd-1e4035955d647ee8.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/typenum-f21f76344c02c36f.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/fastrand-a3295beae1a95678.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/termtree-613bdc973f40390b.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/color_quant-6c3989956cc3e1d2.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/tracing_subscriber-49d45b26825e41ad.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/equivalent-05732797235cbc72.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/float_cmp-84a1846afcb5f54c.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/logo_render-589bba4e0221e57a.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/regex_syntax-c54956f8b069d9a7.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/ab_glyph_rasterizer-8631f7a8646cef51.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/logo_render-c9919c040e4bef42.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/cpufeatures-d1a56c9f05f34e94.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/socket2-b6f29552e5f08dde.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/tracing_subscriber-8da2802dfd6db3bc.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/clap-6be59d99011dc984.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/colorchoice-638f8d7ab2d6228d.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/anstyle-9c50b42ef6c4e9a1.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/rustix-85337eb656ed6bf4.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/serde_core-cf71d6bcc3c7fae1.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/matchers-2d009bdf04e269f9.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/fnv-d9e4c0adbef8def8.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/tokio_macros-7c9cf9d7a95c1514.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/log-068cab2c6107c5f8.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/memchr-2ee9ba9a3a2c838d.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/crypto_common-ce2dfad9c7c48d70.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/unicode_script-cb6c578be2838254.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/tempfile-158dd243fcf387dd.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/gif-112e9753fe631022.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/cfg_if-ac9712055968a5f2.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/signal_hook_registry-c42198dc1b95b1de.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/owned_ttf_parser-14dfac3ef73c5aa8.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/clap_derive-4e038993af701641.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/exr-ee5dd978955175b9.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/serde-1ff501bf858c2583.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/rand_chacha-3a7e34aced9633e2.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/unarray-1791f0244e14af44.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/num_traits-36cd343c46da9d7e.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/serde_yaml-187a0430f27d0a58.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/hashbrown-0c22b98a874227ac.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/parking_lot_core-98396dd15024e48f.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/liblogo_render-3107f2076835ea52.rmeta - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/matchers-f60ad579af5fd1f9.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/owned_ttf_parser-3e15f9be4acee229.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/predicates_core-d691f4092f042cad.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/unsafe_libyaml-2ff73f0235c3c7ea.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/bytemuck-6340df6ae58e2cae.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/smallvec-a78c834143ae0ecf.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/errno-3f54f83d8d16e85b.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/flate2-ec7a4826630eb341.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/bit_set-ecb5f9d3ed837fb9.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/is_terminal_polyfill-fc37852163e5bccc.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/walkdir-9127516f9eee0552.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/zerocopy-cbe7b6e1f0300c30.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/png-79dca14a5c405d70.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/crossbeam_deque-6aed88099f2d4705.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/utf8parse-90df8dfb1731b29c.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/generic_array-be4b47c8e78f003a.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/libmt_logo_render-6ac6c1d9923c1916.rmeta - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/pin_project_lite-b84e1263242038a0.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/strsim-e0923c6c7531f1d0.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/rand_core-5014e2aaffce87b7.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/bit_vec-47614801de728089.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/image-e07d7632d2023d84.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/anstyle_query-4db024a052cc4031.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/tracing-5f57a95b8128dc18.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/walkdir-91e5bf429ea0de18.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/regex_syntax-c311da0c567610c4.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/rand-27888c08c45ba621.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/normalize_line_endings-0048e32a74f8ea5a.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/image-14378ba0bc8e9a1b.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/ryu-e46f1b70c4cf288b.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/exr-caf8469cd1770e3f.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/anyhow-fadeaa8917397966.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/logo_render-bc1390fdb46bc79a.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/bit_field-a219c08ca4a5745e.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/float_cmp-eca896cc4664e0ac.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/version_check-f603c0c578371d71.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/crossbeam_epoch-8dcd22724d287aa0.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/sharded_slab-8c413c06317ce2be.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/gif-d386bcb3d91212e9.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/zune_inflate-3dfd97b68127de27.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/tinyvec_macros-7589241bef274e27.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/memchr-05d8456d4366b9b5.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/is_terminal_polyfill-d82cbf5ad9f360f5.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/clap_lex-968343cc733642c4.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/bitflags-6a3f7016c3a70a1a.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/fnv-a12b2d4d3b04cb43.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/either-599288d2e162962d.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/thread_local-f685bb4678128c93.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/linux_raw_sys-477537af68a5e0f2.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/tokio-8b93114867f68458.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/logo_render-911e62af97763e46.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/wait_timeout-0e1cc86274540a13.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/signal_hook_registry-387213b5054ad498.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/predicates_core-e540be3e317a236f.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/chrono-f501f4e4aa38d088.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/lebe-2eb42bdd84671267.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/tiff-d613b4965c421d28.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/serde_derive-a3e33015b950e2ea.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/zune_inflate-5b6d77d4e991ecea.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/serde_json-00b686a62d235269.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/ppv_lite86-b7154c354c548d77.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/mt_logo_render-e7db4fae80343cfa.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/getrandom-a10300235dd8787e.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/tracing_log-b87e63e8d6a32c4c.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/unarray-06ea31959a25dc55.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/unicode_normalization-51b9794be2bd3ffb.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/rand_xorshift-9af11362cb2008e7.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/predicates_tree-55e600dabeeefccc.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/ppv_lite86-763666b6d68ae14e.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/rand_chacha-76969d76ae0da6e5.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/unicode_ident-1382303dcf21388c.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/liblogo_render-c9919c040e4bef42.rmeta - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/bitflags-f1d1fd77b6ac5598.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/weezl-1103148c10964d5c.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/liblogo_render-1f21500e0776bcf3.rmeta - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/tinyvec-ac71b488a4d986c9.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/unicode_security-952bca87ae8ee120.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/tiff-365139297186efbd.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/quick_error-021dd688a684f336.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/sha2-bbe029b55b579d59.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/predicates-89d1aa0a217b3c29.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/mio-225a0540366d30f6.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/block_buffer-517c02c319fc8465.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/itoa-9d35911771cbb77e.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/heck-3963dfc78e9f7b45.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/bytemuck-802b0dae9493a10c.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/weezl-1649c31e40430e8d.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/libmt_logo_render-30c9536133c8515e.rmeta - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/libc-806f16286e70aa48.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/serde_json-5c64c488a2dafe5c.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/ttf_parser-55db98c83bee64bd.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/digest-34024226d2c19b02.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/chrono-97ee3c89a50e589e.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/logo_render-3107f2076835ea52.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/once_cell-4b22675d120b6b3b.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/anstyle-6b832726eb6f0320.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/same_file-611ed8c5e99ef2bb.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/zerocopy_derive-4b3b42a492d4debe.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/crc32fast-b6fdfe1311da7b0d.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/autocfg-92a89194df82d441.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/same_file-a236546d6430c1cc.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/regex-28d92d4196d805e8.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/jpeg_decoder-b1a9e3c452cc254b.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/anstream-1924a72a22908389.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/utf8parse-2dd8602fbba11fcb.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/mt_logo_render-9fa31655f4fc613f.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/smallvec-9359173fb30c361a.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/png-c294ebb45a62d2c5.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/block_buffer-2da58a090c2dca2b.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/tinyvec-94a03715b4148ef0.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/flate2-68573e4b62e3213f.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/parking_lot-19da15e1d89ae672.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/anstream-3b9de203acb683a7.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/rand_core-8ec99985b777fd05.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/digest-239e074f896d7805.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/miniz_oxide-316b866170e47de7.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/sha2-174e1b970b269f75.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/log-a21e7a6f32ba3edd.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/byteorder-fe075a472e771211.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/errno-e6e71752c07542d7.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/tracing_attributes-182fa39294dbc53e.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/ab_glyph_rasterizer-78012871d73f40b5.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/unicode_script-026d130460ef7dc8.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/simd_adler32-9cb707d153324e40.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/iana_time_zone-8a27d1b189033ecb.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/nu_ansi_term-84d50177f38947eb.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/generic_array-12d5c26ce131d9e3.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/getrandom-3cfee8586483a0fb.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/tinyvec_macros-c32c790895b26d5f.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/thiserror-6897bfa465bcf27d.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/rusttype-3a8985ab45f3bb1f.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/zmij-01fc5ccbc25ba2c7.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/adler2-be14787a6cba299a.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/bit_vec-d4825382c654405b.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/sharded_slab-7392bb65c9f79e9b.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/tempfile-f061641ac415f937.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/crossbeam_utils-12973a36485098d6.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/adler2-aac30a3415ed6911.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/either-d30b41e48704eee6.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/rayon_core-efba3999e3db1a0a.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/ryu-44495dcb1d575033.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/aho_corasick-4a716ca679841cfd.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/half-cd95870aad170dc3.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/rand-23dd546488bd7e73.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/rand_xorshift-be0e8906dad6e0bd.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/clap-33d45b980a97e02f.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/syn-da3a4e82cf03b254.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/termtree-f0d1ec1896b98c0a.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/colorchoice-1f5d7f74a21b4380.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/lazy_static-05a686f49d0e3b68.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/bstr-93cdde6a21e6be80.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/typenum-aa22acb71659346b.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/crossbeam_epoch-c0032f7a6c969374.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/libc-4c5c12affb9c3331.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/wait_timeout-329b3b01b0518dc0.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/mio-6f945fcd79aed421.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/mt_logo_render-9ed073e3574208c7.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/clap_builder-f839b33fdb80c666.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/simd_adler32-d4f3a17a92093e8d.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/cpufeatures-74e50bb353a1bb9c.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/lock_api-170a0c23e82a3ed7.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/thiserror-b33e70aeb77217a9.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/mt_logo_render-d882f40933c8e7a6.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/crossbeam_deque-cf8f1f7c221f9946.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/lebe-e908de2e9d6aa7cf.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/deps/rayon-50a1b06258a9f2b0.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/serde_core-f6b920b07dc1e583/build_script_build-f6b920b07dc1e583.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/serde_json-d842ee346c939f37/build_script_build-d842ee346c939f37.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/parking_lot_core-2baade8f2c2414e9/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/parking_lot_core-2baade8f2c2414e9/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/parking_lot_core-2baade8f2c2414e9/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/parking_lot_core-2baade8f2c2414e9/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/num-traits-8f9201c8bab17a81/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/num-traits-8f9201c8bab17a81/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/num-traits-8f9201c8bab17a81/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/num-traits-8f9201c8bab17a81/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/rayon-core-7bc2cf5362b8ff67/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/rayon-core-7bc2cf5362b8ff67/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/rayon-core-7bc2cf5362b8ff67/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/rayon-core-7bc2cf5362b8ff67/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/typenum-867981bce50ff4d0/build_script_build-867981bce50ff4d0.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/zmij-d81a66f96e211c53/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/zmij-d81a66f96e211c53/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/zmij-d81a66f96e211c53/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/zmij-d81a66f96e211c53/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/generic-array-754101b310ae5f08/build_script_build-754101b310ae5f08.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/serde_json-fc723170c5c6e6c4/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/serde_json-fc723170c5c6e6c4/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/serde_json-fc723170c5c6e6c4/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/serde_json-fc723170c5c6e6c4/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/rustix-59e312690b650a21/build_script_build-59e312690b650a21.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/thiserror-6bed5dca974daf98/build_script_build-6bed5dca974daf98.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/getrandom-8786b13b56625c47/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/getrandom-8786b13b56625c47/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/getrandom-8786b13b56625c47/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/getrandom-8786b13b56625c47/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/rustix-ceea4eb0d0461c30/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/rustix-ceea4eb0d0461c30/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/rustix-ceea4eb0d0461c30/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/rustix-ceea4eb0d0461c30/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/anyhow-c0ac690f283500bf/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/anyhow-c0ac690f283500bf/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/anyhow-c0ac690f283500bf/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/anyhow-c0ac690f283500bf/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/serde_core-7379b8a249b89788/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/serde_core-7379b8a249b89788/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/serde_core-7379b8a249b89788/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/serde_core-7379b8a249b89788/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/serde_core-7379b8a249b89788/out/private.rs - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/generic-array-087651c05bf4ea62/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/generic-array-087651c05bf4ea62/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/generic-array-087651c05bf4ea62/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/generic-array-087651c05bf4ea62/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/crossbeam-utils-cbfa4bd74229dd70/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/crossbeam-utils-cbfa4bd74229dd70/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/crossbeam-utils-cbfa4bd74229dd70/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/crossbeam-utils-cbfa4bd74229dd70/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/serde-621cbdb0438fe07a/build_script_build-621cbdb0438fe07a.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/anyhow-13c5cf90773273cd/build_script_build-13c5cf90773273cd.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/typenum-dc90dd60fdf9d613/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/typenum-dc90dd60fdf9d613/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/typenum-dc90dd60fdf9d613/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/typenum-dc90dd60fdf9d613/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/typenum-dc90dd60fdf9d613/out/tests.rs - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/thiserror-9034aef32b1fd1dd/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/thiserror-9034aef32b1fd1dd/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/thiserror-9034aef32b1fd1dd/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/thiserror-9034aef32b1fd1dd/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/assert_cmd-e7e7d1434379b111/build_script_build-e7e7d1434379b111.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/serde-dfd856a21c4f3299/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/serde-dfd856a21c4f3299/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/serde-dfd856a21c4f3299/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/serde-dfd856a21c4f3299/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/serde-dfd856a21c4f3299/out/private.rs - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/crossbeam-utils-f0edf380ef7e3877/build_script_build-f0edf380ef7e3877.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/assert_cmd-87b23c6efcdbdea5/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/assert_cmd-87b23c6efcdbdea5/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/assert_cmd-87b23c6efcdbdea5/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/assert_cmd-87b23c6efcdbdea5/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/assert_cmd-87b23c6efcdbdea5/out/current_target.txt - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/libc-c885e1c90b72c148/build_script_build-c885e1c90b72c148.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/zmij-61700e05d122052d/build_script_build-61700e05d122052d.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/zerocopy-d03e6376a3a9fb0a/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/zerocopy-d03e6376a3a9fb0a/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/zerocopy-d03e6376a3a9fb0a/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/zerocopy-d03e6376a3a9fb0a/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/crc32fast-b7a281ec52585cd1/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/crc32fast-b7a281ec52585cd1/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/crc32fast-b7a281ec52585cd1/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/crc32fast-b7a281ec52585cd1/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/quote-93e49b5e253dd21f/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/quote-93e49b5e253dd21f/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/quote-93e49b5e253dd21f/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/quote-93e49b5e253dd21f/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/getrandom-26e37080c46acb08/build_script_build-26e37080c46acb08.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/proc-macro2-74fa01f598ab62d7/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/proc-macro2-74fa01f598ab62d7/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/proc-macro2-74fa01f598ab62d7/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/proc-macro2-74fa01f598ab62d7/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/libc-c82ecdc06f085cf0/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/libc-c82ecdc06f085cf0/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/libc-c82ecdc06f085cf0/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/libc-c82ecdc06f085cf0/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/parking_lot_core-d8f9a5917d093f3b/build_script_build-d8f9a5917d093f3b.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/crc32fast-c02721b04ccd3df7/build_script_build-c02721b04ccd3df7.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/num-traits-ffe5302f48fb1d9b/build_script_build-ffe5302f48fb1d9b.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/rayon-core-54623884d65467a5/build_script_build-54623884d65467a5.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/zerocopy-191169c16e967abe/build_script_build-191169c16e967abe.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/proc-macro2-0e65c40bf8231895/build_script_build-0e65c40bf8231895.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/debug/build/quote-5cb9b4995b33d70d/build_script_build-5cb9b4995b33d70d.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/libmt_logo_render.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/logo-render.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/.cargo-lock - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/sha2-d7392e96269c5893.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/unicode_security-8f2a542bc51b9247.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/typenum-73b2e13a98789f4b.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/flate2-55bdc88298606ad1.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/hashbrown-d16ada57a8adc842.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/tracing_subscriber-0c3d1f42f6d80f68.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/ab_glyph_rasterizer-fb805bd5b778c402.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/simd_adler32-fcbad19a950ee61e.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/itoa-9b5b5317e719e406.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/chrono-b35d33492550883b.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/owned_ttf_parser-fc10e9c7c30e6a7a.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/regex-f3c004b7b39010a4.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/iana_time_zone-90875773d5a16973.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/digest-86a3d67fa217bf02.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/equivalent-aaf2892a7ae403fc.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/miniz_oxide-308f352e45bb09dc.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/serde-61ae246c9b756a14.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/zmij-84f415b3b7e0a64b.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/clap_builder-b3fade188f169a72.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/bit_field-97b95180dd485b2c.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/autocfg-b5371640a4148f6c.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/anyhow-9a94ba4ff758d2c3.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/tracing_log-67adcab1c174267b.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/indexmap-3dd7e3a64455709c.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/unicode_script-81e10c82a0c7acbe.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/anstyle_query-f7e808d5f3048dc3.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/lazy_static-bfdde06600c2b05b.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/clap_derive-78ab6a7d41935436.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/regex_syntax-3639138e986b646b.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/ryu-e9479625fad21689.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/clap_lex-c56280f6cc0a82d6.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/bytemuck-23b54ddce61b8eaa.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/jpeg_decoder-497a4c82f13c115a.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/once_cell-4347a7db0d5e2cdc.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/num_traits-34e98dbae4131407.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/block_buffer-b2a6315404f85d6c.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/crc32fast-d5378920ae370c8f.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/regex_automata-8e89580f35b19fcc.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/tracing-191bddacb7474a5b.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/exr-fe2cb0570207fec2.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/rayon-1486b42d97ced935.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/serde_json-89fb45315165e1d5.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/fdeflate-b51bf22e8368ede0.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/syn-a407991769356242.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/serde_derive-b539f0f6c46cb6ce.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/tracing_core-d0da8305443d6d40.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/either-6715ad036d8addf6.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/version_check-0a7f57e12d5bdc7b.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/pin_project_lite-3bcd9419fdc63bfd.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/unicode_ident-136f53ed2590818a.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/unicode_normalization-c3aef5f8f3f0deb1.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/anstyle-925cf606d8ae6ce5.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/thiserror-fc0c5888b0e1a102.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/walkdir-5e43256f27ec5a44.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/serde_yaml-a47175cad3f8ab22.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/lebe-a5b75dad5988e04d.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/zerocopy_derive-a440da8fc3322049.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/byteorder-874c5a6d7475d6a9.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/unsafe_libyaml-43c9248cec64c050.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/zerocopy-e39c11ed0768d00a.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/anstyle_parse-3df7b5e531937610.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/color_quant-bd4fb83e92469de4.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/logo_render-cf07ccad737139b4.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/nu_ansi_term-b4c1dcfb17a6a6a2.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/matchers-a5fb94773184fd07.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/aho_corasick-7132b9143b765c80.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/thiserror_impl-db309359a03c5d3a.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/png-586910c9348a3c60.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/crossbeam_epoch-40ea9882fa662b83.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/strsim-512bcfc4d4629a7d.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/proc_macro2-a6baf73af88ae46d.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/adler2-a2eae21fc9456c6c.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/sharded_slab-7d62c1f88d344333.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/half-ce1ec0885ed6cbd6.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/tinyvec-922cd14383f21a6c.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/cfg_if-f861c443d2f24497.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/tinyvec_macros-862a4cc65806a7ab.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/same_file-a5bcbc2c5134b5b2.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/memchr-91577964295a66b3.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/is_terminal_polyfill-2ef4af84bfeb831a.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/serde_core-15dd3a31bd575b93.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/thread_local-270559698eb6ac8e.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/crypto_common-79f0af334ef69ba0.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/tracing_attributes-18e70001ec511604.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/log-155f8ff584b96da5.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/crossbeam_deque-8280923d5d999c08.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/qoi-b723883483a62296.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/rayon_core-8913a0815ea28555.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/bitflags-18d0ac8be2b8377b.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/quote-9d11bcee0aeda94c.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/mt_logo_render-84813683a36f716b.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/clap-9dad457e957384ee.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/image-f7ce463361414274.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/rusttype-ef85682e79737b9b.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/weezl-79d1d5592a0f03dc.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/zune_inflate-06a413032c5db195.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/ttf_parser-2d37f643b0aa63b1.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/utf8parse-af43da6c53f47b3e.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/crossbeam_utils-81b021494019898c.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/cpufeatures-b71a4f5b85743414.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/anstream-3ca7dc8cf59af412.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/heck-c4d0c659e9c47c53.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/generic_array-dcd3b9a03219524a.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/colorchoice-eb20bdd0fab7c9f5.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/gif-42028136d4c25633.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/tiff-aec6f5195f3aaa75.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/deps/smallvec-e4602dc0e21e925d.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/zerocopy-87b83e98ea74ebea/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/zerocopy-87b83e98ea74ebea/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/zerocopy-87b83e98ea74ebea/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/zerocopy-87b83e98ea74ebea/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/serde_core-1bca2b8884db8eba/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/serde_core-1bca2b8884db8eba/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/serde_core-1bca2b8884db8eba/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/serde_core-1bca2b8884db8eba/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/serde_core-1bca2b8884db8eba/out/private.rs - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/serde_json-e578ca147a360e09/build_script_build-e578ca147a360e09.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/quote-e7ed6c50095e94b9/build_script_build-e7ed6c50095e94b9.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/rayon-core-fabe56f464271f2f/build_script_build-fabe56f464271f2f.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/crossbeam-utils-ed4974530b79a38d/build_script_build-ed4974530b79a38d.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/rayon-core-c2e5c18948fb2a77/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/rayon-core-c2e5c18948fb2a77/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/rayon-core-c2e5c18948fb2a77/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/rayon-core-c2e5c18948fb2a77/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/serde-df623ff94c3c493f/build_script_build-df623ff94c3c493f.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/generic-array-f032783fcf8054ba/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/generic-array-f032783fcf8054ba/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/generic-array-f032783fcf8054ba/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/generic-array-f032783fcf8054ba/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/zmij-aa9d582057abf909/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/zmij-aa9d582057abf909/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/zmij-aa9d582057abf909/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/zmij-aa9d582057abf909/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/typenum-70cefa78820bee31/build_script_build-70cefa78820bee31.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/serde-8cb93f4161a838d6/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/serde-8cb93f4161a838d6/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/serde-8cb93f4161a838d6/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/serde-8cb93f4161a838d6/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/serde-8cb93f4161a838d6/out/private.rs - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/anyhow-877ef90bc52370ed/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/anyhow-877ef90bc52370ed/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/anyhow-877ef90bc52370ed/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/anyhow-877ef90bc52370ed/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/proc-macro2-d5b650fe5dab9708/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/proc-macro2-d5b650fe5dab9708/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/proc-macro2-d5b650fe5dab9708/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/proc-macro2-d5b650fe5dab9708/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/thiserror-03fe137b983fd15a/build_script_build-03fe137b983fd15a.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/crc32fast-3225465871b93709/build_script_build-3225465871b93709.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/serde_json-b37abf5e3d969f24/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/serde_json-b37abf5e3d969f24/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/serde_json-b37abf5e3d969f24/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/serde_json-b37abf5e3d969f24/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/num-traits-57d55528909dccdb/build_script_build-57d55528909dccdb.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/crossbeam-utils-b5522fe9e1032d26/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/crossbeam-utils-b5522fe9e1032d26/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/crossbeam-utils-b5522fe9e1032d26/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/crossbeam-utils-b5522fe9e1032d26/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/quote-00ed0ce342d50ba7/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/quote-00ed0ce342d50ba7/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/quote-00ed0ce342d50ba7/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/quote-00ed0ce342d50ba7/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/serde_core-35abc93f65c72e06/build_script_build-35abc93f65c72e06.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/anyhow-68bd442f5a13db39/build_script_build-68bd442f5a13db39.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/typenum-2265a6e42ca1921c/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/typenum-2265a6e42ca1921c/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/typenum-2265a6e42ca1921c/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/typenum-2265a6e42ca1921c/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/typenum-2265a6e42ca1921c/out/tests.rs - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/num-traits-8ce14537697351b8/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/num-traits-8ce14537697351b8/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/num-traits-8ce14537697351b8/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/num-traits-8ce14537697351b8/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/zmij-4b922f1fd55bd7cc/build_script_build-4b922f1fd55bd7cc.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/zerocopy-cf64722951f048f0/build_script_build-cf64722951f048f0.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/crc32fast-7507788712408072/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/crc32fast-7507788712408072/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/crc32fast-7507788712408072/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/crc32fast-7507788712408072/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/thiserror-f5ff1dc75f36b9d0/stderr - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/thiserror-f5ff1dc75f36b9d0/invoked.timestamp - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/thiserror-f5ff1dc75f36b9d0/output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/thiserror-f5ff1dc75f36b9d0/root-output - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/generic-array-8c0d804ccadadd11/build_script_build-8c0d804ccadadd11.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/target/release/build/proc-macro2-a93b65539d510ac5/build_script_build-a93b65539d510ac5.d - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/prompts/04-data-model.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/prompts/15-release-preparation.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/prompts/17-deployment-packaging.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/prompts/14-documentation-completion.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/prompts/01-spec-editor.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/prompts/10-render-engine-implementation.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/prompts/08-cli-implementation.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/prompts/03-api-contract.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/prompts/09-data-model-implementation.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/prompts/06-precommit-ci.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/prompts/PROMPTING_RULES.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/prompts/13-security-performance-audit.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/prompts/07-testing-implementation.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/prompts/05-ux-ui.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/prompts/12-architecture-refinement.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/prompts/18-ci-monitor-autofix.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/prompts/00-repo-bootstrap.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/prompts/STATE_CAPSULE_GUIDE.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/prompts/AGENT_STATE_HANDOFF.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/prompts/02-architecture.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/prompts/16-final-validation.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/prompts/11-integration-testing.md - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/scripts/auto_fix.py - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/scripts/security_validator.py - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/scripts/ci_monitor.py - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/scripts/validate_doc_organization.sh - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/scripts/security_scanner.py - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/assets/logo/index.yaml - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/assets/logo/recipe-d58095a6dadc48a4-ff0000--fill-solid-mark-none-badge-none-256x256.ansi - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/src/cache.rs - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/src/recipe.rs - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/src/lib.rs - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/src/main.rs - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/src/security/mod.rs - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/src/security/hee_rules.rs - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/src/security/validator.rs - Removed trailing whitespace
+- **whitespace**: /home/spencer/git/MT-logo-render/src/security/scanner.rs - Removed trailing whitespace
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/.cargo-lock - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0mise6fepoyip/s-hf567tgbm9-1uwqzsm.lock - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2su9ow849z013/s-hf56y2btw8-02894py.lock - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/logo_render-3chuphtsax7rv/s-hf56nogtar-16eq61a.lock - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-1z9r5aw6og2mr/s-hf56zgzeba-01cana3.lock - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-1o1uj7k894fkb/s-hf56nmi8uf-135hocl.lock - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/logo_render-2t4s4fv8sf6vv/s-hf58opc7sz-0cumd7i.lock - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/logo_render-2t4s4fv8sf6vv/s-hf58opc7sz-0cumd7i-a01eea58ms3ep50acyo7513er/cdidy1qij8tjcl55rr9tq0baa.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/logo_render-2t4s4fv8sf6vv/s-hf58opc7sz-0cumd7i-a01eea58ms3ep50acyo7513er/cgadvs6pzhmktv1gmpn3369gc.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/logo_render-2t4s4fv8sf6vv/s-hf58opc7sz-0cumd7i-a01eea58ms3ep50acyo7513er/ak2s5l22m496roqs581trypxj.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/logo_render-2t4s4fv8sf6vv/s-hf58opc7sz-0cumd7i-a01eea58ms3ep50acyo7513er/de9nw4piwtlx8bn955g8t574n.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/logo_render-2t4s4fv8sf6vv/s-hf58opc7sz-0cumd7i-a01eea58ms3ep50acyo7513er/ajb42gaw9mcudvv9o8go6zemm.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa.lock - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/bv8tt0dqtnt8jxij5kxu008ds.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/cke0apndiz8zq5z8w5thd3wdn.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/d9d6pplew7uxl2t67j13693ni.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/7b4okavxlkbx8uq4hpqj19cj5.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/64eoy23md2aot6ppcs1vckijs.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/0y58x9i71fi7jjguoh3gxuid0.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/615nbzzypu0fb71uwaawbai4d.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/66x0h42g2k4mk6ky1466tfwxd.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/cq8ytjj1ju6nb6ndmwt6g9ynn.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/7zn76s4ibaq8l9t35eq7xx61c.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/9ao3o0jwlh6mc52zycsreul8o.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/0jvi0kpwghb7a5roa3ty27oqo.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/b9pjfmbgbwrhiiz1wupsxzbvh.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/6rapa9e1i4xt2e92yxzx5f7oe.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/3n45mxoa9mmilybtfkrt7gkj8.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/1uc452644ks4115p7jy4ddlrk.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/4v12yxvh43rudyjs0mw87rr9z.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/c0chy457gup4fn8qf5tw3hpje.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/9npir0fg82hg3e06819sj7x0s.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/00lpt0pce2lp63r8zz9riz6os.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/eg4ilcwtsi7rb4k7hhxfa65v8.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/22eu137nyj2n85u7g89z9wkl0.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/be4wdchzfg5h9h9ek6w4bet7s.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/9tavyjddewysgz9b15rlywso5.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/ehnmlj18mvmiktwlqfb9a0vl9.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/dnc69bx6nwwldvt7oawhs1xhe.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/c7ae6c6bn4fkmr4p529cgh7r2.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/a0h4e0sgpquth2xxdp2x7y8no.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/0i2scza55sxiycbrbep536szf.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/c70kxfcue2edrr5svhgvu779c.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/3ni4apqzxfwm3fva52si8xsg4.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/7p0dm5fm6zrj8pndmm481imr9.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/0vegcnek0c115mtq3sneyouqy.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/a6wz936jodib43f9bugeclql6.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/99d77o4lmgcwt7elhu9494o6z.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/0vjfpnuhxwc6y1teqcdmdew1l.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/76mkglccbc1yjt0a90pzby89w.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/7yreswv7v61qfisvk0bfz8ykv.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/3wa7yeuwsz8y3rc4p7hqszw5g.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/bxsunn369c9zm7a8k49vniyuc.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/c54arn1l7rqk2qp3m5p18n5wj.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/8wijm3nyfbsz3syq57ehl45i3.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/67rf9xbfv5lqhds8394vliz60.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/664gu0dwstle687rlp7uku9r1.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/dqyz3ibgu590ijzvww0uzo35b.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/col7us17xsokjt421rfhmet97.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/1w39efnitdf5i4qcn2pqm9t23.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/cz5xk4yuqu44c0k72099mtxkm.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/80fbg9g4icjd1h9l0n4oycgug.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/f29h2v0ltaujt9kccot9wzea0.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/8zn51a7qaa5aoolbq734n4ltp.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/ekgut5adlf5p46t6qtf9rydud.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/43i3032hbdnxa3mguuivetpjj.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/8ifn5zu60udcuwkz6mivtb8tm.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/buc0so2jtfv7x8shmoe237l42.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/2gyb2y0x09q90nlv2mbixkh5a.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/8spbu18qngvcgssjnrl81nm3w.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/bd1uk55hlcflcwakyrbjo713h.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/5689m39m7qu72t1p9vf8woqja.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/9an11dshkqmalfqinctk59b60.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/bo28xryanxqk4x0k6emjcjmhq.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/2idic5dgiy3z219wuq1af8swa.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/ea03abdb77u3r0v0fc4p95uez.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/4uj4hpmrx8k6dgif4ud6b9hqh.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/d969dmf0y9b1111b7vvh1ee2s.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/9es0163xt60dwbwtlrvm7y5ff.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/3r09j0nxcdnb8cgazej1hkzcq.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/9513fyv5tej3ziirkivvui7ft.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/00ynaopwwmymbz1nggccklitd.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/1tqiu2hqplit9w7pmu5dkc7p8.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/1nr31luilddxr76nlmjv5ekcb.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/07jej7crcci80u3flm76gjwqu.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/a0mlxdkp44h7bolx58n1ks2f0.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/b9ayrgpz82puweizdap416gbb.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/3p9qni5o27r1l4w5oa3uxooqn.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/ejrb6mxbfb4soubj0pvc8qb4d.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/dlwtd1qbsmqb61jp4oyi57fud.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/7q6yvkld3ryyo30uy9wdl7zvr.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/d7g4126vq374yoncytgnct89s.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/89nhg2z9sz45ol2co0tta1trc.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/3pl77ux3l5c0xnhzz1ascwadf.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/a7ogbab3a0junlqva98p37ixz.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/0xqzyhk4wo4wdjqyiwbku54b8.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/ekuyanm415q4hnbna2rfzx49z.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/5zahm9v2w8yqtvprv3emqebrw.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/6rtqeo26fviq0r5cd0vx5uof2.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/0z4ojqk3vx5wvc1szba8kgp9h.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/aman0jm76pbhbjcc6oqqhs86y.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/a6u3ua54smcx6z8okltdyy33y.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/2qg5sag2sek1yqsfn6tu2skc3.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/6hisel28ti3colsl9886lgf99.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/cpwky8oag99cjbe66gmi5wwtu.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/0g4nw8vebk2tztil320kfcglq.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/1qgjy5yihbzh5i7jdyagwkhhz.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/e20u9wihztueex6l68j2du9w0.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/0fc5sbkyqt07yvej0vy8h7abv.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/5tzanhgh8zzy65013v8g457kk.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/9sojsgvo89l9jncjoogba8bc1.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/0f8jwvw6376gxg7nyvjapaf6e.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/2ncbpc7d1mxo16kscnmmh05o9.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/0z9y8t1op5eg9r9wwu8epz0vo.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/03y0ey16fmbgw33sm2mzcu7t6.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/9w60lmwkr75u01aw1n19kxa3t.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/cre5yh7u4jgu4llbghhvdetdd.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/3eizgkb3yqw8a2hv4ht5j5yao.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/9xm7nudm1njoust0ezndwln44.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/b41x00t1edfzjghyt0wkodoau.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/097lg854anorxxprv7pwvane3.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/4i2qub4xg7z5kenviwvayelxi.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/cblnxq0oipl7wkga79lk4g4x0.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/27vf3otku7ct4fwix2k92c3wt.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/0p63res2d7xcn511ze71liijz.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/7nmiyrwpazd0b8jxrvlyf9fzn.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/5k5a1oy446fd4b00hz64hczfh.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/7jdcr2r8nhdguo16ump967u3i.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/ayzlh6egb69eybvqa8nf7wdxo.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/8me0nzo8ciuewqijf1xzagcmt.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/b169o2de2498vikxusfwg7k6f.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/3p8dvpd7lfr2mur5vbvxmxamt.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/af07rlu0u0x092o97yjm7w6lo.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/48y7hrh8bx3lf0lsbb0d0m53r.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/957hc5u8imu4z2z6px9xvw4gi.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/a185s0k5bb5udhoawtxn2bihu.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/0m1xmt59aa0qhmbf6yb5ea3bd.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/6bhbrhxd02gu5wy4r7bmw43yr.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/67r1ayj03cxtbqgbwzxovldkx.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/8spn4hh6la08f8n6s64o9j8ah.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/bs3rk6anx7978fj1dhxl5srbi.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/46tpwfps3uzzwmcqt4m6xlhoi.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/6bhtmu4lho7x3wh3jcleuoarr.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/d1xq305aw8dv0d5jdghe6y5ba.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/ehlnrxuew2zwouza5uhzxfn7a.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/2ntat0ceghwcqudeg4s4r1and.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/f2w96cbpye3s4w6pcd3aonm7m.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/2xu25xrc3hl79c7cbfk193xcc.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/5l2ba33zuv7lsw2ej8h25nzqs.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/5lrdbbgkpbtw9wps13fn4qx1o.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/07s1wea0elvvq1k8rlqkbl1pw.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/79psut8dxpvqeyozicb9erguv.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/968rzf8hlwuofjcl0i4banxpi.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/0n4nhcecp8xujxavs2h8l9znd.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/bdu6tbi5l2anvgelvoimy2o2x.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/c2yduudwgx5h0wdzkuabuw820.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/8xjo704ql2ussfdyly8txl00g.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/aqyobr8cm4hff53a1sgtj38qo.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/3vmsvc5ct8vk2d9w95jpx3h5i.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/5389y5t1rd3wp2fo9pvccd3s2.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/b0djpzuv6ajf0qmxrw0rsnsd7.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/3hyrw4ztwdng3zz52t13zyip2.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/f3o6fr57y08aizuxzxd6pql7f.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/3n9wcpw1wzl6sxyej20fn1pxh.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/e15pcb36z6nxchfsjo8mpcu7g.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/aeguato6gppwyx0d79zrse5ln.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/5zhqi14lgwlvlss7nrwhz16l1.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/ctu8fwxcjra7knz23wyle0pr3.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/dasc4g5n96u4wpdn3go6haeen.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/3iijvi9vksat6yle6qkrl10j0.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/2e187066dp71h8pgxrfvhzzmk.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/7al6e3s56wxqpe4icprf3hhxb.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/7pxgzkarujkzz62ojpsyrwkow.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/3bht3v6r91iibmfv3kgq6lqgp.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/095kcs4vyd9jqafk76ppmcqw1.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/9yd668ddqrisfrk69qi4eifty.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/382p7ka0wng51jfvksk5p24oq.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/bpv4tywyeud4mc5jbzpqeo23a.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/dhexkqepa5mqh68ea0hc6mk5h.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/1ox56bcbceo72o26490k7sj5n.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/4zi9maifa77315a2z3sgafxxu.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/c3fkn3koepv7xrvbr5tyvgr0y.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/7mvt9vzpp01v0hg34c5sae1su.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/3lzx64kvgdpt5334yhzia77mb.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/f1210if1fj0q6mo0c8tnewnco.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/30xnoso5e36rmx2ud11dyvdmi.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/2qc8oekydwehk63cti42c57bl.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/alykww08ruxnly8c3kifg5j3g.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/1agiyt1hp47t87ivx9w7ooido.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/5t0r7y8mwtcot8viukp2jpsta.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/4dwe8na62qf89xusjyl3ak3tr.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/8jn3cfz64g7xyhcd4rgyaqzj4.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/32qc5646n37ouz0w7j68xqva3.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/f0o6hmb44uj2xueje7bjd1iql.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/cj9rle70qzv16qapcaw6xub1e.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/6w8udsx1m5qej4riie2jha36z.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/4xjoef0y1vct4elm2t1a8o0u9.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/017k0tyec0epj6c87p8ctlpvc.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/3nv5cuq476a5y8kyt2q5djcue.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/9207ekm7y6lsivwxlc0dcam6o.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/6tprp85u5oms22f08ale2xn4m.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/c1vsb83g1pj5zkq17jvo6g4ki.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/8oe41ol0e5vt0g3awnl5aojmn.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/7mqmq2y2pau08h9o7h1nauo19.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/cvl218pbwpgtd9ms4c1ihf69w.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/c4xw815ios5xj2qv9yolt8qfb.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2gvcc25j5cxtu/s-hf58ol0kaz-0e9kqaa-f1764fxn5wu0q47fzhuofvimq/cxdst6kz1wuw9k4hgh71ver71.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/logo_render-2qk7ryqwzi9th/s-hf56v6x6p6-1ooigez.lock - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/logo_render-2qk7ryqwzi9th/s-hf56v6x6p6-1ooigez-f0hndt2efui1s66nfdzgb6reu/3zby0a2hui68bntyn908xofsh.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/logo_render-2qk7ryqwzi9th/s-hf56v6x6p6-1ooigez-f0hndt2efui1s66nfdzgb6reu/3i5xe1qhm8rokhuulnwgim096.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/logo_render-2qk7ryqwzi9th/s-hf56v6x6p6-1ooigez-f0hndt2efui1s66nfdzgb6reu/1ewpzqm3xuzc2vj0a0p1ygbjn.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/logo_render-2qk7ryqwzi9th/s-hf56v6x6p6-1ooigez-f0hndt2efui1s66nfdzgb6reu/25iffhjkjzcican0na3a17oin.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/logo_render-2qk7ryqwzi9th/s-hf56v6x6p6-1ooigez-f0hndt2efui1s66nfdzgb6reu/861ka2fu5stev988ozcv0d6kx.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/logo_render-2fc4rp6439d51/s-hf56zhcjpx-08rtxvq.lock - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/logo_render-1qbcn4rle5z3a/s-hf56nogvvt-14ldwrg.lock - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam.lock - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/2u5a47vsyt6g0axrsaulf29ui.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/8qved2leiwb73i0hj8t8oyp8v.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/81gdc1jcstp4ivuta86db8df0.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/4kofd60r8ye55jwfk49mxsxlc.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/dpch8rsgtg9b6adkil3pgov60.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/el96aw92rblarskvmsozmz1km.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/6xqvxpayew1pr0suffi10gpn8.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/amy5y7cr815gvytvg8w24ofqc.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/dn8svgg0cfmkz7v5xhx2odfg7.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/1odpmh9h29okfidq20kd9r0p9.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/e7w3wccd57xhdka4b6tposm5l.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/5z0n3308z5kz0iqra1pwzs9yq.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/9gl758s07bp8jxkmes6ha221v.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/0zx2tdrp6bnwhpbkzhrx15vdt.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/3t0furu87k8f9h704mmgkh34d.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/9zo1dwi0zdyc9axvaqs6gx2sb.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/7juvohg8904x30sz67jzfpqab.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/99exyzkwa3uwg95186e2g13br.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/akenf0apviakhibp40ogyvtq8.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/90ugl38fbpwu8cr6e20e2decl.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/eaakoxpjxa9pcgxwybhcuv844.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/4j1av2wecbjmjphhkfzlixyt5.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/9botgdwv8bgrk0vby2r5qsktl.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/39pgq0w8gtcenznz7cgph4bd2.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/136ybaodvpu3lx9423cj1yuw1.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/7mna21girx4cf84pjxlln1vlw.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/ail8mcsf2sh0bfk99qaelf1fh.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/cbjnps2borm1hd21wg2hx2zw6.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/45bgygghy41ekmgr4xeg4j6ah.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/2jm1gtyur8jmz28hq0y51dmc1.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/awf8lfw8zcy2kz4tycup5jynt.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/25f1ket8cf6h41crqku50eeer.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/e63jg4h9w8hra8lnhb9m52bp1.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/6qrpbku6n7h9vnjtkk9dvoiip.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/8ucl4rlmquweyis2izypnv8lr.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/6awz9lgjrmcghb0iy1clvvlfn.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/6lainbxeq7uqkfgovpu4c4uf7.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/2zrf13ju7behgbsf8hu6xm4ye.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/7rzum6lc5uao3j8x1pshwdp2y.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/ekq7lzql858mmdjb2fozhn7s0.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/1s7lxy26960ww5pp33r1wxd7o.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/9ya1sfay0awki87bi48ya21tb.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/5wssz5r1kb2jgnvagwaf457fd.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/bvchnjwr79u5c1rtshzw16ing.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/5y7pe7njl541kqdioijgqnyz4.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/2xmfglodx2neq0uk62o6b0s3l.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/3p9lk4m82nc06vcmt97ubra8j.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/67utfrbezpzc4ol1bvyarjoja.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/a97b8rou2k3c5wvo77kdbvoqu.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/euocmqzn982xk89copz1ut7dz.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/7fizycxfid4nhrhzjeiuzf6go.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/5ce43lb8raqgbvthj27v1lt2p.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/emjmshcqrzb8n48goidm4vq7o.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/c75i3deml9ptfwbtoq9wc6nhh.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/4q5v1mqfn81o1bexszhrsnokh.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/3ju6ng7gxqq1cfq3ic6v2m2g2.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/ckatz2tpngoqbzaop2dahw74h.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/2qti1psa0go9ktr7gokzhxyo5.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/0wmytzc3s1cpiyqmq9vbbm09f.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/859qlt50aevynq4vqeayzob2q.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/663az1yn54zp5nfqnuhe4a095.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/5pes5gndax5rkl2hjgn8s94wh.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/cxc0snu13scnekuhhey5lmg77.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/9rw9i1yyfdybyepswt6zl30fo.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/1e5nuj2hux9w4g5ri2uxp54p6.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/1mqj2i59gqunnlkunm8l918ck.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/9rrdh0wsfnumyyqcufwzyizyp.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/710mcdi352sswmrrlsuiyh7nu.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/39p9r85qtu03g0l7v046mlbbz.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/3tktw4qjsgqf62zzbaucuc51j.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/6h44yzw70m09s3qblt8cebfq1.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/c7posjt3dzoi08ge2fmlasi65.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/63pbemnxuhp3l4v74snltf30h.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/b33n1hu68686wg22xbk12lr2d.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/bi8mbk2jtkbrwl1rzdkfdq1n9.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/238gaz3j41r3x9bfj0vof7b4n.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/6adpy8qzb8pz3pdri98uf5vlf.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/9a9u8scityt7tg3tz2utbqza8.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/3a0h9ky6cu2g40fiq6iqsgdg0.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/d9wykhpmdmcx4norh2swpjes4.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/3avjgjxji9w4ayewi37gjvrvu.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/23pgit2g1mc2733kkpnv3oi07.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/4vd2mhtmkf1xzq2t5nui5qxwk.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/2aj57e3djom3w878yms1a85c2.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/0nzlskykki3zoqutf7pi9j49s.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/0ih8d1r1bu8a7je7j67ytkljx.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/0gjxnxcziqczitf2xq77bqivm.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/b2so7ihad5zmd5qn95ictrt0i.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/c32utae60jrvanm1txy632k4u.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/bob4b6mhkvyrnh3t1iq36nrib.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/3tyrhoqjgwm29byipigd8e827.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/5swcey1zr39byitagjmiywpov.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/7z5bns73netrthh86csr1iv60.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/erd1gr2z7rw44w7yocyb088bu.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/3ptx2s1dclotsxy1hjcaxudlw.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/73rckoyih74fdyq6kq3kjmhpi.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/8snxisiv6pwe40pch46dunj1f.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/7elrvkkhth3z0grc2j6b4j887.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/4pvvgpr9u7ct6z6v387o0n6hb.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/086dplqrsnewedvveqygaljk5.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/bebvfioiwoi4p4ppocuc22507.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/ehdf0nnwnfxtm09xfzbpf1ca7.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/1axvfm826lds81il2rv4t2bvv.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/a063sayvd18t11qmc97n2e0zn.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/e7u7j0r8l6mqcrgbv32ypm84g.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/7u59ihbny4cramrt7y6waw8gp.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/cq2s0cuoen7doumq9qwd62j3u.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/5nax9fafwds9m49projc2jr4e.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/dkz8dr6w4pjaou64xvclbvyhf.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/0of9ml52vo8apa38r0303iju0.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/780ez96nvs1rxb4ae206xxwmf.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/3rcc5y7st88kssnn8iigr567y.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/4dkskp8u9ugwxgm7slk1xrtch.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/8c7jtmiop49tns4vfa5zzrmsq.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/5xj8c3sf37u5t3736apsv98ky.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/567io2htioi2ek9d5gs83c57c.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/44exi5c06kiemzyfg0whyxlph.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/7figrbrpq2z01tpjfzkzgxnng.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/9nv0bcy8msnn03n7idz2sexzl.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/9i2yh7e85ymzbshl6e3cgltgz.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/c3ouxt5ao7cczjumqdoi484h0.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/7cgskqbjbtec6uzqc2mrluoku.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/9isgt2q9uw7azknfbuxep59f6.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/drqkm0g2a9iknk66x8ans2qpa.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/ayjn1vohgupdr378wb5qgx17p.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/68vs4m9kwm2t8ukt6sxsoxmqr.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/6hi8lgmgelq7k8gh15v0r798c.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/0guiniki5ydi4qvh7sd7yl0o7.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/b5m3n2pv90rpkuidmxcsxgfny.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/9vyikx1mxhg9xshkd8kifnjdn.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/6n7u449q8s8u5qwdgcpnwwuv2.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/892o4cmmktiax3zya8q9vmbec.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/614udxygzjmmahywpohrcdq08.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/66jq9woietkn14kn17ikz4mbt.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/2bug50uvh8j5kcnwa0m4zxscp.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/2sc2l7kfbm8web6c4iuxaxvao.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/c1ir7fw66rrngjcxcuuu0rapc.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/4kjen0zfmnoemnbzlteyfjz3c.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/7jzvr4sucfqpc9ydc45erjx2m.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/5q7h97zwqi1qtt1ahsu6pzbjm.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/0jrk72lyrypwrv3iri7ro8fxb.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/eaw1m44mdyoqyh40vulm18ysz.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/0swyyrpkq45vb2vlqwuhc4ql5.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/8rmur48iflya9hkd5kzouo205.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/3mi3m93edmn071ep2w1akxxbo.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/4l8j0f3l1oyujsz35g2afsatg.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/4pihsqo6ui7rxqhawfv4b9gnd.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/dwsrl3qzrxsbhfc41yf45otud.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/b1d7df9vj56oewpb8ehmpgsda.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/aznffw8aemeazqvj27schb3ck.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/1zhuvijs87mg7brfulqy9pua2.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/43y5wg0zczfjkcccpcni2cauc.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/3hb61x387u6ou4ae7xly9zm4z.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/5z434fqyczzn2qk89sxwd5cc1.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/02l7jlltcwczx3u34e029kh7s.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/1kcv7pgxdmwrewuse0fhue32f.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/ef9y951xmhp4z9cwglso30b6p.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/7awfigho5ovszbjjue3m0x9ps.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/d6zdoaiw4h2kmln2mve4umrr8.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/aczttylqs435yzbg6ksift13g.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/50ptpp8cukwph34gdy9wpjz0n.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/7kqyu7rp0y1rkxqkyv0wwut1m.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/17xzf0nl04kxe9xobye3u0xsi.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/9w1j8h8tr0vsuh8pcnzdo58ed.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/1nz8bptcodb8pulvc61da936k.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/2vc1yq1ve4xz875zcgmrge5gn.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/3rqtc5eaffuldrz16lajdcj8e.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/3ijn8z86sssdj0hmtxszemmqz.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/cis0njz05hv1v02hjghn7mvw6.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/6x7xsnf76r39q3cbd7vsifcli.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/7fmp2w4k1afdr3fznoynn4qsa.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/9cgw492oegvmxgugd3r8jyzoo.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/86b9oz5el7k9661180r4xerfr.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/7d08gb1fftx2trmnvabn89uxp.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/8wi31nb7g5bvleoups1rwvg5t.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/3ia0008tnnc6xsqxn1l2tx7yh.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/18ms52cawx7r52i4kuodf7sxe.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/ande99cch9m0n5tajtfhoz8bi.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/dvotngltv4ijjxe8hgkx90gy4.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/9c7yoyzuzk0aqwxxtzhjlmnrc.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/chnahgwmsw0l6fscpouu8qkq9.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/0b6a9r68xknlwuu0niao0wvii.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/47ea43h8psfw06ml452fvfle6.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/d4qrnavs3eobgt2nff8s4m4ee.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/ase1xgaoo3repq73rwjdl90fh.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/6teecebae6ajfejrz94z2et4w.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/26jkleprfvlquihaag47ey3ih.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/25932lvtszc9u735dpcl8j9oo.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/copbvf4a9u9gh2yrwys7r7sb0.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/1xbtcw8uydbj9hc4e4bsq1z4q.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/5mm7w3u82q5v2581ns2f2forl.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/4a76noko80b5ue2skz58i2q7v.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/2hka0b9yi8ckaac7d1q5ycn7d.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-2ypbf2d24plxg/s-hf56uxjbtk-1o32nam-7euaxle0ytt2r92t1hshveeqh/cnrt8o2x5qanarmp2iajfbxgd.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/logo_render-0psil4yshlc57/s-hf56y2ywja-0xr96gh.lock - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u.lock - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/4un9127rx7pnsf7gmhesj181f.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/1fxanwuz7aifdennll4xmbrlb.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/cxk2so8il62mbevkjctyfcr7s.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/atqpma36sf8ihc5lecnqskc9g.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/d7hfxstmj2814sr01x3lqvza3.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/dehn8p9o3fcs7tqd1o5dh18jq.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/esrhn9hr8kio0xzi69q30lj95.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/aa1oxum683wrw9ctm0bpq7g1u.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/31f8kr7juc4zlwmd6gd5bp1xv.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/eok1gvl4znrefxss853cnnu0p.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/8vtp27h2r636e09dmxf62kl5y.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/dvmkt50pji4ueodjsaokmtb1y.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/0jj3nqsamgvj96qvzy027pwyb.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/2ww9mxj8kjfq3xmqfc3usmjsk.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/a1d19l1kh81dlh840gnzfud07.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/3d4wyrmbg4f7hb0xmlbnhzjg6.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/defj60lpu67myd7wbe2di6f61.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/dxcjr6srbvynlpxl3xplwz6a0.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/3m3up4vqjdbc7tmt0uc92wtmb.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/58l8rqpbays94jh3lzhaj8gzl.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/8bjunsqmjn020r42zi3a8k3nb.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/e4iqh38kmk0iyvw4scik2ffc7.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/8eiiyi3kt9kasf22fdxlu0rxa.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/2idt9447c59xrx2xkw62e8xbh.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/6ry3jr8hdgb9cfx8rexjumj7o.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/f0kgx34o7j2jqzt9uxevwnqp4.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/3tw9gf2yycbvc0k5uiw4id6h4.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/4e3qbem4s4euotie6mmzo8n50.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/9spxa50gyitm366935d2pcdsf.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/19r6kjemgvnjk7o7f1avrzwln.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/1e2fectwumz36pvp43hk3zpxz.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/4c1mr96unsqvscpgwm1hnxxlr.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/b7ywxp9d1mwmym9udg8ziqqli.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/c2d9121bqlk7oic5ofdufwjog.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/bajxanl3tdggx3bxszatmaqy0.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/21yosqdr0ejp9lzolhtrmgnc0.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/akv2vpibdmj24brp9m1lzm4rg.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/9b055kb26q279hkyidk9w3ghj.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/6jcc79bkzna9y98j7uiidom2w.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/c1spu1qd1copkvk75of6rpem4.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/e25mbplzwqa0pstbizur55v69.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/9x45n2dnqxci8fpi379qqj04o.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/erozyix7bbvhupmsrq06up3a7.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/4r6knlswo87yysh58uijbqbxk.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/7n3el2wztkt1wx2nesps38491.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/9nb14som7hfmonbjuzmhbjxq6.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/2014kvaxiilbas4jjig4c0kpp.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/7eev6k9oqlql4vrfqj3v42ewp.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/31ku65foup4nhtcbj47kmyv6q.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/czczg0unwf8ugend7el88qcpg.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/d4omsafm8dd4h6wb0xzezrn7r.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/6i0fwpoaftw6xgv2cxsmeoa97.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/f1rs3yzxbhddfwjketo32083v.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/emseeur7g55spsxbkz4upj90j.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/4lg92s8z1bi4n5z7ipn66lmdc.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/a0iod4kwp1pvnr9s32hs4fomf.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/6tr572fyucqdukm9am7pbqdnk.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/8n07aukbocazukw70uoeudyi5.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/ah9c8jx3vj38l28et3mcd5qq5.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/a2cnra48czcgr9l555981a37z.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/1mpaervi3qrgkowu5hmo4o87v.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/6xdmcreftnllpeqyc6os7o7ye.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/6of2xslcl8r1tf0aofaugqxcj.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/ak9nyoq8zq13vvberwb7fwdd2.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/7k6b1844sc8gbvi0xx4gstjx9.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/83s8ir04ywwo349zjdrd0n1in.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/5pnxk82e994dlo8gu60x6tcw5.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/8kw57zk42l9s3ns25tui8gs1f.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/9z0697osmp6gpeh9swod33mrn.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/2l4sr2osw0zp9ee3hh5adbl3b.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/asoq484sw1efk0glgv5aqa3jc.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/djvwu0tkooydowbc4ty6m18oh.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/1tbios1lwu2gsjnydl84rsasp.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/9mobjjztiaddgbjboygk36xly.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/cz1tpbvcf13nzlov7xckmqf37.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/2v61h4fu2065202p5q7rfi63j.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/7onzn1coqbji5lj9bftpakts1.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/eucykjo6z4jy8x3xewe8bb0xq.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/desdjri1rokwct4mvdtezahx6.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/ekp29t002clm8xd5r8yujzzus.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/a4ibm8j1i1h7upq04ubxlq03b.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/a0hv4rzns4wulwgm5rsa4x2zw.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/2bmz4dofys6gssegy3xc0tim6.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/130ydj2yojnuz5lezer22n9wr.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/b5ciog353thpd8190i64ezbqj.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/9arl7vjdhlggn3aq8ssw2him5.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/6kwrrg5y8onekwzg6s2vdee1t.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/eevklvmg9yq7coj2eyknlxl9k.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/ekdyb4c1lox8i7gjl5z5g7g90.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/1z1hzbjvgpj61c8mzk60io7u5.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/9uyfpxim2of9gpnctzytqr63x.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/2k74f9ev3zhu1c3v0t5w6okw9.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/91dwhlyzjouo4x86mdqrf32ii.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/7qeoh1hpeklrhjw6eanbji3u3.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/bb9odwgr5ae3o6mlvds04b3p4.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/dceq3p55bvvccnsldee6er7vl.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/2yhlpl1yo9rfhoey7jfo5jcdc.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/4wg0c9zmd97ulr35i76n82s8t.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/7jkwwllt741mc0ykfjsux37i2.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/021sgkilt33df6ozk4f1gb75c.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/3mlcwfzgdsgje9907fae6iagl.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/6j5o6hsmozry4gxtsaaoa9ot7.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/1u5j9zb86b4q3ja3hn5xerla6.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/9saua7sh2148c1jvuby9lkufu.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/0mh9wv09nic8l74zbgcnq5t2f.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/070jmv8c31vkkh3t0w05lw68p.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/bx3r2t0wzuwoyftj7svp22gzb.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/7oaaadib981mjntao3ijospbl.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/eow06k9b9h2cwi2ltpr0vtb07.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/cour98kv88evkoqzln1vbpvod.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/268d8k4s8zqt4mtawmfqu17h2.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/6yhw9pvlcdsufqguvv1pp717d.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/b5h3fr8d7vgvviwqu9ea30i78.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/a0g4kqckatu14tr3n0ya3vcgj.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/6s1gc8khfoegzs0on67ca2yhm.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/d7v9mqka03cz1yyxbipmj8vjh.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/dfw4jyvotbefjr6kxkoaf6fvj.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/7jhnsdfmssyawugmfqbjqbghi.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/3e0dbht7cgr53ax77rkfuerg1.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/5miw94ue6wdegnmwu3mnziqej.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/08wh9527hd3beiglv2bjg0x4r.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/5zm5yth0wpunyb0siyryidhjj.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/4jgak83vq7f8utw88uqmh5mwk.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/5iyca52yuwyhsqri3azgfzme9.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/3ifeho5u1bd4zj8r1v0sskyd3.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/bluv6dmmxo0pfih1hycu7y6g8.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/0nne6twlt920wnawibb7535g7.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/bjljvaych006rsa6ahgtkotkg.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/aeaild97vybuy6qyk2k3c5u3y.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/998ve3ye7lgku2h9qxkseq3u6.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/42905mgupd62sumikmtzf6yj5.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/9qkqitcmtu8cxfnjw4stufpju.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/7zw81g8nn14gccca5wwysx4p6.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/45j9ctq0qarji0jmltc9cp6h9.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/1lk7n383adblcqn4dr4ds9s8t.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/a65me9u707hbaih421bhixky2.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/by912eu6hubnw8eslz659ritg.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/1pu8kxhq16yns5zqugvjsfxoe.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/975m8rq9dkecp4iio2t6noy3e.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/e5o8eqloryl6rfb9ww6cuektu.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/635vtklsjycjc5f7o1j4e3n5d.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/6yjth7nlaammnwt8w208eveuf.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/193bzx604mikgjsgg3xvvq7vb.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/eb66cuv0ukc49daxqc1kbhhw3.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/brl53akvn69yre69o5acc9ckf.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/emkif4frih6ihz3gnooxsmeis.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/1ewmb1kt8bybj9103p1iid8cz.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/def9mykp0sf8xce5xhd2a1ue3.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/4uaw5duk29ujmt2nlcq5af4ms.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/5i8x8liqx9joit1ho0lcu5i8y.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/7rykjk9abw7cwkw0mezugl4u0.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/f11fx1y8hynzprlm1r296sdet.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/dt07tedbdykqjv9dczllfopdk.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/8c85iubnvytiacgcki60bz7y3.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/bzy28mdahas6b7rkshkpwhfdv.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/2732ryh0v4spa3q4me4rzel09.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/3b13vkxamr0x4xudjijs4p013.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/anffvps3c4xul17gixd6e5mg7.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/1z8sla9l0ds1zp9e90debu17p.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/f3tlk3qktyr9wq64tsow6r4z0.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/67m8sn8n2zwmlbncne0c17k8r.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/119iubulbn7bd8j012fgzx8e2.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/1pxc6ydlrilq3461jzdlgzd24.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/52xy1fzlt6tovl3u554l4d9g4.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/8kq5oirbbjes2k872kvd3stu1.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/5uts329qlo5daf0uu1m1tf6yq.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/3ylzbal2jgk7sa8u4d931d8s4.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/67ammz2w6pqcdceyefnzahu8y.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/aop63c4qxuyppf565hhm3amev.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/6tzi5n64y5vhn17jixb69uz4c.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/1wbpolc1x8o72umrp1vo9w7wp.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/a9ndy5pw68l5555ye9t3vspxb.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/081wpgxhc8v8w2zll4edjwyct.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/e8eox1szknb081ktd5c8l6hu9.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/6o8edmbh3kp7j46xsjl7qbgvj.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/5b95xutzo747e29okj2wks62o.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/6xina4sh6yqsj4vtlf6ocubd5.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/27bdhedjuzf4s7nqp5avgsbq6.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/3ne96x00gtezndw1zfj7wtbkm.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/6tka5dk7z5mg4qwz0vozkotu6.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/9037albgj0ijzwif803gn4jvu.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/4zcnazwfvpi66tlzohilihfnn.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/6t5f1xyl1hz4dv0ax9w065y11.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/1r5fk0c5czv8ug01hf6gx9edo.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/ehg6f38676yq9f7aprw8zatk1.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/995dus3syoo8o9g2sy872r89m.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/edj42mdmfz7h150hdps8ymcav.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/7sou6cioznac3u0t13ysj6nug.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-36vhmthhlcf70/s-hf56v6x1jo-17g4k2u-dxgzlh6i1ujsqm79ybop0bcdm/c15r99p4rphl05lkg18nqj85w.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-3u9r9eor3vzls/s-hf56nmi7zh-03hjhzf.lock - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/logo_render-0t8al1z5qe800/s-hf56y2yztb-1k7folr.lock - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/logo_render-15zx81a3mvbxa/s-hf5690nuji-023xky1.lock - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-3dlnwejogq5sv/s-hf56y2btwh-0kerz1s.lock - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx.lock - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/7xwx2h7c8juzphz1pgm75f1fc.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/6029j0rovsox1w1h44vu7k8xw.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/5irlat3to86e9pvnsa8an72e2.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/bx26qulls5j8925v5f8i3rk14.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/5nylktrtxs1ra0tkuu0q9s8xm.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/4y9bdhhyo7cmo8uilzyzs40px.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/0rypnnxm6a6os1aqao4piumbw.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/cm8otjp9ao9avjbw4lakfqrn0.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/buonw6bgfuazbjc6h1niqy9br.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/7rc3ztwcqu1qttjxils9hg36h.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/864r25oa2h3a4m4gegplaslqe.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/esqcoiz666yb3ftlrnm1avmnn.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/6uirchlhp80bq246i63h7z97k.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/4ednu2vapd6377e7y5i9ljqze.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/9ry2xiqew0ub7ut3znk79xuw3.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/8eo354yqi1lgxzezalurb6dm4.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/0x4kvari3cc2ixl609c6amo6d.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/c9r8wsz9sfmnsvszketd4u8ir.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/6srkjo48bcjoxajd79f4x8w6t.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/1i3a0odmx5lhotzfmeoey2gpq.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/3wjns3coz5k2drq6lhn9haf7z.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/2o93n7dbbmawwriit2ru36n6n.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/7lycxmv5h0spav1kuv0rxnclo.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/almlt41gfg17kypbvavmd4nmc.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/b536qb8shkmt0kjqk871lvak3.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/5ukhy6kpuh6ebhfjt6sdrhmqp.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/cdg4w5hu4gr8mamed6rpbsyv6.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/18wr6dhlj06719ep05p4xytm2.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/ef90kb1bk13e4e3j2q9pb1xtz.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/df6ap1jzfrbqao78dp81bnhub.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/0dfa1wnsxtemq6t37y7xvbc4v.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/eienbrngmpdb3883sgjhye8lo.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/4lwayqya3vd3db54yr8wrw5az.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/cbsqhslgr0d4k31g4wuamwhy1.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/7qdvhj8yp9m1w0rj5ydbcddu6.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/cjlj7vt3kw50fc4pga7vkv6qm.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/eylc5tkdaaofp0oemhqgh9ezd.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/bte86xz1mgh3w2afpxxg2qkr6.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/1k9se2e4ia1q513tgze2qka9j.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/egqkxpkzvhmbrkd49ve6xjzhl.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/5lgl2y8gk1rruig1j317i5b5a.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/48xlsk5guck3idik7appriygh.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/ay2c3qsa1cqjdhwl568uom13e.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/433g8ubfu32okz97fe7epgxg8.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/262irjew5lamvbw1ybqtyr4h3.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/b2i4vra6yguci21x5h8df0ybd.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/9fcqgiv9yfef4z98pffgtkbmb.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/1b06riz00qlnlgntw8bklf739.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/7o6khstsh6xya157ljr99faml.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/34ceg79e7td5kxhm9eh8mh09p.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/bzxuihxf4u13035zut4lxg159.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/6jqdliwuyevin96u1b59kcwpp.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/dnnb9lbd60wweuia14ib79shd.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/dvpmhnh4r88ay8s6dng02y1d7.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/9vsrx273syfwjdgzbymtjq5qa.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/db3k40psh2cfq8xz5zwx6tesh.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/40ka6cr61k5prkc3q0il1fhnl.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/0jyonlqufwb6h8easho4uv39c.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/deg2xh3p9zcnfdstpsytu7j1r.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/7wdmdh9dh2xh6gsbcq61wwaad.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/dx5yqaasoe0bt3fa4aue5cz3o.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/b70hrfikpps5nqgg8wfszhrz8.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/a8mlyouwhi7sj5ozksgaaeylr.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/17r1wy57triab9kbpb8afbkkv.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/6n4ngpt092ymdtvuqg6vzm2kr.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/8mwljuxi34lw4wjvkrbkhtktf.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/dfjj70lw2gwnpooynny0yedvp.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/9jsje75stcs8mhjc0aq0qu0qk.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/7pjx9p128i5qhto8q9126wtfl.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/ajo3ljnuoirpkfv5b8hi8732j.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/7sbni4kirdvdyq9qrjmxxzziy.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/43yyxz9r1pkxufwag8zvy78rn.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/3e4h4ia8x94r1saaqxq8wv8ug.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/7at82zf2jsu221oubn0ioarmt.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/4t3si8mld8aljvfc29o7j1lls.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/7afk5ax046v67zdf6r3e69p1u.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/ct0iqi3t5ovndgtbmy2gfuk21.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/12kycook10iywubwo7rg63rj5.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/607863jovaxi1yc918r3pb90x.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/eh7iqjj62vqzqg81oy0otma0z.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/btjxeg55l49m646e7x0w9z594.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/4q4imgiqhv4omydvme90i3svd.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/5i08wekudw6k7hj975o8e59uv.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/5scge0ukw3xietf33qhpmfh2h.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/67mm17jrfubfmosqslb02hyda.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/6nw1vfhxx31z0gge4wommfitx.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/c2ytqm1ex9e667wq1zzrzgusj.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/eyo5wd64a1ifxngy5ok65oa7d.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/ek68et6y1u3xacmlarwo3xcyn.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/5r7rnjtzftye2eovjn8yod0ra.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/egm2wntbnvzfnqfwoi7d0api9.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/262j2s4r3xysk763igj61dguq.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/0egcuxnfmmr5yh0j97pzc629l.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/7paflmguwbz4lvo9bxecmvj1r.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/2236xs5yhmo2opnt17otiwckg.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/evu54s7xh85gpyb0q6uvf6xeu.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/f1td25vtr7p1vecibvm06pvfx.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/96vj96ybh259z3uwe0g5a3lxw.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/8sbh4fm0ejfr9eyyaatcmep3g.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/4zsqyx3dbjh5rhwlmw59tinyw.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/4vudq4u2xpb4xy4ofsntg9htw.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/4pi430rweutvc5z65k1tlbhaj.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/6wrqgdsc7zd8t7y53se1sdlzm.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/13z90aaj9z5bpgwg8fw92tifr.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/4mygy2mdxx0xk8mjbckq1ncdc.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/5nzamm7fk95dahx2eg24uhq2u.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/akafxp814ebfguz8os28f9wd4.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/cmr39xv6vg030p8hybb1e7oko.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/74cnkiyrerieaxn137t6egli9.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/0s566a3k52cn9fh2483n1o6u7.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/9j8aet5sycw45a7atz1ff2yhs.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/c6y8s5j6ojusunxyyznf0i5da.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/5v73pnn10wj3pimwsy3r5z0rp.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/5i2c8anz5w45czlggc78afw77.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/ani5nkuy36q1g3pbw4ql5vg78.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/3ehxew3g6116jx42iv42w42py.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/4mmjdq7zdbm2ftnqpsxk12ncy.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/exzab4o4kn5bbhf6etrr4swge.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/8h4psc4sulfib69hzpd3a4rd8.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/40dc6yzhh5e6wqlz04u5k7l6j.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/7szw525vc0d0otq81jp93kyhn.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/etq6zpe9rlshpag2g768ufecz.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/b4e0ux5a60twm3zgv29tsb5ex.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/b61ujqgoe4ruv2zrs3avzhfw8.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/1tvokx4x31nmtula57dawbs87.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/a099u4xwekgksunqbz2g2ix71.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/ai67l6gq2wow27uzifnp546oh.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/7bfdl0l5hnce64yn8actothb2.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/9dt2xo6m1ep1bib0s8qr2yz8u.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/c9eh9wsw41so64gh9rwftk55e.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/ahadveh0oy0le16al0yff2fcl.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/cixeug2vkfx83qbigwsm0a34q.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/22mbnwtq90nisju0jz13q3g0z.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/1l09ytv7et3w4yhtz4tst2f5g.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/3xtxah6csf17dd3ov42jxkm5b.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/15gu2sz7vxxuw3pupmdnc4dk3.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/6ljff7w5r4yp7cejnqd2pmlcm.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/b3uyrdz9r7e3c49xgd2v7jzju.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/812v1uw2vg9hgvl9moe76ar90.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/eve22789owm0xkzjhcfkpk5yz.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/csdulzl9ftx1izx284qft4ywm.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/bkyu7lhh4ph4ui4y9l51br7x1.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/dpdrhqoo6oxqwk6angwytgjvt.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/1b1vyyo2gllncclptfzhwf250.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/9ewxla5363if8p4ky8psd782t.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/5vuq3ex1vygkwpaurq246lb8j.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/ctnl59zmq27sw2v5uf08prhs9.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/2yf3z43do3zamx1afi6t44w0o.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/8ns0zc68szlvblkvizhwrm72l.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/c88mdhmm3pumg7r6nvol1hs9p.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/cg685a8ov3mfslcuud3k2yu7i.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/08bywl95hq1214u4p3x00ypkj.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/27lkce7idlt2p14isidtcozp5.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/els3t8vkci0pmk0uknxupzrj9.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/3k5yms59c1x77bylolxts7hj9.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/6nnkm991edk7looy6f73z7dty.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/5vx3d4re441kit4q7i0qnmlft.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/75lwnehbas5xaz0cgodsha6f0.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/9ywlyr3upamf084c31atjido9.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/7y0ruhzrwrt7w0k969j14ggv4.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/7joeflo262lo4uslvqsc4gcjq.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/18prv7o76gwoir0bm9vks5kyf.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/063l4tk8vfkg7ggjploehon5d.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/4h6x02yn8bjy87wg5bq6p401r.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/3818lbbx5l7wrhn19sceey7i1.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/a50rasrsn77vajvnjm5p713s9.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/449fna2jsgktozdi875qycvjx.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/e5c9t5jsdynb9d3x89t2cft68.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/7uoff427p6c3etzb63nw9rhej.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/9gh0miu4734z81b1icuudgk2m.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/6ynfzul5ejo7fslwv36h88s5f.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/5xk48cyxkjhe50yavdr9klwsr.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/6t8s62ok02ji860gs78vj7fhn.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/6gvxu0fnnaeof3oxnwuantbv5.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/443dzz85ed1z4gnnxj5qd2phc.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/buiaq38a77ws4r09m0l532res.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/5f6hey27z1dh7wqfkwcejn8a9.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/6n35qkvb4n54o0t7jcgmods1z.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/9w75cc4k8rxjp440o7s1siflf.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/d12d0ru7dj7wmmp6drmrhxo4j.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/66jsl8m39icyawmxhvm12mrfe.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/3kha13p376kz0hxxbyj2sydes.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/15776o9o3zssb4ykc4tdqbr5h.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/3na0o02lqp9b52a8bjc3rhdla.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/3aduwh259ak7kim16hx7234ue.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/cqj0d9a597lwh58dj202wj0fk.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/9z57fg370xhs0omah7qkz0jct.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/3ipk0dfxjt77az6bmdpdrk4fu.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/incremental/mt_logo_render-0q25fuf3cy3ab/s-hf58oo2dnr-19xxjsx-8dpi3a9y987jvj3ij2jgl07wj/asjjxeo5lqdir6ydle69wcg85.o - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libquote-3018a85c90b8e52e.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libbit_set-ecb5f9d3ed837fb9.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libminiz_oxide-87fc99044cab366b.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libanyhow-fadeaa8917397966.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/liberrno-3f54f83d8d16e85b.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libsyn-da3a4e82cf03b254.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/liblogo_render-911e62af97763e46.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libryu-e46f1b70c4cf288b.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/liblogo_render-fc70147352dfbd17.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libunicode_security-983306f94dea1661.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libzmij-01fc5ccbc25ba2c7.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/librayon-da5f6db289e4aa80.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libbit_set-b3c6b4d2c99ff40a.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libnum_traits-afc4ad36262395b1.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/librayon_core-efba3999e3db1a0a.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libregex_automata-f21581c10494c15f.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtypenum-f21f76344c02c36f.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtracing_log-73879507102a308c.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libautocfg-92a89194df82d441.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libttf_parser-55db98c83bee64bd.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libbit_vec-d4825382c654405b.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libcpufeatures-d1a56c9f05f34e94.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libdigest-34024226d2c19b02.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtermtree-f0d1ec1896b98c0a.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libfastrand-7fa766553e92fbf7.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libregex_automata-f21581c10494c15f.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libthiserror_impl-902d0cb9567594a4.so - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libproptest-58adba183a33257d.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/liblock_api-170a0c23e82a3ed7.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libdifflib-10217bbd9dc6410f.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libsha2-174e1b970b269f75.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libregex_syntax-c54956f8b069d9a7.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libclap_builder-4b1ac8818007c051.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtiff-365139297186efbd.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libcrc32fast-b6fdfe1311da7b0d.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libzune_inflate-3dfd97b68127de27.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libunicode_ident-1382303dcf21388c.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtinyvec-94a03715b4148ef0.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libunicode_ident-1382303dcf21388c.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libcrossbeam_epoch-c0032f7a6c969374.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/liblibc-4c5c12affb9c3331.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libwalkdir-9127516f9eee0552.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libcrc32fast-9484996ed116c1bc.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libnum_traits-36cd343c46da9d7e.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libanstyle_parse-22c9e24bbeac8565.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libppv_lite86-b7154c354c548d77.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libparking_lot_core-98396dd15024e48f.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libmt_logo_render-e7db4fae80343cfa.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libunarray-1791f0244e14af44.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libthread_local-f685bb4678128c93.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libregex_syntax-c54956f8b069d9a7.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libsimd_adler32-d4f3a17a92093e8d.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libsocket2-b6f29552e5f08dde.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libcfg_if-ac9712055968a5f2.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libcolor_quant-1d8abda26d39af25.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libsmallvec-9359173fb30c361a.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtracing_subscriber-49d45b26825e41ad.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libhalf-cd543d96bd722c46.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/liblinux_raw_sys-7de15d2f42241369.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libnormalize_line_endings-0048e32a74f8ea5a.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libpredicates_tree-6a139ff6639d6dc3.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libowned_ttf_parser-14dfac3ef73c5aa8.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libbitflags-f1d1fd77b6ac5598.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libserde_json-00b686a62d235269.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libbstr-3af63c928c5d3d7c.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libgif-112e9753fe631022.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libcolor_quant-6c3989956cc3e1d2.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libanstream-3b9de203acb683a7.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libunicode_script-cb6c578be2838254.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libhalf-cd95870aad170dc3.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtracing_core-e5e4e93b5146b4a9.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libonce_cell-4b22675d120b6b3b.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libaho_corasick-1b033bbd021e907e.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/liblebe-2eb42bdd84671267.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libnu_ansi_term-7610f7e730fb5a26.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libpredicates-c5d1706a95302865.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libquick_error-288aa8015494b792.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libchrono-f501f4e4aa38d088.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libpng-79dca14a5c405d70.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libanstream-3b9de203acb683a7.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libpin_project_lite-6a2a50506e74f982.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/liblibc-806f16286e70aa48.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/liblogo_render-589bba4e0221e57a.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libttf_parser-aec6cd651f8e061f.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libhashbrown-64b65b5d8985f843.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libanstyle_query-30b249d7b73c87c3.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libcpufeatures-74e50bb353a1bb9c.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libclap_builder-f839b33fdb80c666.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libunicode_normalization-51b9794be2bd3ffb.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libweezl-1103148c10964d5c.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libmio-225a0540366d30f6.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libgeneric_array-be4b47c8e78f003a.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libregex-28d92d4196d805e8.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libowned_ttf_parser-3e15f9be4acee229.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libnormalize_line_endings-b16565f1023ac5cb.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libserde-62ce481452690d80.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libserde_core-cf71d6bcc3c7fae1.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libdigest-34024226d2c19b02.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libbit_field-260587b81fb6f470.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libstrsim-e0923c6c7531f1d0.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libwait_timeout-329b3b01b0518dc0.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libitoa-9d35911771cbb77e.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libanstream-1924a72a22908389.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libexr-ee5dd978955175b9.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libfloat_cmp-eca896cc4664e0ac.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libflate2-68573e4b62e3213f.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libppv_lite86-763666b6d68ae14e.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libbstr-3af63c928c5d3d7c.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libiana_time_zone-8a27d1b189033ecb.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libfastrand-a3295beae1a95678.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libsha2-174e1b970b269f75.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libmemchr-2ee9ba9a3a2c838d.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtracing_log-73879507102a308c.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libpredicates-89d1aa0a217b3c29.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libbytemuck-802b0dae9493a10c.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtermtree-613bdc973f40390b.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libcolor_quant-1d8abda26d39af25.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/liblebe-2eb42bdd84671267.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libanstyle_parse-927b3a1924883143.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/liblog-a21e7a6f32ba3edd.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libqoi-67139f7830df1106.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/librand_core-8ec99985b777fd05.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/liblock_api-a1f5271005d3aff0.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libunarray-06ea31959a25dc55.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libcrossbeam_deque-6aed88099f2d4705.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/liblock_api-170a0c23e82a3ed7.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libcrc32fast-b6fdfe1311da7b0d.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/librand_chacha-3a7e34aced9633e2.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libppv_lite86-b7154c354c548d77.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libcrossbeam_deque-6aed88099f2d4705.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libryu-e46f1b70c4cf288b.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libnum_traits-36cd343c46da9d7e.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libeither-599288d2e162962d.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/librand_xorshift-9af11362cb2008e7.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/librayon-50a1b06258a9f2b0.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libjpeg_decoder-dc0ee97acd112184.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libblock_buffer-517c02c319fc8465.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libgif-d386bcb3d91212e9.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libwalkdir-91e5bf429ea0de18.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtinyvec-ac71b488a4d986c9.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libqoi-ec499952c03b14f2.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libexr-caf8469cd1770e3f.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libregex_automata-6f43fd1b731aebfb.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libclap-33d45b980a97e02f.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libunicode_security-952bca87ae8ee120.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/librand_chacha-3a7e34aced9633e2.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libimage-e07d7632d2023d84.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/librusty_fork-395cad651e66eee2.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libaho_corasick-4a716ca679841cfd.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtracing-851c1d1c005cf12e.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libmio-225a0540366d30f6.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libpredicates_core-d691f4092f042cad.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtracing_log-b87e63e8d6a32c4c.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libzerocopy_derive-4b3b42a492d4debe.so - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libminiz_oxide-87fc99044cab366b.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libzerocopy-cbe7b6e1f0300c30.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtinyvec-94a03715b4148ef0.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libimage-e07d7632d2023d84.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libcrypto_common-a2528af24cf7c31c.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libserde_json-5c64c488a2dafe5c.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libutf8parse-90df8dfb1731b29c.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libunsafe_libyaml-2ff73f0235c3c7ea.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libanstyle-6b832726eb6f0320.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/liblazy_static-8601acb9c9b44a36.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libgif-112e9753fe631022.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libclap_builder-4b1ac8818007c051.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libimage-14378ba0bc8e9a1b.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libsignal_hook_registry-387213b5054ad498.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libindexmap-7c2b97e06b6eea89.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libclap-33d45b980a97e02f.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libautocfg-92a89194df82d441.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/liblibc-806f16286e70aa48.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libhashbrown-64b65b5d8985f843.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libfloat_cmp-84a1846afcb5f54c.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/liblazy_static-05a686f49d0e3b68.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libindexmap-11ff43ad9f14caa2.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/liblogo_render-3107f2076835ea52.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libunicode_normalization-766b6f7883da1c59.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libstrsim-e0923c6c7531f1d0.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libpng-79dca14a5c405d70.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libadler2-aac30a3415ed6911.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libsmallvec-9359173fb30c361a.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libhalf-cd543d96bd722c46.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libpin_project_lite-b84e1263242038a0.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libfnv-d9e4c0adbef8def8.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/librusttype-7ee7e5b0ab5aaf6e.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libfnv-a12b2d4d3b04cb43.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libdifflib-aebe56be18cf8ce3.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libquote-3018a85c90b8e52e.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libfastrand-a3295beae1a95678.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libbyteorder-fe075a472e771211.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libsame_file-a236546d6430c1cc.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libblock_buffer-2da58a090c2dca2b.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/liblog-068cab2c6107c5f8.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libzmij-01fc5ccbc25ba2c7.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libparking_lot_core-98396dd15024e48f.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libsharded_slab-8c413c06317ce2be.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtinyvec_macros-7589241bef274e27.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libclap_lex-98587f52585c224f.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/librusttype-3a8985ab45f3bb1f.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libmt_logo_render-6ac6c1d9923c1916.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libthiserror-6897bfa465bcf27d.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libjpeg_decoder-b1a9e3c452cc254b.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libindexmap-11ff43ad9f14caa2.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libsignal_hook_registry-c42198dc1b95b1de.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libowned_ttf_parser-14dfac3ef73c5aa8.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libscopeguard-90ffa7c9631b7eab.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libquick_error-021dd688a684f336.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libregex_syntax-c311da0c567610c4.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libclap_lex-98587f52585c224f.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libsocket2-6a4cb75c3045040e.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libunicode_security-983306f94dea1661.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libzune_inflate-3dfd97b68127de27.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libbitflags-e149a816959374b3.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libchrono-97ee3c89a50e589e.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libcrossbeam_epoch-c0032f7a6c969374.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtokio_macros-7c9cf9d7a95c1514.so - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libsocket2-6a4cb75c3045040e.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/librand-27888c08c45ba621.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libwalkdir-9127516f9eee0552.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/librand_core-5014e2aaffce87b7.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libanyhow-98ef2bc94004cb3d.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libmt_logo_render-3777f8ca53605e99.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/mt_logo_render-d882f40933c8e7a6 - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libequivalent-ffae6dac19e18ae4.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libadler2-aac30a3415ed6911.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libanyhow-fadeaa8917397966.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/librustix-85337eb656ed6bf4.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libiana_time_zone-8a27d1b189033ecb.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libanstyle-9c50b42ef6c4e9a1.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libserde_yaml-08ed107869de7c6b.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/liblazy_static-8601acb9c9b44a36.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libpin_project_lite-b84e1263242038a0.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libsharded_slab-8c413c06317ce2be.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libversion_check-f603c0c578371d71.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libheck-3963dfc78e9f7b45.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libversion_check-f603c0c578371d71.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/librand_core-5014e2aaffce87b7.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libbitflags-72760085f07d754c.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libjpeg_decoder-b1a9e3c452cc254b.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libexr-caf8469cd1770e3f.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libhashbrown-0c22b98a874227ac.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libflate2-ec7a4826630eb341.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtracing_core-e5e4e93b5146b4a9.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libbitflags-f1d1fd77b6ac5598.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/librustix-80ce181554e60dd7.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libsharded_slab-7392bb65c9f79e9b.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/liblog-068cab2c6107c5f8.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/librand-23dd546488bd7e73.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libonce_cell-4341f4892c685a22.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libbyteorder-4beed3d5b8d0dfa7.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libdifflib-aebe56be18cf8ce3.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libmt_logo_render-84517f5abb0a78e8.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libpredicates_core-e540be3e317a236f.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libunsafe_libyaml-936545d2aaf20698.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libnu_ansi_term-84d50177f38947eb.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/librayon-50a1b06258a9f2b0.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libbit_field-a219c08ca4a5745e.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/mt_logo_render-1373bb418b07701a - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libserde_derive-a3e33015b950e2ea.so - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libgeneric_array-12d5c26ce131d9e3.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libfdeflate-6a9a13138fda94bd.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libwait_timeout-0e1cc86274540a13.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libweezl-1103148c10964d5c.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libsha2-bbe029b55b579d59.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libmt_logo_render-9fa31655f4fc613f.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/librand_xorshift-be0e8906dad6e0bd.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libanstyle_query-4db024a052cc4031.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtempfile-f061641ac415f937.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libis_terminal_polyfill-d82cbf5ad9f360f5.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libserde_yaml-187a0430f27d0a58.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libclap-6be59d99011dc984.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libbit_field-a219c08ca4a5745e.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libcpufeatures-d1a56c9f05f34e94.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libgetrandom-a10300235dd8787e.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libgetrandom-a10300235dd8787e.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libiana_time_zone-876ff0728c646462.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libfdeflate-6a9a13138fda94bd.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/liblogo_render-c9919c040e4bef42.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libfloat_cmp-eca896cc4664e0ac.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtokio-29c1073018809c87.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtracing_attributes-182fa39294dbc53e.so - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/liblogo_render-1f21500e0776bcf3.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libab_glyph_rasterizer-8631f7a8646cef51.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libpng-c294ebb45a62d2c5.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libcfg_if-ac9712055968a5f2.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/librustix-85337eb656ed6bf4.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libab_glyph_rasterizer-78012871d73f40b5.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libanstyle_parse-927b3a1924883143.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/librusty_fork-24eae5a0eef5069c.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libassert_cmd-2c1864142457d7d1.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtempfile-f061641ac415f937.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libmemchr-05d8456d4366b9b5.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libclap_lex-968343cc733642c4.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libmt_logo_render-84517f5abb0a78e8.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libab_glyph_rasterizer-8631f7a8646cef51.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtypenum-aa22acb71659346b.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libbyteorder-fe075a472e771211.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libproptest-58adba183a33257d.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libmt_logo_render-30c9536133c8515e.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libproptest-371c62dd3b025a36.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libttf_parser-aec6cd651f8e061f.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/logo_render-644b188d73947436 - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtracing_core-820b253d9337c87d.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libequivalent-05732797235cbc72.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/librusttype-3a8985ab45f3bb1f.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libbstr-93cdde6a21e6be80.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libcrypto_common-ce2dfad9c7c48d70.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libanstyle-6b832726eb6f0320.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libgeneric_array-12d5c26ce131d9e3.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libwait_timeout-329b3b01b0518dc0.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libchrono-97ee3c89a50e589e.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libunicode_script-cb6c578be2838254.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/librayon_core-7d3da976dad6dea2.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libitoa-81bc74c7417e3a77.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libmatchers-f60ad579af5fd1f9.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libutf8parse-90df8dfb1731b29c.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libitoa-9d35911771cbb77e.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libscopeguard-90ffa7c9631b7eab.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtypenum-aa22acb71659346b.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libdigest-239e074f896d7805.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/librand_chacha-76969d76ae0da6e5.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libbytes-120c6aa5aa9e1f48.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libthread_local-237f7814f352720f.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libserde-1ff501bf858c2583.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libnu_ansi_term-7610f7e730fb5a26.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libbit_set-ecb5f9d3ed837fb9.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtracing-851c1d1c005cf12e.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libbitflags-6a3f7016c3a70a1a.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libcrossbeam_utils-469f46b385614a3a.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libparking_lot-19da15e1d89ae672.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libpredicates_tree-55e600dabeeefccc.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libthiserror-b33e70aeb77217a9.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libbytemuck-6340df6ae58e2cae.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/librand_xorshift-9af11362cb2008e7.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libadler2-be14787a6cba299a.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libbit_vec-47614801de728089.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libeither-d30b41e48704eee6.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libcolorchoice-1f5d7f74a21b4380.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libbytes-507bc832444940da.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/librand-27888c08c45ba621.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libquick_error-021dd688a684f336.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libminiz_oxide-316b866170e47de7.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libcolorchoice-638f8d7ab2d6228d.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtokio-8b93114867f68458.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libserde_json-5c64c488a2dafe5c.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libgetrandom-3cfee8586483a0fb.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libmatchers-f60ad579af5fd1f9.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/liblebe-e908de2e9d6aa7cf.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libsignal_hook_registry-c42198dc1b95b1de.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libclap_derive-4e038993af701641.so - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libthread_local-237f7814f352720f.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libis_terminal_polyfill-fc37852163e5bccc.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libnormalize_line_endings-0048e32a74f8ea5a.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libbytemuck-802b0dae9493a10c.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libsimd_adler32-9cb707d153324e40.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libregex-28d92d4196d805e8.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libblock_buffer-2da58a090c2dca2b.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libcolorchoice-638f8d7ab2d6228d.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtokio-29c1073018809c87.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libunicode_normalization-51b9794be2bd3ffb.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libmemchr-2ee9ba9a3a2c838d.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtiff-d613b4965c421d28.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libmio-6f945fcd79aed421.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libbit_vec-47614801de728089.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libscopeguard-5df82cf6cb271c5b.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtracing_subscriber-8da2802dfd6db3bc.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libzerocopy-119e7b82199893a0.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libcfg_if-f2a8d03081acc6ca.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libbitflags-e149a816959374b3.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libsimd_adler32-d4f3a17a92093e8d.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libcrossbeam_utils-12973a36485098d6.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtinyvec_macros-c32c790895b26d5f.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtinyvec_macros-c32c790895b26d5f.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtempfile-158dd243fcf387dd.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libzerocopy-119e7b82199893a0.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/liberrno-e6e71752c07542d7.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libcrossbeam_deque-cf8f1f7c221f9946.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtracing_subscriber-8da2802dfd6db3bc.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libzune_inflate-5b6d77d4e991ecea.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libflate2-68573e4b62e3213f.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/liblinux_raw_sys-477537af68a5e0f2.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libregex-56d52b87b650b4dc.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libweezl-1649c31e40430e8d.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libqoi-67139f7830df1106.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libmt_logo_render-4d46a259c4bb8a54.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libbytes-507bc832444940da.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtracing-5f57a95b8128dc18.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libcrossbeam_utils-12973a36485098d6.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtermtree-f0d1ec1896b98c0a.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libcrossbeam_epoch-8dcd22724d287aa0.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libequivalent-ffae6dac19e18ae4.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libheck-3963dfc78e9f7b45.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/librayon_core-efba3999e3db1a0a.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libassert_cmd-2c1864142457d7d1.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libmt_logo_render-4d46a259c4bb8a54.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libserde_yaml-187a0430f27d0a58.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libaho_corasick-1b033bbd021e907e.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libpredicates_core-d691f4092f042cad.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libunsafe_libyaml-936545d2aaf20698.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libparking_lot_core-b8913f30449992f1.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libserde_core-8439ad37fcc7fc7b.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libstrsim-95fe3d2fe164b720.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libsame_file-a236546d6430c1cc.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libparking_lot-19da15e1d89ae672.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libonce_cell-4b22675d120b6b3b.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libfnv-d9e4c0adbef8def8.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libthiserror-b33e70aeb77217a9.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libserde-1ff501bf858c2583.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libcrypto_common-ce2dfad9c7c48d70.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/liblinux_raw_sys-477537af68a5e0f2.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libmt_logo_render-9ed073e3574208c7.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libproc_macro2-c02a7e776fa2043c.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libparking_lot-b916ed803a6e4cea.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libutf8parse-2dd8602fbba11fcb.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libis_terminal_polyfill-d82cbf5ad9f360f5.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libserde_core-8439ad37fcc7fc7b.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libtiff-365139297186efbd.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libassert_cmd-1e4035955d647ee8.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/liberrno-e6e71752c07542d7.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/librusty_fork-395cad651e66eee2.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libunarray-1791f0244e14af44.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libpredicates_tree-55e600dabeeefccc.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libpredicates-c5d1706a95302865.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libfdeflate-e2816363150c924e.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libeither-599288d2e162962d.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/logo_render-bc1390fdb46bc79a - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libsyn-da3a4e82cf03b254.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libsame_file-611ed8c5e99ef2bb.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libanstyle_query-4db024a052cc4031.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libunicode_script-026d130460ef7dc8.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libproc_macro2-c02a7e776fa2043c.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libzmij-29b78cdae1927913.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libsmallvec-a78c834143ae0ecf.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libmatchers-2d009bdf04e269f9.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/deps/libryu-44495dcb1d575033.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/serde_core-f6b920b07dc1e583/build_script_build-f6b920b07dc1e583 - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/serde_json-d842ee346c939f37/build_script_build-d842ee346c939f37 - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/parking_lot_core-2baade8f2c2414e9/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/num-traits-8f9201c8bab17a81/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/rayon-core-7bc2cf5362b8ff67/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/typenum-867981bce50ff4d0/build-script-build - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/zmij-d81a66f96e211c53/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/generic-array-754101b310ae5f08/build_script_build-754101b310ae5f08 - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/serde_json-fc723170c5c6e6c4/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/rustix-59e312690b650a21/build_script_build-59e312690b650a21 - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/thiserror-6bed5dca974daf98/build-script-build - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/getrandom-8786b13b56625c47/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/rustix-ceea4eb0d0461c30/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/rustix-ceea4eb0d0461c30/out/rustix_test_can_compile - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/anyhow-c0ac690f283500bf/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/serde_core-7379b8a249b89788/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/generic-array-087651c05bf4ea62/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/crossbeam-utils-cbfa4bd74229dd70/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/serde-621cbdb0438fe07a/build_script_build-621cbdb0438fe07a - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/anyhow-13c5cf90773273cd/build_script_build-13c5cf90773273cd - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/typenum-dc90dd60fdf9d613/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/thiserror-9034aef32b1fd1dd/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/assert_cmd-e7e7d1434379b111/build-script-build - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/serde-dfd856a21c4f3299/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/crossbeam-utils-f0edf380ef7e3877/build_script_build-f0edf380ef7e3877 - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/assert_cmd-87b23c6efcdbdea5/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/libc-c885e1c90b72c148/build_script_build-c885e1c90b72c148 - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/zmij-61700e05d122052d/build-script-build - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/zerocopy-d03e6376a3a9fb0a/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/crc32fast-b7a281ec52585cd1/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/quote-93e49b5e253dd21f/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/getrandom-26e37080c46acb08/build-script-build - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/proc-macro2-74fa01f598ab62d7/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/libc-c82ecdc06f085cf0/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/parking_lot_core-d8f9a5917d093f3b/build_script_build-d8f9a5917d093f3b - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/crc32fast-c02721b04ccd3df7/build_script_build-c02721b04ccd3df7 - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/num-traits-ffe5302f48fb1d9b/build-script-build - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/rayon-core-54623884d65467a5/build_script_build-54623884d65467a5 - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/zerocopy-191169c16e967abe/build_script_build-191169c16e967abe - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/proc-macro2-0e65c40bf8231895/build_script_build-0e65c40bf8231895 - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/debug/build/quote-5cb9b4995b33d70d/build-script-build - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/libmt_logo_render.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/.cargo-lock - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/logo-render - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libdigest-86a3d67fa217bf02.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libclap_derive-78ab6a7d41935436.so - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libcolorchoice-eb20bdd0fab7c9f5.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libunicode_security-8f2a542bc51b9247.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libpin_project_lite-3bcd9419fdc63bfd.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libcrossbeam_utils-81b021494019898c.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libindexmap-3dd7e3a64455709c.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libdigest-86a3d67fa217bf02.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libhalf-ce1ec0885ed6cbd6.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libunicode_script-81e10c82a0c7acbe.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libregex_syntax-3639138e986b646b.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/librayon_core-8913a0815ea28555.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libcrossbeam_deque-8280923d5d999c08.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libzerocopy_derive-a440da8fc3322049.so - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libunicode_ident-136f53ed2590818a.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libis_terminal_polyfill-2ef4af84bfeb831a.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libzerocopy-e39c11ed0768d00a.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libqoi-b723883483a62296.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libserde_json-89fb45315165e1d5.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libryu-e9479625fad21689.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libbitflags-18d0ac8be2b8377b.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libanyhow-9a94ba4ff758d2c3.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libiana_time_zone-90875773d5a16973.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libsimd_adler32-fcbad19a950ee61e.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libequivalent-aaf2892a7ae403fc.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libtypenum-73b2e13a98789f4b.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libab_glyph_rasterizer-fb805bd5b778c402.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libquote-9d11bcee0aeda94c.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libtracing_core-d0da8305443d6d40.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/liblebe-a5b75dad5988e04d.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libjpeg_decoder-497a4c82f13c115a.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libserde-61ae246c9b756a14.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libanstyle_query-f7e808d5f3048dc3.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libsame_file-a5bcbc2c5134b5b2.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libtinyvec_macros-862a4cc65806a7ab.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libtinyvec-922cd14383f21a6c.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libthiserror_impl-db309359a03c5d3a.so - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libanstyle-925cf606d8ae6ce5.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libutf8parse-af43da6c53f47b3e.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libcrypto_common-79f0af334ef69ba0.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libbyteorder-874c5a6d7475d6a9.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libnum_traits-34e98dbae4131407.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libsharded_slab-7d62c1f88d344333.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libregex_automata-8e89580f35b19fcc.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libhashbrown-d16ada57a8adc842.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libsharded_slab-7d62c1f88d344333.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libab_glyph_rasterizer-fb805bd5b778c402.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libtracing_subscriber-0c3d1f42f6d80f68.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libowned_ttf_parser-fc10e9c7c30e6a7a.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libwalkdir-5e43256f27ec5a44.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libpng-586910c9348a3c60.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libregex_automata-8e89580f35b19fcc.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libjpeg_decoder-497a4c82f13c115a.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libmatchers-a5fb94773184fd07.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libunicode_security-8f2a542bc51b9247.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libqoi-b723883483a62296.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libminiz_oxide-308f352e45bb09dc.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libpng-586910c9348a3c60.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libimage-f7ce463361414274.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libserde_yaml-a47175cad3f8ab22.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libclap_builder-b3fade188f169a72.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libversion_check-0a7f57e12d5bdc7b.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libeither-6715ad036d8addf6.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/librusttype-ef85682e79737b9b.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libcolorchoice-eb20bdd0fab7c9f5.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libcrossbeam_epoch-40ea9882fa662b83.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libzune_inflate-06a413032c5db195.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libsmallvec-e4602dc0e21e925d.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libiana_time_zone-90875773d5a16973.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/liblazy_static-bfdde06600c2b05b.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libonce_cell-4347a7db0d5e2cdc.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libsame_file-a5bcbc2c5134b5b2.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libtracing_attributes-18e70001ec511604.so - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/librusttype-ef85682e79737b9b.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libequivalent-aaf2892a7ae403fc.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libblock_buffer-b2a6315404f85d6c.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libhalf-ce1ec0885ed6cbd6.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libtracing_log-67adcab1c174267b.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libtracing_core-d0da8305443d6d40.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libautocfg-b5371640a4148f6c.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libtracing_log-67adcab1c174267b.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libtracing_subscriber-0c3d1f42f6d80f68.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libblock_buffer-b2a6315404f85d6c.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libmatchers-a5fb94773184fd07.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libserde_json-89fb45315165e1d5.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libautocfg-b5371640a4148f6c.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libutf8parse-af43da6c53f47b3e.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libanstream-3ca7dc8cf59af412.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libzerocopy-e39c11ed0768d00a.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libwalkdir-5e43256f27ec5a44.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libunicode_normalization-c3aef5f8f3f0deb1.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libflate2-55bdc88298606ad1.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libgif-42028136d4c25633.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libitoa-9b5b5317e719e406.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libunsafe_libyaml-43c9248cec64c050.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libtracing-191bddacb7474a5b.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libchrono-b35d33492550883b.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libryu-e9479625fad21689.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libclap_lex-c56280f6cc0a82d6.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libclap_lex-c56280f6cc0a82d6.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libis_terminal_polyfill-2ef4af84bfeb831a.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libadler2-a2eae21fc9456c6c.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libowned_ttf_parser-fc10e9c7c30e6a7a.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libtypenum-73b2e13a98789f4b.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libsmallvec-e4602dc0e21e925d.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libmemchr-91577964295a66b3.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libweezl-79d1d5592a0f03dc.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libstrsim-512bcfc4d4629a7d.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/liblazy_static-bfdde06600c2b05b.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libbytemuck-23b54ddce61b8eaa.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libcrossbeam_epoch-40ea9882fa662b83.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libttf_parser-2d37f643b0aa63b1.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libchrono-b35d33492550883b.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libcrypto_common-79f0af334ef69ba0.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libsimd_adler32-fcbad19a950ee61e.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libunicode_script-81e10c82a0c7acbe.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libexr-fe2cb0570207fec2.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/liblog-155f8ff584b96da5.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libanstream-3ca7dc8cf59af412.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libnum_traits-34e98dbae4131407.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libcrossbeam_deque-8280923d5d999c08.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libunicode_normalization-c3aef5f8f3f0deb1.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libregex-f3c004b7b39010a4.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libheck-c4d0c659e9c47c53.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libanyhow-9a94ba4ff758d2c3.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libbit_field-97b95180dd485b2c.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libthread_local-270559698eb6ac8e.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/librayon_core-8913a0815ea28555.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libcolor_quant-bd4fb83e92469de4.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libregex_syntax-3639138e986b646b.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libeither-6715ad036d8addf6.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libzmij-84f415b3b7e0a64b.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libttf_parser-2d37f643b0aa63b1.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libproc_macro2-a6baf73af88ae46d.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libcpufeatures-b71a4f5b85743414.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libaho_corasick-7132b9143b765c80.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/liblebe-a5b75dad5988e04d.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/librayon-1486b42d97ced935.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libitoa-9b5b5317e719e406.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libcpufeatures-b71a4f5b85743414.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libcrc32fast-d5378920ae370c8f.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libbit_field-97b95180dd485b2c.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libcrossbeam_utils-81b021494019898c.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libunsafe_libyaml-43c9248cec64c050.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libonce_cell-4347a7db0d5e2cdc.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libbyteorder-874c5a6d7475d6a9.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libclap_builder-b3fade188f169a72.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libzmij-84f415b3b7e0a64b.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libanstyle_parse-3df7b5e531937610.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libimage-f7ce463361414274.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/librayon-1486b42d97ced935.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libmt_logo_render-84813683a36f716b.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libpin_project_lite-3bcd9419fdc63bfd.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libthiserror-fc0c5888b0e1a102.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libgeneric_array-dcd3b9a03219524a.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libtiff-aec6f5195f3aaa75.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libfdeflate-b51bf22e8368ede0.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libmemchr-91577964295a66b3.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libbytemuck-23b54ddce61b8eaa.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libsyn-a407991769356242.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/liblog-155f8ff584b96da5.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libaho_corasick-7132b9143b765c80.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libbitflags-18d0ac8be2b8377b.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libzune_inflate-06a413032c5db195.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libserde_yaml-a47175cad3f8ab22.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libtracing-191bddacb7474a5b.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libstrsim-512bcfc4d4629a7d.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libnu_ansi_term-b4c1dcfb17a6a6a2.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libclap-9dad457e957384ee.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libserde_core-15dd3a31bd575b93.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libanstyle-925cf606d8ae6ce5.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libcfg_if-f861c443d2f24497.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libcolor_quant-bd4fb83e92469de4.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libexr-fe2cb0570207fec2.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libsha2-d7392e96269c5893.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libadler2-a2eae21fc9456c6c.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libcrc32fast-d5378920ae370c8f.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libanstyle_query-f7e808d5f3048dc3.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libheck-c4d0c659e9c47c53.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libminiz_oxide-308f352e45bb09dc.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libtiff-aec6f5195f3aaa75.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libthread_local-270559698eb6ac8e.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libquote-9d11bcee0aeda94c.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libclap-9dad457e957384ee.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libthiserror-fc0c5888b0e1a102.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libunicode_ident-136f53ed2590818a.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libgif-42028136d4c25633.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libsha2-d7392e96269c5893.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libsyn-a407991769356242.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libnu_ansi_term-b4c1dcfb17a6a6a2.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libserde-61ae246c9b756a14.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libflate2-55bdc88298606ad1.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libtinyvec-922cd14383f21a6c.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libversion_check-0a7f57e12d5bdc7b.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libserde_core-15dd3a31bd575b93.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libweezl-79d1d5592a0f03dc.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libserde_derive-b539f0f6c46cb6ce.so - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libproc_macro2-a6baf73af88ae46d.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libindexmap-3dd7e3a64455709c.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libanstyle_parse-3df7b5e531937610.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libcfg_if-f861c443d2f24497.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libregex-f3c004b7b39010a4.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libgeneric_array-dcd3b9a03219524a.rlib - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libfdeflate-b51bf22e8368ede0.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libhashbrown-d16ada57a8adc842.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/deps/libtinyvec_macros-862a4cc65806a7ab.rmeta - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/build/zerocopy-87b83e98ea74ebea/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/build/serde_core-1bca2b8884db8eba/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/build/serde_json-e578ca147a360e09/build_script_build-e578ca147a360e09 - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/build/quote-e7ed6c50095e94b9/build_script_build-e7ed6c50095e94b9 - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/build/rayon-core-fabe56f464271f2f/build_script_build-fabe56f464271f2f - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/build/crossbeam-utils-ed4974530b79a38d/build_script_build-ed4974530b79a38d - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/build/rayon-core-c2e5c18948fb2a77/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/build/serde-df623ff94c3c493f/build-script-build - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/build/generic-array-f032783fcf8054ba/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/build/zmij-aa9d582057abf909/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/build/typenum-70cefa78820bee31/build-script-build - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/build/serde-8cb93f4161a838d6/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/build/anyhow-877ef90bc52370ed/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/build/proc-macro2-d5b650fe5dab9708/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/build/thiserror-03fe137b983fd15a/build_script_build-03fe137b983fd15a - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/build/crc32fast-3225465871b93709/build-script-build - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/build/serde_json-b37abf5e3d969f24/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/build/num-traits-57d55528909dccdb/build_script_build-57d55528909dccdb - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/build/crossbeam-utils-b5522fe9e1032d26/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/build/quote-00ed0ce342d50ba7/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/build/serde_core-35abc93f65c72e06/build-script-build - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/build/anyhow-68bd442f5a13db39/build_script_build-68bd442f5a13db39 - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/build/typenum-2265a6e42ca1921c/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/build/num-traits-8ce14537697351b8/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/build/zmij-4b922f1fd55bd7cc/build_script_build-4b922f1fd55bd7cc - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/build/zerocopy-cf64722951f048f0/build_script_build-cf64722951f048f0 - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/build/crc32fast-7507788712408072/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/build/thiserror-f5ff1dc75f36b9d0/stderr - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/build/generic-array-8c0d804ccadadd11/build_script_build-8c0d804ccadadd11 - Added missing newline at end of file
+- **eof**: /home/spencer/git/MT-logo-render/target/release/build/proc-macro2-a93b65539d510ac5/build_script_build-a93b65539d510ac5 - Added missing newline at end of file
+- **formatting**: rust - Applied cargo fmt formatting
+
+## 📊 Summary:
+
+- Total fixes attempted: 2237
+- Successfully applied: 2237
+- Failed to apply: 0
+- Success rate: 100.0%

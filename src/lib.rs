@@ -3,8 +3,9 @@
 //! A Human Execution Engine (HEE) for deterministic logo asset generation.
 //! This crate provides secure, deterministic rendering of logo assets from recipes.
 
-pub mod security;
+pub mod cache;
 pub mod recipe;
+pub mod security;
 
 use thiserror::Error;
 
@@ -18,6 +19,9 @@ pub enum Error {
 
     #[error("JSON parsing error: {0}")]
     Json(#[from] serde_json::Error),
+
+    #[error("YAML parsing error: {0}")]
+    Yaml(#[from] serde_yaml::Error),
 
     #[error("Image processing error: {0}")]
     Image(#[from] image::ImageError),
@@ -33,3 +37,9 @@ pub type Result<T> = std::result::Result<T, Error>;
 
 // Re-export security types
 pub use security::{SecurityValidator, ValidationResult};
+
+// Re-export recipe types
+pub use recipe::{resolve_effective_recipe, CanonicalRecipe, Recipe};
+
+// Re-export cache types
+pub use cache::{Cache, CacheEntry, CacheFilters, OutputInfo};

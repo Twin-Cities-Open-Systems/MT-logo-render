@@ -1,11 +1,13 @@
 # CLI Contract (v1.0)
 
 ## Overview
+
 MT-logo-render provides a command-line interface with four core commands. All commands support JSON input/output for machine consumption and human-readable formatting for interactive use.
 
 ## Global Options
 
 ### Asset Root (`--asset-root <DIR>`)
+
 - **Default**: `assets/logo`
 - **Description**: Root directory for cache and generated assets
 - **Structure**:
@@ -16,11 +18,13 @@ MT-logo-render provides a command-line interface with four core commands. All co
   ```
 
 ### Output Format (`--format <FORMAT>`)
+
 - **Values**: `json`, `yaml`
 - **Default**: `json`
 - **Description**: Output format for machine-readable responses
 
 ### Force Mode (`--force`)
+
 - **Type**: Flag
 - **Description**: Bypass cache checks (useful for testing/debugging)
 
@@ -31,6 +35,7 @@ MT-logo-render provides a command-line interface with four core commands. All co
 **Purpose**: Compute deterministic filenames and check existence without rendering.
 
 **Usage**:
+
 ```bash
 logo-render resolve [OPTIONS] <RECIPE>
 logo-render resolve [OPTIONS] --file <PATH>
@@ -38,11 +43,13 @@ logo-render resolve [OPTIONS] -  # Read from stdin
 ```
 
 **Arguments**:
+
 - `<RECIPE>`: Inline JSON/YAML recipe string
 - `--file <PATH>`: Path to recipe file
 - `-`: Read recipe from stdin
 
 **Examples**:
+
 ```bash
 # Inline recipe
 logo-render resolve '{"shape": "circle", "size": "256x256", "base_color": "blue"}'
@@ -55,6 +62,7 @@ echo '{"shape": "square", "size": "128x128", "base_color": "red"}' | logo-render
 ```
 
 **Output Schema** (JSON):
+
 ```json
 {
   "requested_spec": {
@@ -84,6 +92,7 @@ echo '{"shape": "square", "size": "128x128", "base_color": "red"}' | logo-render
 ```
 
 **Exit Codes**:
+
 - `0`: Resolution successful (files may or may not exist)
 - `1`: Error (invalid recipe, IO failure, etc.)
 
@@ -92,6 +101,7 @@ echo '{"shape": "square", "size": "128x128", "base_color": "red"}' | logo-render
 **Purpose**: Ensure requested outputs exist, generating on cache miss.
 
 **Usage**:
+
 ```bash
 logo-render render [OPTIONS] <RECIPE>
 logo-render render [OPTIONS] --file <PATH>
@@ -99,12 +109,14 @@ logo-render render [OPTIONS] --targets png,ansi -
 ```
 
 **Arguments**:
+
 - `<RECIPE>`: Inline JSON/YAML recipe string
 - `--file <PATH>`: Path to recipe file
 - `--targets <LIST>`: Comma-separated list of targets (png,ansi,ansi256,md,html)
 - `-`: Read recipe from stdin
 
 **Target Options**:
+
 - `png`: PNG image output (default)
 - `ansi`: Truecolor ANSI terminal output (default)
 - `ansi256`: 256-color ANSI fallback
@@ -112,6 +124,7 @@ logo-render render [OPTIONS] --targets png,ansi -
 - `html`: HTML wrapper (base64 embed or reference)
 
 **Examples**:
+
 ```bash
 # Basic render
 logo-render render '{"shape": "triangle", "size": "128x128", "base_color": "green"}'
@@ -124,6 +137,7 @@ logo-render render --force '{"shape": "hex", "size": "256x256", "base_color": "p
 ```
 
 **Output Schema** (JSON):
+
 ```json
 {
   "requested_spec": {
@@ -165,6 +179,7 @@ logo-render render --force '{"shape": "hex", "size": "256x256", "base_color": "p
 ```
 
 **Exit Codes**:
+
 - `0`: All requested outputs exist after command completion
 - `1`: Error (invalid recipe, rendering failure, IO error)
 - `2`: Partial success (some outputs failed, but command completed)
@@ -174,17 +189,20 @@ logo-render render --force '{"shape": "hex", "size": "256x256", "base_color": "p
 **Purpose**: Environment self-check and capability reporting.
 
 **Usage**:
+
 ```bash
 logo-render doctor [OPTIONS]
 ```
 
 **Checks Performed**:
+
 - Asset root directory writable
 - Font paths readable (if configured)
 - System capabilities summary
 - Version and build information
 
 **Output Schema** (JSON):
+
 ```json
 {
   "version": "1.0.0",
@@ -212,6 +230,7 @@ logo-render doctor [OPTIONS]
 ```
 
 **Issues Format**:
+
 ```json
 {
   "issues": [
@@ -226,6 +245,7 @@ logo-render doctor [OPTIONS]
 ```
 
 **Exit Codes**:
+
 - `0`: Environment OK, all capabilities available
 - `1`: Issues detected that may impact functionality
 
@@ -234,11 +254,13 @@ logo-render doctor [OPTIONS]
 **Purpose**: Query cache index with optional filtering.
 
 **Usage**:
+
 ```bash
 logo-render list [OPTIONS] [FILTERS...]
 ```
 
 **Filter Options**:
+
 - `--shape <SHAPE>`: Filter by shape (circle, square, triangle, hex)
 - `--size <SIZE>`: Filter by size (WxH format)
 - `--base-color <COLOR>`: Filter by base color
@@ -250,6 +272,7 @@ logo-render list [OPTIONS] [FILTERS...]
 - `--missing`: Only show entries with missing files
 
 **Examples**:
+
 ```bash
 # List all cached entries
 logo-render list
@@ -265,6 +288,7 @@ logo-render list --label "MT"
 ```
 
 **Output Schema** (JSON):
+
 ```json
 [
   {
@@ -303,12 +327,14 @@ logo-render list --label "MT"
 ```
 
 **Exit Codes**:
+
 - `0`: Query successful
 - `1`: Error (IO failure, invalid filters)
 
 ## Recipe Schema
 
 ### Base Recipe Structure
+
 ```json
 {
   "shape": "circle" | "square" | "triangle" | "hex",
@@ -325,16 +351,19 @@ logo-render list --label "MT"
 ```
 
 ### Color Formats
+
 - **Named colors**: `"red"`, `"blue"`, `"green"`, etc.
 - **Hex colors**: `"#ff0000"`, `"00ff00"`, `"0000ff"`
 - **Short hex**: `"f00"`, `"0f0"`, `"00f"`
 
 ### Size Format
+
 - **Format**: `"<WIDTH>x<HEIGHT>"`
 - **Examples**: `"256x256"`, `"128x64"`, `"512x512"`
 - **Constraints**: Minimum 16x16, maximum 4096x4096
 
 ### Fill Patterns
+
 - **solid**: Single color fill
 - **pie:<DEGREES>**: Pie slice from top (circle only, degrades to solid)
 - **split:<SEGMENTS>**: Equal divisions (2/3/6 for hex, 2 for others)
@@ -343,6 +372,7 @@ logo-render list --label "MT"
 ## Error Handling
 
 ### Error Response Format
+
 ```json
 {
   "error": {
@@ -359,6 +389,7 @@ logo-render list --label "MT"
 ```
 
 ### Common Error Types
+
 - **InvalidRecipe**: Malformed or invalid recipe specification
 - **RenderingFailed**: Rendering pipeline error
 - **CacheCorrupted**: Cache index inconsistency
@@ -366,7 +397,9 @@ logo-render list --label "MT"
 - **FontError**: Font loading or rendering issues
 
 ### Error Suggestions
+
 All errors include actionable suggestions:
+
 - "Use one of: [valid_values]"
 - "Ensure asset root is writable: chmod +w assets/logo"
 - "Check font file exists and is readable"
@@ -374,16 +407,19 @@ All errors include actionable suggestions:
 ## Input/Output Formats
 
 ### JSON Input
+
 - Standard JSON parsing
 - Comments not supported (use YAML for comments)
 - Unicode strings supported
 
 ### YAML Input
+
 - Alternative to JSON for human editing
 - Comments and multi-line strings supported
 - Converted to internal JSON representation
 
 ### Output Formatting
+
 - **JSON**: Machine-readable, single-line or pretty-printed
 - **YAML**: Human-readable with comments
 - Consistent field ordering for deterministic diffs
@@ -391,41 +427,137 @@ All errors include actionable suggestions:
 ## Environment Variables
 
 ### LOGO_RENDER_ASSET_ROOT
+
 - **Default**: `assets/logo`
 - **Description**: Override default asset root directory
 
 ### LOGO_RENDER_FONT_PATH
+
 - **Default**: None
 - **Description**: Default font path for Unicode glyph rendering
 
 ### LOGO_RENDER_FORCE_COLOR
+
 - **Values**: `true`, `false`
 - **Default**: Auto-detect
 - **Description**: Force ANSI color output (for testing)
 
 ## Exit Code Summary
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| 0 | Success | Command completed successfully |
-| 1 | Error | Fatal error, command failed |
-| 2 | Partial | Some operations succeeded, some failed |
+| Code | Meaning | Description                            |
+| ---- | ------- | -------------------------------------- |
+| 0    | Success | Command completed successfully         |
+| 1    | Error   | Fatal error, command failed            |
+| 2    | Partial | Some operations succeeded, some failed |
 
 ## Compatibility Notes
 
 ### Platform Support
+
 - **Linux**: Primary target, full feature support
 - **macOS**: Full support with native font rendering
 - **Windows**: Full support with path separator handling
 
 ### Terminal Compatibility
+
 - **Truecolor**: Modern terminals (iTerm2, GNOME Terminal, Windows Terminal)
 - **256-color**: Fallback for older terminals
 - **Basic**: Graceful degradation to no colors
 
 ### File System Requirements
+
 - **Unicode paths**: Full Unicode filename support
 - **Atomic renames**: POSIX-compliant file systems
 - **Permissions**: Read/write access to asset root
+
+## Development Commands
+
+### Recommended Cargo Commands
+
+For development work, use the `--quiet` flag to reduce output noise:
+
+```bash
+# Clean build output
+cargo build --quiet
+
+# Run tests with minimal noise
+cargo test --quiet
+
+# Lint with reduced verbosity
+cargo clippy --quiet
+
+# Format code
+cargo fmt --quiet
+
+# Run specific tests
+cargo test --quiet -- resolve_command
+cargo test --quiet -- render_command
+
+# Benchmark performance
+cargo bench --quiet
+
+# Check for security vulnerabilities
+cargo audit --quiet
+```
+
+### Non-Interactive Command Requirements
+
+**CRITICAL**: All commands must be fully automated and never trigger user's editor or pager.
+
+#### Git Commands
+
+- Always use `git --no-pager` to prevent pager activation
+- Use `GIT_EDITOR=true` or `GIT_EDITOR=:` to prevent editor activation
+- Add `--no-edit` to skip editor for commit operations
+- Use `--quiet` flags to reduce output and prevent pager
+
+#### Safe Command Examples
+
+```bash
+git --no-pager status
+git --no-pager diff --name-only
+git --no-pager log --oneline -10
+GIT_EDITOR=true git commit --no-edit -m "message"
+git --no-pager push origin HEAD --force-with-lease
+```
+
+#### Unsafe Command Examples (AVOID)
+
+```bash
+git status          # Can trigger pager
+git diff            # Can trigger pager
+git commit          # Can trigger editor
+git rebase          # Can trigger editor
+```
+
+#### Other Commands
+
+- Use `--quiet` flags to reduce output
+- Redirect output to `/dev/null` when not needed
+- Use `HEAD` instead of branch names to avoid editor prompts
+- Use `--force`, `--assume-yes` flags to avoid interactive prompts
+
+### Development Workflow
+
+1. **Build**: `cargo build --quiet`
+1. **Test**: `cargo test --quiet`
+1. **Lint**: `cargo clippy --quiet`
+1. **Format**: `cargo fmt --quiet`
+1. **Audit**: `cargo audit --quiet`
+
+### Debug Commands
+
+For debugging, you can override the quiet mode:
+
+```bash
+# Verbose build for debugging
+cargo build --verbose
+
+# Debug logging
+RUST_LOG=debug ./target/debug/logo-render render --file recipe.json
+
+# Profile build
+cargo build --profile=dev --quiet
+```
 
 This contract provides a stable, machine-readable interface for integrating MT-logo-render into build systems, scripts, and other tools.

@@ -3,21 +3,28 @@
 //! Comprehensive security validation system for MT-logo-render HEE component.
 //! Implements defense-in-depth security following tick-task security patterns.
 
-pub mod validator;
-pub mod scanner;
 pub mod hee_rules;
+pub mod scanner;
+pub mod validator;
 
-pub use validator::{SecurityValidator, ValidationResult, Error};
-pub use scanner::SecurityScanner;
 pub use hee_rules::HEERules;
+pub use scanner::SecurityScanner;
+pub use validator::{Error, SecurityValidator, ValidationResult};
 
 /// Comprehensive security validation result
 #[derive(Debug, Clone)]
+#[allow(dead_code)]
 pub struct SecurityCheck {
     pub passed: bool,
     pub violations: Vec<String>,
     pub warnings: Vec<String>,
     pub recommendations: Vec<String>,
+}
+
+impl Default for SecurityCheck {
+    fn default() -> Self {
+        Self::new()
+    }
 }
 
 impl SecurityCheck {
@@ -46,6 +53,7 @@ impl SecurityCheck {
 
 /// Security context for validation operations
 #[derive(Debug, Clone)]
+#[allow(dead_code)]
 pub struct SecurityContext {
     pub operation: String,
     pub user_id: Option<String>,

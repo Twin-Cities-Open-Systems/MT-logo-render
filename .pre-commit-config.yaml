@@ -32,7 +32,7 @@ repos:
         files: Cargo.toml
 
   # General code quality
-  - repo: git@github.com:pre-commit/pre-commit-hooks.git
+  - repo: https://github.com/pre-commit/pre-commit-hooks.git
     rev: v4.4.0
     hooks:
       - id: trailing-whitespace
@@ -58,8 +58,8 @@ repos:
         args: ['--maxkb=500']
 
   # Markdown formatting
-  - repo: git@github.com:executablebooks/mdformat.git
-    rev: 0.7.16
+  - repo: https://github.com/executablebooks/mdformat.git
+    rev: 0.7.19
     hooks:
       - id: mdformat
         name: Format Markdown
@@ -68,6 +68,19 @@ repos:
           - mdformat-gfm
           - mdformat-frontmatter
           - mdformat-footnote
+
+  # Documentation organization validation
+  - repo: local
+    hooks:
+      - id: validate-doc-organization
+        name: Validate Documentation Organization
+        description: Ensure agent docs are in prompts/ and human docs are in docs/
+        entry: bash -c "./scripts/validate_doc_organization.sh"
+        language: system
+        types: [markdown, text]
+        pass_filenames: false
+        always_run: true
+        stages: [commit, push]
 
 ci:
   autofix_commit_msg: |
