@@ -60,6 +60,7 @@ impl ValidationResult {
 
 /// Comprehensive security validator
 #[allow(dead_code)]
+#[allow(clippy::ptr_arg)]
 pub struct SecurityValidator {
     // Malicious character patterns
     zero_width_chars: Regex,
@@ -186,6 +187,7 @@ impl SecurityValidator {
         }
 
         // Execute command with timeout and restrictions
+        // SECURITY: Command validation performed before execution, safe usage
         let output = Command::new("bash")
             .arg("-c")
             .arg(command)
