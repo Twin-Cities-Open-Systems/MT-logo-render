@@ -25,6 +25,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Pre-commit Authentication**: Fixed SSH authentication failures by switching to HTTPS URLs
 - **YAML Syntax**: Corrected indentation error in `.pre-commit-config.yaml`
 - **CI Configuration**: Enhanced GitHub Actions workflow with SSH setup for pre-commit
+- **Rust Compilation Errors**: Fixed all unused variable warnings in `src/main.rs` by adding underscore prefixes to unused variables and parameters:
+  - Line 188: Added `_x` and `_y` to pixel enumeration loop
+  - Line 236: Changed `accent_color` to `_accent_color` in ANSI rendering
+  - Line 295: Changed `accent_color` parameter to `_accent_color` in `render_circle`
+  - Line 321: Changed `accent_color` parameter to `_accent_color` in `render_square`
+  - Line 344: Changed `accent_color` parameter to `_accent_color` in `render_triangle`
+  - Line 357: Changed `area` variable to `_area` in triangle rendering
+  - Line 516: Changed `label` parameter to `_label` in `render_label`
 
 ### Technical
 

@@ -185,7 +185,7 @@ fn render_png(recipe: &Recipe, output_path: &Path) -> Result<()> {
         .unwrap_or(base_color);
 
     // Fill background
-    for (x, y, pixel) in img.enumerate_pixels_mut() {
+    for (_x, _y, pixel) in img.enumerate_pixels_mut() {
         *pixel = Rgba([base_color.0, base_color.1, base_color.2, 255]);
     }
 
@@ -233,7 +233,7 @@ fn render_ansi(recipe: &Recipe, output_path: &Path) -> Result<()> {
 
     // Parse colors
     let base_color = parse_hex_color(&canonical.base_color)?;
-    let accent_color = canonical
+    let _accent_color = canonical
         .accent_color
         .as_ref()
         .and_then(|c| parse_hex_color(c).ok())
@@ -341,7 +341,7 @@ fn render_triangle(
     img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
     recipe: &mt_logo_render::CanonicalRecipe,
     base_color: (u8, u8, u8),
-    accent_color: (u8, u8, u8),
+    _accent_color: (u8, u8, u8),
 ) {
     let width = recipe.size.width as f32;
     let height = recipe.size.height as f32;
@@ -354,7 +354,7 @@ fn render_triangle(
         let yf = y as f32;
 
         // Simple triangle check (point-in-triangle)
-        let area = 0.0; // Simplified calculation for now
+        let _area = 0.0; // Simplified calculation for now
 
         if yf >= top_y && yf <= base_y {
             let progress = (yf - top_y) / (base_y - top_y);
@@ -374,7 +374,7 @@ fn render_hex(
     img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
     recipe: &mt_logo_render::CanonicalRecipe,
     base_color: (u8, u8, u8),
-    accent_color: (u8, u8, u8),
+    _accent_color: (u8, u8, u8),
 ) {
     let width = recipe.size.width as f32;
     let height = recipe.size.height as f32;
@@ -513,7 +513,7 @@ fn render_badge(
 /// Render text label (simplified - just draw a colored rectangle for now)
 fn render_label(
     img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
-    label: &str,
+    _label: &str,
     recipe: &mt_logo_render::CanonicalRecipe,
 ) -> Result<()> {
     // For now, just draw a colored rectangle in the bottom area
