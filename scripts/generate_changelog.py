@@ -38,7 +38,7 @@ def main():
     parser = argparse.ArgumentParser(description='Generate changelog for release')
     parser.add_argument('--version', required=True, help='Version to extract')
     parser.add_argument('--output', default='changelog.md', help='Output file')
-    parser.add_argument('--changelog', default='../CHANGELOG.md', help='Changelog file path')
+    parser.add_argument('--changelog', default='CHANGELOG.md', help='Changelog file path')
 
     args = parser.parse_args()
 
