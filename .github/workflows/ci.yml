@@ -318,7 +318,7 @@ jobs:
       run: cargo install cargo-license
 
     - name: Check dependency licenses
-      run: cargo license --json | jq -e 'all(.license; . == "MIT" or . == "Apache-2.0" or . == "BSD-3-Clause" or . == "ISC")'
+      run: cargo license --json | jq -e 'all(.license; test("^(MIT|Apache-2.0|BSD-3-Clause|ISC)( OR (MIT|Apache-2.0|BSD-3-Clause|ISC))*$"))'
 
   # Documentation validation
   docs:
