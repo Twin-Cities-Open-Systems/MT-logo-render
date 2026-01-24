@@ -69,6 +69,19 @@ repos:
           - mdformat-frontmatter
           - mdformat-footnote
 
+  # Documentation organization validation
+  - repo: local
+    hooks:
+      - id: validate-doc-organization
+        name: Validate Documentation Organization
+        description: Ensure agent docs are in prompts/ and human docs are in docs/
+        entry: bash -c "./scripts/validate_doc_organization.sh"
+        language: system
+        types: [markdown, text]
+        pass_filenames: false
+        always_run: true
+        stages: [commit, push]
+
 ci:
   autofix_commit_msg: |
     [pre-commit.ci] auto fixes from pre-commit.com hooks

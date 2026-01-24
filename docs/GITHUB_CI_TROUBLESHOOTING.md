@@ -20,7 +20,7 @@ Get the latest workflow run ID:
 
 ```bash
 # Get the most recent workflow run
-gh api repos/spencerbutler/MT-logo-render/actions/runs --per-page 1 | jq '.workflow_runs[0].id'
+gh api repos/spencerbutler/MT-logo-render/actions/runs | jq '.workflow_runs[0].id'
 
 # Get all recent runs with status
 gh api repos/spencerbutler/MT-logo-render/actions/runs | jq '.workflow_runs[] | {id: .id, name: .name, status: .status, conclusion: .conclusion, created_at: .created_at}'
@@ -130,7 +130,7 @@ gh api repos/spencerbutler/MT-logo-render/actions/runs | jq '.workflow_runs[0] |
 **Step 1**: Identify the failing run
 
 ```bash
-gh api repos/spencerbutler/MT-logo-render/actions/runs --per-page 1 | jq '.workflow_runs[0].id'
+gh api repos/spencerbutler/MT-logo-render/actions/runs | jq '.workflow_runs[0].id'
 # Output: 21304793158
 ```
 
@@ -176,7 +176,7 @@ git push origin feature/phase3-core-implementation
 
 ```bash
 # Get latest workflow run
-gh api repos/owner/repo/actions/runs --per-page 1 | jq '.workflow_runs[0].id'
+gh api repos/owner/repo/actions/runs | jq '.workflow_runs[0].id'
 
 # List all jobs in a run
 gh api repos/owner/repo/actions/runs/RUN_ID/jobs | jq '.jobs[] | {name: .name, conclusion: .conclusion}'
