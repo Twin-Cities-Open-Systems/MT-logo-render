@@ -286,7 +286,12 @@ impl SecurityScanner {
     }
 
     #[allow(clippy::ptr_arg)]
-    fn scan_toml_file(&self, _content: &str, _violations: &mut Vec<String>, _warnings: &mut Vec<String>) {
+    fn scan_toml_file(
+        &self,
+        _content: &str,
+        _violations: &mut Vec<String>,
+        _warnings: &mut Vec<String>,
+    ) {
         // TODO: Implement proper TOML security scanning
         // For now, this is a stub to get CI passing
     }

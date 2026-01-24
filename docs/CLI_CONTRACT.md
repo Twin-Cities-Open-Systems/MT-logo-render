@@ -444,11 +444,11 @@ All errors include actionable suggestions:
 
 ## Exit Code Summary
 
-| Code | Meaning | Description                            |
+| Code | Meaning | Description |
 | ---- | ------- | -------------------------------------- |
-| 0    | Success | Command completed successfully         |
-| 1    | Error   | Fatal error, command failed            |
-| 2    | Partial | Some operations succeeded, some failed |
+| 0 | Success | Command completed successfully |
+| 1 | Error | Fatal error, command failed |
+| 2 | Partial | Some operations succeeded, some failed |
 
 ## Compatibility Notes
 

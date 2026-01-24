@@ -784,12 +784,3 @@ fn handle_resolve(recipe: Option<String>, file: Option<PathBuf>, ctx: &CliContex
 
     Ok(())
 }
-<task_progress>
-- [x] Analyze CI monitor script
-- [x] Check failing tests details
-- [x] Implement auto-fixing for HEE Security Scan
-- [x] Implement auto-fixing for Pre-commit Hooks
-- [x] Implement auto-fixing for Code Quality
-- [ ] Monitor CI results and iterate
-</task_progress>
-</write_to_file>
