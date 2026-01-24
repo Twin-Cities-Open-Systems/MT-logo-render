@@ -357,7 +357,6 @@ mod tests {
             }
 
             unsafe {
-                // SAFETY: This is test code demonstrating unsafe pattern detection
                 // This should trigger a warning
             }
         "#;
