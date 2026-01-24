@@ -270,15 +270,15 @@ stateDiagram-v2
 
 ### 3. State Transition Rules
 
-| Current State | Trigger | Next State | Conditions |
-|---------------|---------|------------|------------|
-| Operational | Failure detected | Degraded | Failure severity > low |
-| Operational | Maintenance scheduled | Maintenance | Manual trigger |
-| Degraded | Critical failure | Failed | Severity = critical |
-| Degraded | Issues resolved | Operational | All alerts cleared |
-| Failed | Partial recovery | Degraded | Some functions restored |
-| Failed | Full recovery | Operational | All functions restored |
-| Maintenance | Update complete | Operational | Validation passed |
+| Current State | Trigger               | Next State  | Conditions              |
+| ------------- | --------------------- | ----------- | ----------------------- |
+| Operational   | Failure detected      | Degraded    | Failure severity > low  |
+| Operational   | Maintenance scheduled | Maintenance | Manual trigger          |
+| Degraded      | Critical failure      | Failed      | Severity = critical     |
+| Degraded      | Issues resolved       | Operational | All alerts cleared      |
+| Failed        | Partial recovery      | Degraded    | Some functions restored |
+| Failed        | Full recovery         | Operational | All functions restored  |
+| Maintenance   | Update complete       | Operational | Validation passed       |
 
 ## State Capsule Operations
 
@@ -502,14 +502,14 @@ graph LR
 
 ### 2. Lifecycle Management
 
-| Phase | Responsibilities | Duration | Frequency |
-|-------|------------------|----------|-----------|
-| Initialization | Create initial state | < 1 second | Once |
-| Operational | Continuous monitoring | Indefinite | Always |
-| Failure Handling | Detect and record failures | < 2 minutes | As needed |
-| Recovery | Execute recovery procedures | < 5 minutes | As needed |
-| Maintenance | System updates and backups | 5-30 minutes | Weekly |
-| Validation | State integrity checks | < 1 minute | Hourly |
+| Phase            | Responsibilities            | Duration     | Frequency |
+| ---------------- | --------------------------- | ------------ | --------- |
+| Initialization   | Create initial state        | < 1 second   | Once      |
+| Operational      | Continuous monitoring       | Indefinite   | Always    |
+| Failure Handling | Detect and record failures  | < 2 minutes  | As needed |
+| Recovery         | Execute recovery procedures | < 5 minutes  | As needed |
+| Maintenance      | System updates and backups  | 5-30 minutes | Weekly    |
+| Validation       | State integrity checks      | < 1 minute   | Hourly    |
 
 ## Integration with Monitoring System
 
