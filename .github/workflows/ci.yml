@@ -205,7 +205,7 @@ jobs:
             print('❌ Validation logic errors found:')
             for error in validation_errors:
                 print(f'  - {error}')
-            exit 1
+            import sys; sys.exit(1)
         else:
             print('✅ All recipes passed validation')
         "
@@ -272,6 +272,7 @@ jobs:
         else
           ./target/${{ matrix.target }}/release/logo-render --help
         fi
+      shell: bash
 
     - name: Upload release artifacts
       uses: actions/upload-artifact@v4
