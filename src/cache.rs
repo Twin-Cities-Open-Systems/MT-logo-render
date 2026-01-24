@@ -209,15 +209,13 @@ impl Cache {
                     }
                 }
 
-                if filters.exists
-                    && !entry.outputs.values().any(|o| o.exists) {
-                        return false;
-                    }
+                if filters.exists && !entry.outputs.values().any(|o| o.exists) {
+                    return false;
+                }
 
-                if filters.missing
-                    && entry.outputs.values().all(|o| o.exists) {
-                        return false;
-                    }
+                if filters.missing && entry.outputs.values().all(|o| o.exists) {
+                    return false;
+                }
 
                 true
             })
