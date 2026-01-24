@@ -5,4 +5,4 @@ Canonical Human Execution Engine policy is vendored under:
 - prompts/hee/
 - prompts/hee/docs/
 
-This directory contains pointers only to satisfy repository documentation rules.
+This directory contains pointers and version metadata only.
