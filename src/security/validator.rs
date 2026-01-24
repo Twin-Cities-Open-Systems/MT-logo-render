@@ -278,6 +278,7 @@ impl SecurityValidator {
     }
 
     // Helper methods
+    #[allow(dead_code)]
     fn validate_shell_syntax_safe(&self, command: &str) -> Result<(), String> {
         // Regex patterns for common shell syntax issues
         let patterns = vec![
@@ -372,6 +373,7 @@ impl SecurityValidator {
         Ok(())
     }
 
+    #[allow(dead_code)]
     fn validate_shell_syntax(&self, command: &str) -> Result<(), String> {
         let output = Command::new("bash")
             .arg("-n")

@@ -178,6 +178,7 @@ fn render_png(recipe: &Recipe, output_path: &PathBuf) -> Result<()> {
 
     // Parse base color
     let base_color = parse_hex_color(&canonical.base_color)?;
+    #[allow(unused_variables)]
     let accent_color = canonical
         .accent_color
         .as_ref()
@@ -185,6 +186,7 @@ fn render_png(recipe: &Recipe, output_path: &PathBuf) -> Result<()> {
         .unwrap_or(base_color);
 
     // Fill background
+    #[allow(unused_variables)]
     for (x, y, pixel) in img.enumerate_pixels_mut() {
         *pixel = Rgba([base_color.0, base_color.1, base_color.2, 255]);
     }
@@ -354,7 +356,8 @@ fn render_triangle(
         let yf = y as f32;
 
         // Simple triangle check (point-in-triangle)
-        let area = 0.0; // Simplified calculation for now
+        #[allow(unused_variables)]
+    let area = 0.0; // Simplified calculation for now
 
         if yf >= top_y && yf <= base_y {
             let progress = (yf - top_y) / (base_y - top_y);
