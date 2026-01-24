@@ -5,7 +5,9 @@ All notable changes to MT-logo-render will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased] - Development Phase
+## [1.0.0] - 2026-01-24
+
+- Development Phase
 
 ### Added
 
@@ -45,6 +47,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Set up quality gates and development standards for Rust
 - **CI/CD Improvements**: Fixed pre-commit hooks authentication issues
 - **Security**: Maintained security while improving CI reliability
+
+## [Unreleased] - Development Phase
+
+### Added
+
+### Changed
+
+### Fixed
+
+### Technical
 
 ## [0.1.0] - 2026-01-22
 
