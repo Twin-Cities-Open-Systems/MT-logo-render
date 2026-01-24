@@ -9,7 +9,7 @@ When CI/CD tests fail, use this structured approach to quickly identify root cau
 ## Prerequisites
 
 - GitHub CLI (`gh`) installed and authenticated
-- jq installed for JSON parsing
+- jq installed for JSON parsing (optional for advanced filtering)
 - Access to the repository with appropriate permissions
 
 ## Step-by-Step Troubleshooting Process
@@ -199,7 +199,61 @@ gh api repos/owner/repo/actions/jobs/JOB_ID | jq '.steps[] | {name: .name, concl
 - **Use GitHub Actions logs**: For detailed step-by-step execution information
 - **Test in isolation**: Run individual steps locally when possible to isolate issues
 
-## 6. Fast Debugging with Cargo Clippy
+## 6. Fast Log Analysis with GitHub CLI
+
+For rapid identification of failed jobs and their specific errors, use GitHub CLI's log filtering capabilities:
+
+```bash
+# Get full workflow run status with job details
+gh run view <RUN_ID> --exit-status
+
+# Filter logs for specific job patterns (most efficient method)
+gh run view <RUN_ID> --log | grep -A 10 -B 5 "HEE Recipe Validation\|Release Build.*windows"
+
+# Get detailed error messages from failed jobs
+gh run view <RUN_ID> --log | grep -A 20 "error\|Error\|ERROR"
+
+# Check for specific error patterns
+gh run view <RUN_ID> --log | grep -i "syntaxerror\|parsererror\|command not found"
+```
+
+**Benefits of using `--log | grep`:**
+
+- **Immediate results**: Get specific error details without API rate limits
+- **Targeted analysis**: Filter for exact job names or error patterns
+- **Context preservation**: Use `-A` (after) and `-B` (before) flags to include surrounding context
+- **Fast debugging**: Identify root causes in seconds rather than minutes
+
+**When to use:**
+
+- Multiple job failures requiring quick identification
+- Platform-specific errors (Windows/macOS/Linux differences)
+- Syntax errors or command failures
+- Dependency or environment issues
+
+**Real-world example:**
+
+```bash
+# Identify exact Python syntax error in CI
+gh run view 21316181635 --log | grep -A 10 -B 5 "HEE Recipe Validation"
+# Output: "SyntaxError: invalid syntax" with line number
+
+# Find Windows PowerShell syntax error
+gh run view 21312746913 --log | grep -A 5 -B 5 "Test release binary"
+# Output: "ParserError: Missing '(' after 'if' in if statement"
+```
+
+**Pro tip:** Combine with job-specific patterns for precise error isolation:
+
+```bash
+# Get only error lines from failed jobs
+gh run view <RUN_ID> --log | grep -E "(error|Error|ERROR|fail|Fail|FAIL)" | grep -v "warning"
+
+# Check for platform-specific failures
+gh run view <RUN_ID> --log | grep -A 5 "windows-latest\|macos-latest\|ubuntu-latest"
+```
+
+## 7. Fast Debugging with Cargo Clippy
 
 For efficient CI debugging, use cargo clippy's automatic fixing capabilities:
 

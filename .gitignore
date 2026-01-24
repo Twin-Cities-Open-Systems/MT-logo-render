@@ -43,3 +43,8 @@ docs/.doctrees/
 # CI artifacts
 .github/coverage/
 .github/test-results/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
