@@ -206,6 +206,9 @@ def main():
     """Main monitoring loop"""
     import argparse
 
+    # Declare global variables first
+    global BRANCH, REPO_OWNER, REPO_NAME
+
     parser = argparse.ArgumentParser(description='MT-logo-render CI/CD Monitor')
     parser.add_argument('--branch', '-b', default=BRANCH,
                        help=f'Branch to monitor (default: {BRANCH})')
@@ -219,7 +222,6 @@ def main():
     args = parser.parse_args()
 
     # Update globals from args
-    global BRANCH, REPO_OWNER, REPO_NAME
     BRANCH = args.branch
     REPO_OWNER = args.owner
     REPO_NAME = args.repo
