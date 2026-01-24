@@ -1,23 +1,46 @@
-# 🎯 Next Task: CI Monitor and Auto-Fix Implementation
+# 🎯 TOP PRIORITY: Fix 4 Failing Tests in PR #4
 
-## 📄 Reference Prompt
+## 🚨 CRITICAL TASK: Immediate Test Fixes Required
 
-**File**: [`prompts/18-ci-monitor-autofix.md`](prompts/18-ci-monitor-autofix.md)
-
-## 🚀 Executive Summary
-
-Implement a **limited-scope CI/CD monitoring and auto-fix system** that continuously monitors failing tests and automatically applies targeted fixes to make tests pass.
+**Stop all other work** - Focus exclusively on fixing the 4 failing tests in PR #4 one by one.
 
 ### 🎯 Core Objective
 
-**Monitor failing tests → Apply minimal fixes → Achieve 90%+ pass rate**
+**Fix failing tests → Achieve 100% pass rate → Unblock PR #4**
 
 ### ⚠️ Strict Constraints
 
 - **Only modify code that directly impacts test results**
-- **No architectural changes or new features**
+- **Fix tests one by one, testing after each fix**
 - **All changes must be minimal and reversible**
 - **Preserve all existing functionality**
+- **Document each fix thoroughly**
+
+## 🔥 IMMEDIATE ACTION PLAN
+
+### Step 1: Identify the 4 Failing Tests
+
+- **Action**: Run full test suite and document each failing test
+- **Target**: Get exact test names and failure messages
+- **Method**: `cargo test --all-targets -- --nocapture`
+
+### Step 2: Fix Tests One by One
+
+- **Priority**: Address tests in order of easiest to hardest
+- **Process**: Fix → Test → Commit → Repeat
+- **Documentation**: Record each fix with before/after details
+
+### Step 3: Validate All Tests Pass
+
+- **Requirement**: 100% pass rate before proceeding
+- **Verification**: Run full test suite multiple times
+- **CI Check**: Ensure GitHub Actions passes
+
+### Step 4: Update Documentation
+
+- **Record**: Detailed fix descriptions in CHANGELOG.md
+- **Update**: TASK_NEXT.md with resolution summary
+- **Create**: State capsule documenting the fixes
 
 ## 🔧 Implementation Focus Areas
 
@@ -95,14 +118,26 @@ python scripts/security_scanner.py
 
 **Total Estimated**: ~80 minutes
 
-## 🚀 Next Steps
+## 🚀 IMMEDIATE NEXT STEPS
 
-1. **Review Complete Prompt**: Study `prompts/18-ci-monitor-autofix.md` for full details
-1. **Assess Current Failures**: Run test suite to document baseline
-1. **Implement Targeted Fixes**: Develop minimal code changes
-1. **Integrate Auto-Fix**: Connect to monitoring system
-1. **Test and Validate**: Ensure no regressions
-1. **Document Results**: Generate comprehensive report
+1. **STOP ALL OTHER WORK**: Focus exclusively on PR #4 failing tests
+1. **Run Full Test Suite**: `cargo test --all-targets -- --nocapture`
+1. **Document Each Failure**: Record exact test names and error messages
+1. **Fix Tests One by One**: Start with easiest, test after each fix
+1. **Commit Each Fix**: Small, focused commits with clear messages
+1. **Validate 100% Pass Rate**: Ensure all tests pass before proceeding
+1. **Push Fixes to PR #4**: Update the pull request with resolutions
+
+## 📋 Original CI Monitor Plan (ON HOLD)
+
+**Do NOT proceed with CI monitor work until all tests pass:**
+
+1. Review Complete Prompt: Study `prompts/18-ci-monitor-autofix.md` for full details
+1. Assess Current Failures: Run test suite to document baseline
+1. Implement Targeted Fixes: Develop minimal code changes
+1. Integrate Auto-Fix: Connect to monitoring system
+1. Test and Validate: Ensure no regressions
+1. Document Results: Generate comprehensive report
 
 **For complete implementation details, refer to the comprehensive prompt:**
 📄 [`prompts/18-ci-monitor-autofix.md`](prompts/18-ci-monitor-autofix.md)
