@@ -268,7 +268,7 @@ jobs:
     - name: Test release binary
       run: |
         if ("${{ matrix.os }}" -eq "windows-latest") {
-          ./target/${{ matrix.target }}/release/logo-render.exe --help
+          ./target/x86_64-pc-windows-msvc/release/logo-render.exe --help
         } else {
           ./target/${{ matrix.target }}/release/logo-render --help
         }
