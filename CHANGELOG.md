@@ -34,6 +34,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Line 357: Changed `area` variable to `_area` in triangle rendering
   - Line 516: Changed `label` parameter to `_label` in `render_label`
 - **Security Scanner Test**: Fixed `test_scan_rust_file` by removing SAFETY comment that was preventing proper unsafe code detection, resolving CI/CD test failures across all platforms (Ubuntu, macOS, Windows)
+- **Python 3.14 Syntax Error**: Fixed `exit(1)` syntax error in HEE Recipe Validation CI job by changing to `import sys; sys.exit(1)` for Python 3.14.2 compatibility
+- **Windows PowerShell Syntax Error**: Fixed PowerShell parser error in Windows release build test by adding `shell: bash` to ensure consistent bash syntax across all platforms
+- **CI Workflow Hardcoded Paths**: Removed hardcoded Windows target paths in favor of dynamic `${{ matrix.target }}` variables for proper cross-platform builds
 
 ### Technical
 
