@@ -20,11 +20,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated technology stack from Python/React to Rust CLI
 - Modified acceptance criteria for deterministic asset generation
 
+### Fixed
+
+- **Pre-commit Authentication**: Fixed SSH authentication failures by switching to HTTPS URLs
+- **YAML Syntax**: Corrected indentation error in `.pre-commit-config.yaml`
+- **CI Configuration**: Enhanced GitHub Actions workflow with SSH setup for pre-commit
+
 ### Technical
 
 - Established 18-step development process for Rust CLI application
 - Created comprehensive documentation framework
 - Set up quality gates and development standards for Rust
+- **CI/CD Improvements**: Fixed pre-commit hooks authentication issues
+- **Security**: Maintained security while improving CI reliability
 
 ## [0.1.0] - 2026-01-22
 

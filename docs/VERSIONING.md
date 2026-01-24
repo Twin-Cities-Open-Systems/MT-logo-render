@@ -54,11 +54,11 @@ Increment PATCH version when:
 
 ### Platform Compatibility Matrix
 
-| MT-logo-render | HEE Platform | Compatibility |
+| MT-logo-render | HEE Platform | Compatibility               |
 | -------------- | ------------ | --------------------------- |
-| 1.x.x | 1.x.x | ✅ Full compatibility |
-| 2.x.x | 1.x.x | ⚠️ Requires platform update |
-| 1.x.x | 2.x.x | ❌ Incompatible |
+| 1.x.x          | 1.x.x        | ✅ Full compatibility       |
+| 2.x.x          | 1.x.x        | ⚠️ Requires platform update |
+| 1.x.x          | 2.x.x        | ❌ Incompatible             |
 
 ### Breaking Change Protocol
 
