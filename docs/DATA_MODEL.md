@@ -1,6 +1,7 @@
 # Data Model (v1.0)
 
 ## Overview
+
 MT-logo-render uses structured data models for recipe specifications, canonicalization, and cache management. All data structures are designed for deterministic processing and efficient serialization.
 
 ## Core Data Structures
@@ -8,6 +9,7 @@ MT-logo-render uses structured data models for recipe specifications, canonicali
 ### Recipe Specification
 
 #### Base Recipe Schema
+
 ```rust
 #[derive(Deserialize, Serialize, Clone, Debug)]
 pub struct Recipe {
@@ -51,6 +53,7 @@ pub struct Recipe {
 ```
 
 #### Shape Enumeration
+
 ```rust
 #[derive(Deserialize, Serialize, Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Shape {
@@ -66,6 +69,7 @@ pub enum Shape {
 ```
 
 #### Size Specification
+
 ```rust
 #[derive(Deserialize, Serialize, Clone, Copy, Debug, PartialEq, Eq)]
 pub struct Size {
@@ -95,6 +99,7 @@ impl FromStr for Size {
 ```
 
 #### Color Representation
+
 ```rust
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub enum Color {
@@ -132,6 +137,7 @@ impl FromStr for Color {
 ```
 
 #### Fill Patterns
+
 ```rust
 #[derive(Deserialize, Serialize, Clone, Debug, PartialEq, Eq)]
 #[serde(rename_all = "snake_case")]
@@ -150,6 +156,7 @@ impl Default for Fill {
 ```
 
 #### Overlay Elements
+
 ```rust
 #[derive(Deserialize, Serialize, Clone, Copy, Debug, PartialEq, Eq)]
 #[serde(rename_all = "snake_case")]
@@ -170,9 +177,11 @@ pub enum Badge {
 ## Canonicalization Process
 
 ### Recipe Canonicalization
+
 Recipes are normalized to ensure deterministic output regardless of input format variations.
 
 #### Step 1: Parse and Validate
+
 ```rust
 fn parse_recipe(input: &str) -> Result<Recipe, Error> {
     // Parse JSON/YAML
@@ -182,6 +191,7 @@ fn parse_recipe(input: &str) -> Result<Recipe, Error> {
 ```
 
 #### Step 2: Normalize Colors
+
 ```rust
 fn normalize_color(color: &Color) -> String {
     match color {
@@ -210,6 +220,7 @@ fn normalize_color(color: &Color) -> String {
 ```
 
 #### Step 3: Sanitize Text Fields
+
 ```rust
 fn sanitize_label(label: &str) -> Option<String> {
     let sanitized: String = label.chars()
@@ -226,6 +237,7 @@ fn sanitize_label(label: &str) -> Option<String> {
 ```
 
 #### Step 4: Generate Canonical JSON
+
 ```rust
 fn canonicalize_recipe(recipe: &Recipe) -> Result<String, Error> {
     // Create normalized recipe
@@ -248,14 +260,17 @@ fn canonicalize_recipe(recipe: &Recipe) -> Result<String, Error> {
 ```
 
 ### Stem Generation
+
 Deterministic filename stems are generated from canonicalized recipes.
 
 #### Stem Format
+
 ```
 <recipe_id>-<base_color>[-<accent_color>]-<tokens>-<size>
 ```
 
 #### Recipe ID Generation
+
 ```rust
 fn generate_recipe_id(canonical_json: &str) -> String {
     use sha2::{Digest, Sha256};
@@ -278,6 +293,7 @@ fn get_recipe_id(recipe: &Recipe) -> String {
 ```
 
 #### Token Generation
+
 ```rust
 fn generate_tokens(recipe: &Recipe) -> Vec<String> {
     let mut tokens = Vec::new();
@@ -334,6 +350,7 @@ fn encode_unicode_glyph(glyph: &str) -> String {
 ```
 
 #### Complete Stem Generation
+
 ```rust
 fn generate_stem(recipe: &Recipe) -> Result<String, Error> {
     let recipe_id = get_recipe_id(recipe)?;
@@ -355,6 +372,7 @@ fn generate_stem(recipe: &Recipe) -> Result<String, Error> {
 ## Cache Data Structures
 
 ### Cache Index Format
+
 ```yaml
 entries:
   - stem: "defaultshape-0000ff-solid-circle-256x256"
@@ -377,6 +395,7 @@ entries:
 ```
 
 ### Cache Entry Structure
+
 ```rust
 #[derive(Deserialize, Serialize, Clone, Debug)]
 pub struct CacheEntry {
@@ -405,6 +424,7 @@ pub struct OutputInfo {
 ```
 
 ### Cache Index Management
+
 ```rust
 #[derive(Deserialize, Serialize, Clone, Debug)]
 pub struct CacheIndex {
@@ -441,6 +461,7 @@ impl CacheIndex {
 ## Effective Recipe Resolution
 
 ### Degradation Logic
+
 When requested features aren't supported, recipes are gracefully degraded.
 
 ```rust
@@ -489,6 +510,7 @@ pub fn resolve_effective_recipe(requested: &Recipe) -> (Recipe, Vec<String>) {
 ## Validation Rules
 
 ### Recipe Validation
+
 ```rust
 impl Recipe {
     pub fn validate(&self) -> Result<(), Vec<String>> {
@@ -531,6 +553,7 @@ impl Recipe {
 ## Serialization Compatibility
 
 ### JSON Schema Support
+
 All data structures support JSON Schema generation for validation:
 
 ```rust
@@ -558,6 +581,7 @@ impl Recipe {
 ```
 
 ### Version Compatibility
+
 Data structures include version information for future compatibility:
 
 ```rust

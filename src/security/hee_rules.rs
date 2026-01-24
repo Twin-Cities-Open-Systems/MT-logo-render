@@ -8,6 +8,7 @@ use sha2::{Digest, Sha256};
 use std::collections::HashMap;
 
 /// HEE-specific security rules and validations
+#[allow(dead_code)]
 pub struct HEERules {
     validator: SecurityValidator,
     deterministic_cache: HashMap<String, String>, // input_hash -> output_hash

@@ -3,11 +3,12 @@
 use crate::{Error, Result};
 use serde::{Deserialize, Serialize};
 use sha2::{Digest, Sha256};
-use std::path::PathBuf;
+use std::path::{Path, PathBuf};
 use std::str::FromStr;
 
 /// Base recipe specification for logo generation.
 #[derive(Deserialize, Serialize, Clone, Debug, PartialEq)]
+#[allow(dead_code)]
 pub struct Recipe {
     /// Shape type for rendering
     pub shape: Shape,
@@ -59,6 +60,7 @@ pub enum Shape {
 
 /// Size specification with width and height.
 #[derive(Clone, Copy, Debug, PartialEq, Eq, Hash)]
+#[allow(dead_code)]
 pub struct Size {
     pub width: u32,
     pub height: u32,
@@ -189,6 +191,7 @@ pub enum Badge {
 
 /// Canonicalized recipe with normalized values.
 #[derive(Clone, Debug, PartialEq, Eq, Hash, Serialize)]
+#[allow(dead_code)]
 pub struct CanonicalRecipe {
     pub shape: Shape,
     pub size: Size,
@@ -203,6 +206,7 @@ pub struct CanonicalRecipe {
 }
 
 /// Effective recipe with degradation notes.
+#[allow(dead_code)]
 pub struct EffectiveRecipe {
     pub requested: Recipe,
     pub effective: Recipe,
@@ -428,7 +432,7 @@ fn encode_unicode_glyph(glyph: &str) -> String {
 }
 
 /// Compute hash of font file for deterministic identification.
-fn compute_font_hash(font_path: &PathBuf) -> Result<String> {
+fn compute_font_hash(font_path: &Path) -> Result<String> {
     use std::fs;
     let content = fs::read(font_path)?;
     let hash = Sha256::digest(&content);

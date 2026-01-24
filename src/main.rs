@@ -5,7 +5,7 @@
 use clap::{Parser, Subcommand};
 use mt_logo_render::recipe::{Badge, Mark, Shape};
 use mt_logo_render::{Error, Recipe, Result};
-use std::path::PathBuf;
+use std::path::{Path, PathBuf};
 use tracing_subscriber::{layer::SubscriberExt, util::SubscriberInitExt};
 
 #[derive(Clone, Debug)]
@@ -143,12 +143,12 @@ fn main() -> Result<()> {
             std::process::exit(1);
         }
         Commands::List {
-            shape,
-            size,
-            base_color,
-            fill,
-            exists,
-            missing,
+            shape: _shape,
+            size: _size,
+            base_color: _base_color,
+            fill: _fill,
+            exists: _exists,
+            missing: _missing,
         } => {
             // TODO: Implement list command
             println!("List command not yet implemented");
@@ -160,7 +160,7 @@ fn main() -> Result<()> {
 }
 
 /// Render recipe to PNG format
-fn render_png(recipe: &Recipe, output_path: &PathBuf) -> Result<()> {
+fn render_png(recipe: &Recipe, output_path: &Path) -> Result<()> {
     use image::{ImageBuffer, Rgba};
     use std::fs;
 
@@ -178,7 +178,6 @@ fn render_png(recipe: &Recipe, output_path: &PathBuf) -> Result<()> {
 
     // Parse base color
     let base_color = parse_hex_color(&canonical.base_color)?;
-    #[allow(unused_variables)]
     let accent_color = canonical
         .accent_color
         .as_ref()
@@ -186,7 +185,6 @@ fn render_png(recipe: &Recipe, output_path: &PathBuf) -> Result<()> {
         .unwrap_or(base_color);
 
     // Fill background
-    #[allow(unused_variables)]
     for (x, y, pixel) in img.enumerate_pixels_mut() {
         *pixel = Rgba([base_color.0, base_color.1, base_color.2, 255]);
     }
@@ -221,7 +219,7 @@ fn render_png(recipe: &Recipe, output_path: &PathBuf) -> Result<()> {
 }
 
 /// Render recipe to ANSI format
-fn render_ansi(recipe: &Recipe, output_path: &PathBuf) -> Result<()> {
+fn render_ansi(recipe: &Recipe, output_path: &Path) -> Result<()> {
     use std::fs;
 
     // Create directory if it doesn't exist
@@ -356,8 +354,7 @@ fn render_triangle(
         let yf = y as f32;
 
         // Simple triangle check (point-in-triangle)
-        #[allow(unused_variables)]
-    let area = 0.0; // Simplified calculation for now
+        let area = 0.0; // Simplified calculation for now
 
         if yf >= top_y && yf <= base_y {
             let progress = (yf - top_y) / (base_y - top_y);
@@ -787,3 +784,12 @@ fn handle_resolve(recipe: Option<String>, file: Option<PathBuf>, ctx: &CliContex
 
     Ok(())
 }
+<task_progress>
+- [x] Analyze CI monitor script
+- [x] Check failing tests details
+- [x] Implement auto-fixing for HEE Security Scan
+- [x] Implement auto-fixing for Pre-commit Hooks
+- [x] Implement auto-fixing for Code Quality
+- [ ] Monitor CI results and iterate
+</task_progress>
+</write_to_file>

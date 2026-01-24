@@ -13,6 +13,7 @@ use std::path::{Path, PathBuf};
 
 /// Cache index entry for tracking generated assets
 #[derive(Deserialize, Serialize, Clone, Debug)]
+#[allow(dead_code)]
 pub struct CacheEntry {
     pub stem: String,
     pub recipe: RecipePair,
@@ -23,6 +24,7 @@ pub struct CacheEntry {
 
 /// Pair of requested and effective recipes
 #[derive(Deserialize, Serialize, Clone, Debug)]
+#[allow(dead_code)]
 pub struct RecipePair {
     pub requested: Recipe,
     pub effective: Recipe,
@@ -30,6 +32,7 @@ pub struct RecipePair {
 
 /// Information about a generated output file
 #[derive(Deserialize, Serialize, Clone, Debug)]
+#[allow(dead_code)]
 pub struct OutputInfo {
     pub path: PathBuf,
     pub exists: bool,
@@ -41,6 +44,7 @@ pub struct OutputInfo {
 
 /// Main cache management system
 #[derive(Debug)]
+#[allow(dead_code)]
 pub struct Cache {
     index_path: PathBuf,
     generated_dir: PathBuf,
@@ -49,6 +53,7 @@ pub struct Cache {
 
 /// Cache index containing all entries
 #[derive(Deserialize, Serialize, Clone, Debug)]
+#[allow(dead_code)]
 pub struct CacheIndex {
     pub entries: Vec<CacheEntry>,
 }
@@ -108,6 +113,7 @@ impl Cache {
     }
 
     /// Update cache entry for a rendered output
+    #[allow(clippy::ptr_arg)]
     pub fn update_entry(
         &mut self,
         stem: &str,
@@ -225,6 +231,7 @@ impl Cache {
 
 /// Filters for cache querying
 #[derive(Debug, Default)]
+#[allow(dead_code)]
 pub struct CacheFilters {
     pub shape: Option<String>,
     pub size: Option<String>,

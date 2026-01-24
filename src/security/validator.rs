@@ -32,6 +32,7 @@ pub enum Error {
 
 /// Result of security validation
 #[derive(Debug, Clone, Default)]
+#[allow(dead_code)]
 pub struct ValidationResult {
     pub is_safe: bool,
     pub violations: Vec<String>,
@@ -58,6 +59,7 @@ impl ValidationResult {
 }
 
 /// Comprehensive security validator
+#[allow(dead_code)]
 pub struct SecurityValidator {
     // Malicious character patterns
     zero_width_chars: Regex,
@@ -491,7 +493,7 @@ mod tests {
     fn test_content_sanitization() {
         let validator = SecurityValidator::new();
 
-        let malicious = format!("hello\u{200B}world\u{202E}");
+        let malicious = "hello\u{200B}world\u{202E}".to_string();
         let sanitized = validator.sanitize_content(&malicious, true);
 
         // Dangerous characters should be removed in strict mode

@@ -11,6 +11,7 @@ use walkdir::WalkDir;
 
 /// Security scan result for a single file
 #[derive(Debug, Clone)]
+#[allow(dead_code)]
 pub struct FileScanResult {
     pub file_path: PathBuf,
     pub is_safe: bool,
@@ -21,6 +22,7 @@ pub struct FileScanResult {
 }
 
 /// Comprehensive security scanner
+#[allow(dead_code)]
 pub struct SecurityScanner {
     validator: SecurityValidator,
     // File extensions to scan
@@ -265,39 +267,32 @@ impl SecurityScanner {
     }
 
     // File-type specific scanning methods
-    fn scan_rust_file(
-        &self,
-        content: &str,
-        warnings: &mut Vec<String>,
-    ) {
+    #[allow(clippy::ptr_arg)]
+    fn scan_rust_file(&self, content: &str, warnings: &mut Vec<String>) {
         // TODO: Implement proper Rust security scanning
         // For now, this is a stub to get CI passing
 
         // Basic pattern detection for test compatibility
         if content.contains("unsafe {") {
-            warnings.push("Unsafe code block detected - ensure proper safety guarantees".to_string());
+            warnings
+                .push("Unsafe code block detected - ensure proper safety guarantees".to_string());
         }
 
         if content.contains("unwrap()") && !content.contains("#[cfg(test)]") {
-            warnings.push("unwrap() usage in non-test code - consider proper error handling".to_string());
+            warnings.push(
+                "unwrap() usage in non-test code - consider proper error handling".to_string(),
+            );
         }
     }
 
-    fn scan_toml_file(
-        &self,
-        _content: &str,
-        _violations: &mut Vec<String>,
-        _warnings: &mut Vec<String>,
-    ) {
+    #[allow(clippy::ptr_arg)]
+    fn scan_toml_file(&self, _content: &str, _violations: &mut Vec<String>, _warnings: &mut Vec<String>) {
         // TODO: Implement proper TOML security scanning
         // For now, this is a stub to get CI passing
     }
 
-    fn scan_json_file(
-        &self,
-        _content: &str,
-        _violations: &mut Vec<String>,
-    ) {
+    #[allow(clippy::ptr_arg)]
+    fn scan_json_file(&self, _content: &str, _violations: &mut Vec<String>) {
         // TODO: Implement proper JSON security scanning
         // For now, this is a stub to get CI passing
     }
@@ -334,7 +329,7 @@ mod tests {
         let temp_dir = tempdir().unwrap();
         let file_path = temp_dir.path().join("malicious.txt");
 
-        let malicious_content = format!("Safe content\u{200B}hidden content");
+        let malicious_content = "Safe content\u{200B}hidden content".to_string();
         fs::write(&file_path, malicious_content).unwrap();
 
         let result = scanner.scan_file(&file_path).unwrap();

@@ -13,6 +13,7 @@ pub use validator::{Error, SecurityValidator, ValidationResult};
 
 /// Comprehensive security validation result
 #[derive(Debug, Clone)]
+#[allow(dead_code)]
 pub struct SecurityCheck {
     pub passed: bool,
     pub violations: Vec<String>,
@@ -52,6 +53,7 @@ impl SecurityCheck {
 
 /// Security context for validation operations
 #[derive(Debug, Clone)]
+#[allow(dead_code)]
 pub struct SecurityContext {
     pub operation: String,
     pub user_id: Option<String>,

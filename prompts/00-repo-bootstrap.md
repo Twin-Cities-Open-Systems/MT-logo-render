@@ -3,12 +3,14 @@
 You are operating in a fresh directory for MT-logo-render. This is ALWAYS the first prompt to execute for any new project.
 
 ## Objectives
-1) Initialize git repository with main branch (never master).
-2) Create complete docs/prompts scaffolding with no implementation code.
-3) Ensure structure matches README and docs index.
-4) Make initial commit with all foundational files before any implementation.
+
+1. Initialize git repository with main branch (never master).
+1. Create complete docs/prompts scaffolding with no implementation code.
+1. Ensure structure matches README and docs index.
+1. Make initial commit with all foundational files before any implementation.
 
 ## Critical Requirements
+
 - **ALWAYS start with git init and main branch** - This is mandatory for all projects.
 - **Never proceed to implementation without git history** - All decisions must be recorded.
 - **Complete bootstrap before any code** - Documentation and process comes first.
@@ -16,6 +18,7 @@ You are operating in a fresh directory for MT-logo-render. This is ALWAYS the fi
 ## Steps
 
 ### Git Setup (MANDATORY - Always First)
+
 ```bash
 # Check if already in a git repository
 if git rev-parse --git-dir > /dev/null 2>&1; then
@@ -33,6 +36,7 @@ fi
 ```
 
 ### File Creation
+
 - Create .gitignore with appropriate patterns
 - Create README.md with project overview
 - Create CHANGELOG.md for version tracking
@@ -41,6 +45,7 @@ fi
 - Create docs/ structure with SPEC.md, ARCHITECTURE.md, etc.
 
 ### Initial Commit (MANDATORY)
+
 ```bash
 git add .gitignore README.md CHANGELOG.md docs/ROADMAP.md prompts/ docs/
 git commit -m "feat: bootstrap [PROJECT] repository with tick-task methodology
@@ -56,20 +61,24 @@ git commit -m "feat: bootstrap [PROJECT] repository with tick-task methodology
 ```
 
 ### Verification
+
 - Verify all prompts/ files exist (00-17 + PROMPTING_RULES.md)
 - Verify docs/ structure is complete
 - Verify git log shows the bootstrap commit
 - Verify branch is named 'main'
 
 ## Constraints
+
 - Optimize for free tier usage: do not generate large files unnecessarily.
 - No sudo operations.
 - Use gh for PR operations if available.
-- Every commit includes model disclosure: [model: <MODEL_NAME>]
+- Every commit includes model disclosure: [model: \<MODEL_NAME>]
 - **Never skip git initialization** - This process must be followed for auditability.
 
 ## Post-Bootstrap
+
 After this prompt completes successfully:
+
 - Repository has complete documentation foundation
 - Git history records all initial setup decisions
 - Ready to proceed to specification phase (Prompt 01)
