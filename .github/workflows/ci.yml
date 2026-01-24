@@ -205,7 +205,7 @@ jobs:
             print('❌ Validation logic errors found:')
             for error in validation_errors:
                 print(f'  - {error}')
-            exit(1)
+            exit 1
         else:
             print('✅ All recipes passed validation')
         "
@@ -262,25 +262,14 @@ jobs:
         path: ~/.cargo/registry
         key: ${{ runner.os }}-cargo-release-${{ hashFiles('**/Cargo.lock') }}
 
-        if [ "${{ matrix.os }}" = "windows-latest" ]; then
-          ./target/${{ matrix.target }}/release/logo-render.exe --help
-        else
->>>>>>> a8f418f (CRITICAL BUG FIX: Fix Windows release binary test path)
-          ./target/${{ matrix.target }}/release/logo-render --help
-        fi
+    - name: Build release binary
+      run: cargo build --release --target ${{ matrix.target }}
 
     - name: Test release binary
       run: |
         if [ "${{ matrix.os }}" = "windows-latest" ]; then
           ./target/${{ matrix.target }}/release/logo-render.exe --help
         else
-          ./target/${{ matrix.target }}/release/logo-render --help
-        fi
-=======
-        if [ "${{ matrix.os }}" = "windows-latest" ]; then
-          ./target/${{ matrix.target }}/release/logo-render.exe --help
-        else
->>>>>>> a8f418f (CRITICAL BUG FIX: Fix Windows release binary test path)
           ./target/${{ matrix.target }}/release/logo-render --help
         fi
 
