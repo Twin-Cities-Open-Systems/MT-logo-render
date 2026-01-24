@@ -292,7 +292,7 @@ fn render_circle(
     img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
     recipe: &mt_logo_render::CanonicalRecipe,
     base_color: (u8, u8, u8),
-    accent_color: (u8, u8, u8),
+    _accent_color: (u8, u8, u8),
 ) {
     let width = recipe.size.width as f32;
     let height = recipe.size.height as f32;
@@ -318,10 +318,10 @@ fn render_square(
     img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
     recipe: &mt_logo_render::CanonicalRecipe,
     base_color: (u8, u8, u8),
-    accent_color: (u8, u8, u8),
+    _accent_color: (u8, u8, u8),
 ) {
-    let width = recipe.size.width as u32;
-    let height = recipe.size.height as u32;
+    let width = recipe.size.width;
+    let height = recipe.size.height;
     let margin = (width.min(height) as f32 * 0.1) as u32;
     let square_size = width.min(height) - 2 * margin;
     let start_x = (width - square_size) / 2;
@@ -518,8 +518,8 @@ fn render_label(
 ) -> Result<()> {
     // For now, just draw a colored rectangle in the bottom area
     // TODO: Implement proper text rendering with rusttype
-    let width = recipe.size.width as u32;
-    let height = recipe.size.height as u32;
+    let width = recipe.size.width;
+    let height = recipe.size.height;
     let label_height = height / 8;
     let start_y = height - label_height;
 

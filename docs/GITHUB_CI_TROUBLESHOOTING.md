@@ -62,7 +62,7 @@ gh api repos/spencerbutler/MT-logo-render/actions/jobs/$JOB_ID | jq '.steps[] | 
 # Before
 uses: actions/upload-artifact@v3
 
-# After  
+# After
 uses: actions/upload-artifact@v4
 ```
 

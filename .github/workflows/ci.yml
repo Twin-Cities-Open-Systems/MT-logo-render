@@ -177,7 +177,7 @@ jobs:
         # Test recipe validation with Python security validator
         python -c "
         from scripts.security_validator import validate_recipe
-        
+
         # Define expected results
         valid_recipes = [
             '{\"shape\": \"circle\", \"size\": \"256x256\"}',  # Valid
@@ -186,20 +186,20 @@ jobs:
             '{\"size\": \"256x256\"}',  # Invalid - missing shape
             '{\"shape\": \"circle\", \"size\": \"256x256\"}\u200B',  # Invalid - zero width char
         ]
-        
+
         all_recipes = valid_recipes + invalid_recipes
-        
+
         validation_errors = []
         for recipe in all_recipes:
             result = validate_recipe(recipe)
             is_valid = recipe in valid_recipes
-            
+
             print(f'Recipe: {repr(recipe[:50])}... Valid: {result} (Expected: {is_valid})')
-            
+
             # Check if validation result matches expectation
             if result != is_valid:
                 validation_errors.append(f'Recipe {repr(recipe[:30])}...: got {result}, expected {is_valid}')
-        
+
         if validation_errors:
             print('❌ Validation logic errors found:')
             for error in validation_errors:
