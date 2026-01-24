@@ -262,17 +262,27 @@ jobs:
         path: ~/.cargo/registry
         key: ${{ runner.os }}-cargo-release-${{ hashFiles('**/Cargo.lock') }}
 
-    - name: Build release binary
-      run: cargo build --release --target ${{ matrix.target }}
+        if [ "${{ matrix.os }}" = "windows-latest" ]; then
+          ./target/${{ matrix.target }}/release/logo-render.exe --help
+        else
+>>>>>>> a8f418f (CRITICAL BUG FIX: Fix Windows release binary test path)
+          ./target/${{ matrix.target }}/release/logo-render --help
+        fi
 
     - name: Test release binary
       run: |
-        if ("${{ matrix.os }}" -eq "windows-latest") {
-          ./target/x86_64-pc-windows-msvc/release/logo-render.exe --help
-        } else {
+        if [ "${{ matrix.os }}" = "windows-latest" ]; then
+          ./target/${{ matrix.target }}/release/logo-render.exe --help
+        else
           ./target/${{ matrix.target }}/release/logo-render --help
-        }
-      shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+        fi
+=======
+        if [ "${{ matrix.os }}" = "windows-latest" ]; then
+          ./target/${{ matrix.target }}/release/logo-render.exe --help
+        else
+>>>>>>> a8f418f (CRITICAL BUG FIX: Fix Windows release binary test path)
+          ./target/${{ matrix.target }}/release/logo-render --help
+        fi
 
     - name: Upload release artifacts
       uses: actions/upload-artifact@v4
