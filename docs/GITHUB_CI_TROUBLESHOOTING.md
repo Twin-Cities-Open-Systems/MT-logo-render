@@ -171,6 +171,8 @@ git push origin feature/phase3-core-implementation
 1. **Monitor proactively**: Check CI status regularly, don't wait for failures
 1. **Update dependencies**: Keep GitHub Actions and tools up to date
 1. **Clear error messages**: Ensure test failures provide actionable information
+1. **Follow HEE workflow**: Always create feature branches, PRs, and merge properly
+1. **State capsule management**: Update state capsules after PR merge and CI/CD completion
 
 ## Useful Commands Reference
 
@@ -285,8 +287,127 @@ cargo clippy --quiet
 - Before pushing changes to avoid CI failures
 - During development to maintain code quality
 
+## 8. HEE Workflow and State Capsule Management
+
+### Proper HEE Development Workflow
+
+**Important**: Always follow this workflow to ensure proper state management and CI/CD integration:
+
+1. **Create Feature Branch**:
+
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+
+1. **Work and Commit**:
+
+   ```bash
+   # Make changes, commit frequently with model disclosure
+   git add .
+   git commit -m "type: Description of changes [model: claude-3.5-sonnet]"
+   ```
+
+1. **Push and Create PR**:
+
+   ```bash
+   git push origin feature/your-feature-name
+   gh pr create --title "feat: Your feature description" --body "Description of changes"
+   ```
+
+1. **Monitor CI/CD**:
+
+   ```bash
+   # Check PR status
+   gh api repos/spencerbutler/MT-logo-render/pulls | jq '.[] | {number: .number, title: .title, state: .state, head: .head.ref}'
+
+   # Monitor CI runs for the PR
+   gh run list --branch feature/your-feature-name
+   ```
+
+1. **Merge PR**:
+
+   ```bash
+   gh pr merge --merge --delete-branch
+   ```
+
+1. **Post-Merge State Capsule Update**:
+
+   ```bash
+   # After successful merge, update state capsule
+   git checkout main
+   git pull origin main
+   git status  # Check for any untracked changes
+
+   # Update state capsule with final state
+   # (Edit the appropriate state capsule file)
+   ```
+
+### State Capsule Workflow Rules
+
+**Rule 1**: Check for existing capsule before creating new one
+
+- Always read existing state capsules first
+- Update existing capsules when appropriate
+- Only create new capsules when no relevant existing capsule exists
+
+**Rule 2**: Update state capsule after PR merge
+
+- After PR merge and CI/CD completion
+- Checkout main branch and pull latest changes
+- Check git status for any untracked changes
+- Update state capsule with final state and results
+
+**Common Mistake**: Creating PRs directly to main without feature branches
+**Solution**: Always use feature branches and proper PR workflow
+
+**Common Mistake**: Forgetting to update state capsules after merge
+**Solution**: Make state capsule updates part of your post-merge checklist
+
+### CI/CD Monitoring for HEE Workflows
+
+Monitor HEE-specific CI/CD patterns:
+
+```bash
+# Check for HEE-related workflow failures
+gh run list --limit 10 | jq '.[] | select(.name | contains("HEE")) | {id: .id, name: .name, status: .status, conclusion: .conclusion}'
+
+# Monitor state capsule validation workflows
+gh run list --limit 20 | jq '.[] | select(.name | contains("state")) | {id: .id, name: .name, status: .status}'
+
+# Check for prompt validation failures
+gh run list --limit 10 | jq '.[] | select(.name | contains("prompt")) | {id: .id, name: .name, conclusion: .conclusion}'
+```
+
+### Troubleshooting HEE Workflow Issues
+
+**Issue**: PR created directly to main branch
+**Solution**:
+
+1. Create feature branch from current main
+1. Cherry-pick commits to feature branch
+1. Create new PR from feature branch
+1. Close direct-to-main PR
+
+**Issue**: State capsule not updated after merge
+**Solution**:
+
+1. Check git status after merge
+1. Update appropriate state capsule file
+1. Commit state capsule update
+1. Push to main branch
+
+**Issue**: CI/CD failures due to state capsule issues
+**Solution**:
+
+1. Check state capsule syntax and structure
+1. Validate against HEE requirements
+1. Fix any validation errors
+1. Re-run CI/CD workflows
+
 ## Related Documentation
 
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
 - [GitHub CLI Documentation](https://cli.github.com/manual/gh_api)
 - [jq Manual](https://stedolan.github.io/jq/manual/)
+- [HEE State Capsule Guide](../docs/STATE_CAPSULE_GUIDE.md)
+- [HEE Prompting Rules](../prompts/PROMPTING_RULES.md)

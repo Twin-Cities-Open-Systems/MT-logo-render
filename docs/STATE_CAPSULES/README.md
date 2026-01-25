@@ -33,6 +33,14 @@ docs/STATE_CAPSULES/
 - `2026-01-24/MT-logo-render-Phase3-Doctor-Implementation.md`
 - `2026-01-25/Market-Thesis-Dashboard-Integration.md`
 
+## Completion Convention
+
+When all tasks in a session capsule are complete:
+
+1. **Rename File**: Prepend `done.` to filename
+   - `Project-Phase-Description.md` → `done.Project-Phase-Description.md`
+1. **Note**: Only session-specific capsules are renamed. The canonical `CURRENT_TASKS.md` remains unchanged.
+
 ## File Format
 
 Each State Capsule follows the standardized YAML format:
