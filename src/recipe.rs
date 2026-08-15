@@ -166,15 +166,77 @@ impl FromStr for Color {
 }
 
 /// Fill pattern specifications.
-#[derive(Deserialize, Serialize, Clone, Debug, PartialEq, Eq, Hash)]
-#[serde(rename_all = "snake_case")]
-#[derive(Default)]
+#[derive(Clone, Debug, PartialEq, Eq, Hash, Default)]
 pub enum Fill {
     #[default]
     Solid,
     Pie(u16),   // Degrees (circle only)
     Split(u8),  // Number of segments
     Stripe(u8), // Number of stripes
+}
+
+// Fill carries data on 3 of its 4 variants, so serde's default enum
+// representation would require e.g. {"pie": 90} rather than the "pie:90"
+// colon-string format CLI_CONTRACT.md documents (and the only format
+// `resolve`/`render` ever actually accepted for Solid, since that variant
+// serializes as a bare string either way). Custom string (de)serialization
+// makes the whole enum match the documented contract.
+impl Serialize for Fill {
+    fn serialize<S>(&self, serializer: S) -> std::result::Result<S::Ok, S::Error>
+    where
+        S: serde::Serializer,
+    {
+        serializer.serialize_str(&self.to_string())
+    }
+}
+
+impl<'de> Deserialize<'de> for Fill {
+    fn deserialize<D>(deserializer: D) -> std::result::Result<Self, D::Error>
+    where
+        D: serde::Deserializer<'de>,
+    {
+        let s = String::deserialize(deserializer)?;
+        s.parse().map_err(serde::de::Error::custom)
+    }
+}
+
+impl std::fmt::Display for Fill {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        match self {
+            Fill::Solid => write!(f, "solid"),
+            Fill::Pie(degrees) => write!(f, "pie:{}", degrees),
+            Fill::Split(segments) => write!(f, "split:{}", segments),
+            Fill::Stripe(count) => write!(f, "stripe:{}", count),
+        }
+    }
+}
+
+impl FromStr for Fill {
+    type Err = String;
+
+    fn from_str(s: &str) -> std::result::Result<Self, Self::Err> {
+        if s == "solid" {
+            return Ok(Fill::Solid);
+        }
+        let (kind, value) = s
+            .split_once(':')
+            .ok_or_else(|| format!("Invalid fill: {}", s))?;
+        match kind {
+            "pie" => value
+                .parse::<u16>()
+                .map(Fill::Pie)
+                .map_err(|_| format!("Invalid pie degrees: {}", value)),
+            "split" => value
+                .parse::<u8>()
+                .map(Fill::Split)
+                .map_err(|_| format!("Invalid split segments: {}", value)),
+            "stripe" => value
+                .parse::<u8>()
+                .map(Fill::Stripe)
+                .map_err(|_| format!("Invalid stripe count: {}", value)),
+            _ => Err(format!("Invalid fill kind: {}", kind)),
+        }
+    }
 }
 
 /// Overlay mark types.
