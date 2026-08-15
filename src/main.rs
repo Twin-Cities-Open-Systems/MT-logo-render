@@ -161,7 +161,7 @@ fn main() -> Result<()> {
 
 /// Render recipe to PNG format
 fn render_png(recipe: &Recipe, output_path: &Path) -> Result<()> {
-    use image::{ImageBuffer, Rgba};
+    use image::ImageBuffer;
     use std::fs;
 
     // Create directory if it doesn't exist
@@ -173,7 +173,12 @@ fn render_png(recipe: &Recipe, output_path: &Path) -> Result<()> {
     let width = canonical.size.width;
     let height = canonical.size.height;
 
-    // Create image buffer
+    // Create image buffer. Left fully transparent (ImageBuffer::new
+    // zero-initializes, i.e. Rgba([0,0,0,0])) rather than pre-filled with
+    // base_color -- the shape functions below paint the shape itself in
+    // base_color, and a background already in that same color made every
+    // shape invisible against its own canvas (only mark/badge, drawn in
+    // accent_color, ever showed up).
     let mut img = ImageBuffer::new(width, height);
 
     // Parse base color
@@ -183,11 +188,6 @@ fn render_png(recipe: &Recipe, output_path: &Path) -> Result<()> {
         .as_ref()
         .and_then(|c| parse_hex_color(c).ok())
         .unwrap_or(base_color);
-
-    // Fill background
-    for (_x, _y, pixel) in img.enumerate_pixels_mut() {
-        *pixel = Rgba([base_color.0, base_color.1, base_color.2, 255]);
-    }
 
     // Render shape
     match canonical.shape {
@@ -590,12 +590,12 @@ fn handle_render(
     use std::io::{self, Read};
 
     // Get recipe content
-    let recipe_content = if let Some(recipe_str) = recipe {
+    let recipe_content = if let Some(recipe_str) = recipe.filter(|s| s != "-") {
         recipe_str
     } else if let Some(file_path) = file {
         fs::read_to_string(file_path)?
     } else {
-        // Read from stdin
+        // Read from stdin (either no positional arg, or the "-" sentinel)
         let mut buffer = String::new();
         io::stdin().read_to_string(&mut buffer)?;
         buffer
@@ -626,7 +626,7 @@ fn handle_render(
     for target in targets {
         match target {
             "png" => {
-                let output_path = ctx.asset_root.join(format!("{}.png", stem));
+                let output_path = cache.get_output_path(&stem, "png");
 
                 // Check cache first
                 if !ctx.force {
@@ -655,7 +655,7 @@ fn handle_render(
                 rendered_files.push(format!("png:{}", output_path.display()));
             }
             "ansi" => {
-                let output_path = ctx.asset_root.join(format!("{}.ansi", stem));
+                let output_path = cache.get_output_path(&stem, "ansi");
 
                 // Check cache first
                 if !ctx.force {
@@ -737,12 +737,12 @@ fn handle_resolve(recipe: Option<String>, file: Option<PathBuf>, ctx: &CliContex
     use std::io::{self, Read};
 
     // Get recipe content
-    let recipe_content = if let Some(recipe_str) = recipe {
+    let recipe_content = if let Some(recipe_str) = recipe.filter(|s| s != "-") {
         recipe_str
     } else if let Some(file_path) = file {
         fs::read_to_string(file_path)?
     } else {
-        // Read from stdin
+        // Read from stdin (either no positional arg, or the "-" sentinel)
         let mut buffer = String::new();
         io::stdin().read_to_string(&mut buffer)?;
         buffer

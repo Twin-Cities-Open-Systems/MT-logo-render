@@ -149,6 +149,11 @@ impl FromStr for Color {
             } else {
                 Err("Hex colors must be 3 or 6 digits".to_string())
             }
+        } else if (s.len() == 3 || s.len() == 6) && s.chars().all(|c| c.is_ascii_hexdigit()) {
+            // Bare hex without a leading '#', e.g. "00ff00" -- documented in
+            // CLI_CONTRACT.md's Color Formats section but previously fell
+            // through to the Named branch and failed as an unknown color name.
+            Ok(Color::Hex(format!("#{}", s)))
         } else if s
             .chars()
             .all(|c| c.is_alphanumeric() || c == '_' || c == '-')
@@ -183,7 +188,7 @@ pub enum Mark {
 
 /// Corner badge types.
 #[derive(Deserialize, Serialize, Clone, Copy, Debug, PartialEq, Eq, Hash)]
-#[serde(rename_all = "snake_case")]
+#[serde(rename_all = "kebab-case")]
 pub enum Badge {
     CornerDot,
     CornerCheck,
