@@ -1,0 +1,7 @@
+version: v1
+name: miss-square
+shape: square
+size: "512x512"
+base_color: "#ef4444"
+mark: x
+label: "MISS"

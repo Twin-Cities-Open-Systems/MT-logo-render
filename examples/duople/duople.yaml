@@ -1,0 +1,9 @@
+version: v1
+name: duople-triangle
+shape: triangle
+size: "512x512"
+base_color: "#eab308"
+accent_color: "#22d3ee"
+fill: "split:3"
+mark: check
+label: "DUOP"

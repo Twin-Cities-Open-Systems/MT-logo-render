@@ -1,0 +1,7 @@
+version: v1
+name: thesis-circle
+shape: circle
+size: "512x512"
+base_color: "#6b7280"
+mark: dot
+label: "THES"
