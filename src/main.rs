@@ -161,7 +161,7 @@ fn main() -> Result<()> {
 
 /// Render recipe to PNG format
 fn render_png(recipe: &Recipe, output_path: &Path) -> Result<()> {
-    use image::{ImageBuffer, Rgba};
+    use image::ImageBuffer;
     use std::fs;
 
     // Create directory if it doesn't exist
@@ -173,7 +173,12 @@ fn render_png(recipe: &Recipe, output_path: &Path) -> Result<()> {
     let width = canonical.size.width;
     let height = canonical.size.height;
 
-    // Create image buffer
+    // Create image buffer. Left fully transparent (ImageBuffer::new
+    // zero-initializes, i.e. Rgba([0,0,0,0])) rather than pre-filled with
+    // base_color -- the shape functions below paint the shape itself in
+    // base_color, and a background already in that same color made every
+    // shape invisible against its own canvas (only mark/badge, drawn in
+    // accent_color, ever showed up).
     let mut img = ImageBuffer::new(width, height);
 
     // Parse base color
@@ -183,11 +188,6 @@ fn render_png(recipe: &Recipe, output_path: &Path) -> Result<()> {
         .as_ref()
         .and_then(|c| parse_hex_color(c).ok())
         .unwrap_or(base_color);
-
-    // Fill background
-    for (_x, _y, pixel) in img.enumerate_pixels_mut() {
-        *pixel = Rgba([base_color.0, base_color.1, base_color.2, 255]);
-    }
 
     // Render shape
     match canonical.shape {
@@ -314,6 +314,12 @@ fn render_circle(
 }
 
 /// Render square shape
+///
+/// A square's corners are its farthest points from center (half-diagonal =
+/// half-side * sqrt(2)), so it needs more margin than a circle to stay
+/// inside the avatar-crop circle -- see render_triangle's comment for the
+/// same underlying issue. 0.16 margin keeps the half-diagonal at ~0.48 *
+/// min(w,h), just inside the 0.5 * min(w,h) inscribed-circle radius.
 fn render_square(
     img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
     recipe: &mt_logo_render::CanonicalRecipe,
@@ -322,7 +328,7 @@ fn render_square(
 ) {
     let width = recipe.size.width;
     let height = recipe.size.height;
-    let margin = (width.min(height) as f32 * 0.1) as u32;
+    let margin = (width.min(height) as f32 * 0.16) as u32;
     let square_size = width.min(height) - 2 * margin;
     let start_x = (width - square_size) / 2;
     let start_y = (height - square_size) / 2;
@@ -337,6 +343,12 @@ fn render_square(
 }
 
 /// Render triangle shape
+///
+/// Bounds are chosen so the triangle's widest points (the top corners) stay
+/// inside the circle most avatar consumers (GitHub included) crop a square
+/// image to -- at the old 0.8-width/0.1-0.9-height bounds, the top corners
+/// sat at ~0.566 * min(w,h) from center, outside the 0.5 * min(w,h)
+/// inscribed-circle radius, and got clipped.
 fn render_triangle(
     img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
     recipe: &mt_logo_render::CanonicalRecipe,
@@ -346,19 +358,16 @@ fn render_triangle(
     let width = recipe.size.width as f32;
     let height = recipe.size.height as f32;
     let center_x = width / 2.0;
-    let base_y = height * 0.9;
-    let top_y = height * 0.1;
+    let base_y = height * 0.82;
+    let top_y = height * 0.18;
 
     for (x, y, pixel) in img.enumerate_pixels_mut() {
         let xf = x as f32;
         let yf = y as f32;
 
-        // Simple triangle check (point-in-triangle)
-        let _area = 0.0; // Simplified calculation for now
-
         if yf >= top_y && yf <= base_y {
             let progress = (yf - top_y) / (base_y - top_y);
-            let triangle_width = width * (1.0 - progress) * 0.8;
+            let triangle_width = width * (1.0 - progress) * 0.62;
             let left = center_x - triangle_width / 2.0;
             let right = center_x + triangle_width / 2.0;
 
@@ -458,19 +467,36 @@ fn render_mark(
 }
 
 /// Render corner badge
+///
+/// A badge placed by simple square-corner margin (the old behavior) sits
+/// well outside the circle avatar consumers crop a square image to -- its
+/// center alone was already past the inscribed-circle radius. Instead,
+/// place the badge's center along the diagonal at the point where the
+/// badge's own outer edge is exactly tangent to that inscribed circle, so
+/// the whole badge stays visible after a circular crop.
 fn render_badge(
     img: &mut image::ImageBuffer<image::Rgba<u8>, Vec<u8>>,
     badge: Badge,
     recipe: &mt_logo_render::CanonicalRecipe,
     color: (u8, u8, u8),
 ) {
-    let size = (recipe.size.width.min(recipe.size.height) as i32 / 8).max(8);
-    let margin = size / 2;
+    let width = recipe.size.width as f32;
+    let height = recipe.size.height as f32;
+    let min_dim = width.min(height);
+    let size = ((min_dim as i32 / 8).max(8)) as f32;
+    let badge_radius = size / 2.0;
+    let avatar_safe_radius = min_dim / 2.0;
+    // Center offset (each axis) that puts the badge's outer edge exactly on
+    // the inscribed circle, along the 45-degree corner diagonal.
+    let offset = (avatar_safe_radius - badge_radius) / std::f32::consts::SQRT_2;
 
-    let (start_x, start_y) = match badge {
-        Badge::CornerDot => (recipe.size.width as i32 - size - margin, margin),
-        Badge::CornerCheck => (margin, margin),
+    let (center_x, center_y) = match badge {
+        Badge::CornerDot => (width / 2.0 + offset, height / 2.0 - offset), // top-right
+        Badge::CornerCheck => (width / 2.0 - offset, height / 2.0 - offset), // top-left
     };
+    let start_x = (center_x - badge_radius) as i32;
+    let start_y = (center_y - badge_radius) as i32;
+    let size = size as i32;
 
     match badge {
         Badge::CornerDot => {
@@ -590,12 +616,12 @@ fn handle_render(
     use std::io::{self, Read};
 
     // Get recipe content
-    let recipe_content = if let Some(recipe_str) = recipe {
+    let recipe_content = if let Some(recipe_str) = recipe.filter(|s| s != "-") {
         recipe_str
     } else if let Some(file_path) = file {
         fs::read_to_string(file_path)?
     } else {
-        // Read from stdin
+        // Read from stdin (either no positional arg, or the "-" sentinel)
         let mut buffer = String::new();
         io::stdin().read_to_string(&mut buffer)?;
         buffer
@@ -626,7 +652,7 @@ fn handle_render(
     for target in targets {
         match target {
             "png" => {
-                let output_path = ctx.asset_root.join(format!("{}.png", stem));
+                let output_path = cache.get_output_path(&stem, "png");
 
                 // Check cache first
                 if !ctx.force {
@@ -655,7 +681,7 @@ fn handle_render(
                 rendered_files.push(format!("png:{}", output_path.display()));
             }
             "ansi" => {
-                let output_path = ctx.asset_root.join(format!("{}.ansi", stem));
+                let output_path = cache.get_output_path(&stem, "ansi");
 
                 // Check cache first
                 if !ctx.force {
@@ -737,12 +763,12 @@ fn handle_resolve(recipe: Option<String>, file: Option<PathBuf>, ctx: &CliContex
     use std::io::{self, Read};
 
     // Get recipe content
-    let recipe_content = if let Some(recipe_str) = recipe {
+    let recipe_content = if let Some(recipe_str) = recipe.filter(|s| s != "-") {
         recipe_str
     } else if let Some(file_path) = file {
         fs::read_to_string(file_path)?
     } else {
-        // Read from stdin
+        // Read from stdin (either no positional arg, or the "-" sentinel)
         let mut buffer = String::new();
         io::stdin().read_to_string(&mut buffer)?;
         buffer
