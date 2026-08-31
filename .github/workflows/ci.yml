@@ -117,9 +117,19 @@ jobs:
     - name: Run security audit
       run: cargo audit
 
-  # HEE Security scanning
-  hee-security:
-    name: HEE Security Scan
+  # Repo-local Unicode/homoglyph attack detection.
+  #
+  # RENAMED 2026-08-31. This was "hee-security" / "HEE Security Scan", which
+  # claimed org-tooling provenance it does not have: it runs
+  # scripts/security_scanner.py, a file local to this repo, forked from
+  # tick-task's and since diverged to nearly double the size. Three files
+  # named security_scanner.py exist across the org, doing two different
+  # jobs. See human-execution-engine#468 for the consolidation.
+  #
+  # A job name that implies org tooling is enforcing something, when it is
+  # not, is worse than no name at all.
+  unicode-scan:
+    name: Unicode Attack Scan (repo-local)
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
@@ -135,13 +145,13 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests
 
-    - name: Run HEE Security Scanner
+    - name: Run Unicode attack scanner (repo-local script)
       run: python scripts/security_scanner.py --directory . --output-format json --output-file security-report.json
 
     - name: Upload security report
       uses: actions/upload-artifact@v4
       with:
-        name: hee-security-report
+        name: unicode-scan-report
         path: security-report.json
 
     - name: Check security scan results
@@ -160,9 +170,11 @@ jobs:
           exit 1
         fi
 
-  # HEE Recipe validation
-  hee-recipe-validation:
-    name: HEE Recipe Validation
+  # Repo-local recipe validation. Renamed 2026-08-31 for the same reason as
+  # unicode-scan above: it runs scripts/security_validator.py from this
+  # repo, not org tooling.
+  recipe-validation:
+    name: Recipe Validation (repo-local)
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
@@ -173,7 +185,7 @@ jobs:
       with:
         python-version: '3.x'
 
-    - name: Validate HEE Recipe Security
+    - name: Validate recipe security (repo-local script)
       run: |
         # Test recipe validation with Python security validator
         python -c "
@@ -349,3 +361,45 @@ jobs:
       run: |
         # Future: validate README examples compile and run
         echo "README validation placeholder"
+
+  # Genuinely org tooling, unlike the jobs above: hee-check is checked out
+  # from human-execution-engine and run against this repo. Catches broken
+  # file references in docs and hardcoded /home/<user>/ paths, neither of
+  # which any Rust-specific check looks for.
+  #
+  # This is the pattern .github already uses to run hee-view: check out the
+  # tool's home repo rather than vendoring a copy. Vendoring is what
+  # produced the three divergent scanners in the first place.
+  hee-check:
+    name: hee-check (org tooling)
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        path: MT-logo-render
+
+    - name: Checkout human-execution-engine (hee-check lives there)
+      uses: actions/checkout@v4
+      with:
+        repository: Twin-Cities-Open-Systems/human-execution-engine
+        path: human-execution-engine
+
+    # REPORTING ONLY FOR NOW, and this is a deliberate, temporary state with
+    # a ticket behind it -- not an advisory check left to rot.
+    #
+    # hee-check finds real pre-existing problems here on its first run:
+    #   12 committed .cursor/ files (derived editor state, and the org does
+    #      not use Cursor)
+    #   /home/spencer/... hardcoded paths in auto_fix_report.md
+    #   ~285 broken file references, of which only ~23 are this repo's own --
+    #      the rest are in committed .cursor/prompts and in prompts/hee/,
+    #      a vendored and now-diverged copy of human-execution-engine's docs
+    #
+    # Turning this red on day one would be the exact failure fleet-ops#350
+    # is about: a permanently-failing check that trains people to ignore red.
+    # Flip continue-on-error off once human-execution-engine#469 lands.
+    - name: Boundary + reference checks
+      continue-on-error: true
+      run: |
+        human-execution-engine/tooling/bin/hee-check all MT-logo-render
