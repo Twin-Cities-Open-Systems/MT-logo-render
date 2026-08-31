@@ -142,10 +142,8 @@ impl HEERules {
             InputType::Command => {
                 check.add_violation("Direct command execution not allowed in HEE context");
             }
-            InputType::FilePath => {
-                if context.risk_level == RiskLevel::Critical {
-                    check.add_violation("Critical risk file operations not supported");
-                }
+            InputType::FilePath if context.risk_level == RiskLevel::Critical => {
+                check.add_violation("Critical risk file operations not supported");
             }
             _ => {}
         }
