@@ -17,7 +17,10 @@ serde_json = "1.0"
 serde_yaml = "0.9"
 
 # Image processing
-image = "0.24"
+# default-features off: the default set pulls every codec, including exr
+# (OpenEXR) -> pulp 0.22.3, which fails to compile under current const-eval
+# and broke the coverage job. This tool only ever emits png and ansi.
+image = { version = "0.24", default-features = false, features = ["png"] }
 rusttype = "0.9"
 
 # Error handling
