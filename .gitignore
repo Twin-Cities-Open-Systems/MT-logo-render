@@ -48,3 +48,7 @@ docs/.doctrees/
 __pycache__/
 *.pyc
 *.pyo
+
+# Editor-derived, never committed. Governance reaches this repo through the
+# dotfiles SessionStart hook, per CLAUDE.md -- not through a copy in-tree.
+.cursor/

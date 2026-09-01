@@ -388,17 +388,30 @@ jobs:
     # REPORTING ONLY FOR NOW, and this is a deliberate, temporary state with
     # a ticket behind it -- not an advisory check left to rot.
     #
-    # hee-check finds real pre-existing problems here on its first run:
+    # This comment's own diagnosis, written when the check landed, was right:
+    #
     #   12 committed .cursor/ files (derived editor state, and the org does
     #      not use Cursor)
-    #   /home/spencer/... hardcoded paths in auto_fix_report.md
     #   ~285 broken file references, of which only ~23 are this repo's own --
     #      the rest are in committed .cursor/prompts and in prompts/hee/,
     #      a vendored and now-diverged copy of human-execution-engine's docs
     #
-    # Turning this red on day one would be the exact failure fleet-ops#350
-    # is about: a permanently-failing check that trains people to ignore red.
-    # Flip continue-on-error off once human-execution-engine#469 lands.
+    # All of that is gone as of this commit. Both trees are deleted:
+    # governance already reaches this repo through the dotfiles SessionStart
+    # hook, so the vendored copy was redundant AND contradictory -- it held
+    # prompts upstream purged in 68fd689, and copies of four documents
+    # deleted upstream today for describing software never built.
+    #
+    #   broken references   317 -> 28, and all 28 are this repo's own
+    #   committed .cursor    12 -> 0
+    #
+    # STILL REPORTING ONLY, for a smaller and more honest reason: 28 real
+    # findings remain in this repo's own docs -- docs/CLI_CONTRACT.md (10),
+    # TASK_NEXT.md (7), docs/CI_MONITORING_SPEC.md (3) and others reference
+    # files that are not here. Turning red on day one is the failure
+    # fleet-ops#350 is about.
+    #
+    # FLIP continue-on-error OFF when those 28 reach zero. #469 landed.
     - name: Boundary + reference checks
       continue-on-error: true
       run: |
