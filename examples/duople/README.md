@@ -15,7 +15,9 @@ Thesis -> Duople distinction, see `human-execution-engine`'s
 
 Render any of them once the CLI contract fixes in this branch land:
 
-    logo-render render --file examples/duople/duople.yaml --targets png,ansi
+```
+logo-render render --file examples/duople/duople.yaml --targets png,ansi
+```
 
 Known limitation, not fixed here: `triangle` shape doesn't support
 `fill: split:N` -- degrades to solid with a warning
