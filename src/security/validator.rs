@@ -250,10 +250,12 @@ impl SecurityValidator {
                     result.add_violation("Potentially dangerous filename characters");
                 }
             }
-            "filepath" => {
-                if content.contains("..") || content.starts_with('/') || content.contains('\x00') {
-                    result.add_violation("Potentially dangerous filepath");
-                }
+            "filepath"
+                if (content.contains("..")
+                    || content.starts_with('/')
+                    || content.contains('\x00')) =>
+            {
+                result.add_violation("Potentially dangerous filepath");
             }
             _ => {}
         }
