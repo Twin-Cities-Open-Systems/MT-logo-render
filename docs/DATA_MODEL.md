@@ -374,6 +374,7 @@ fn generate_stem(recipe: &Recipe) -> Result<String, Error> {
 ### Cache Index Format
 
 <!-- hee-check:refs-off example: assets/logo/generated is build output, gitignored -->
+
 ```yaml
 entries:
   - stem: "defaultshape-0000ff-solid-circle-256x256"
@@ -394,6 +395,7 @@ entries:
     created_at: "2026-01-22T04:00:00Z"
     notes: []
 ```
+
 <!-- hee-check:refs-on -->
 
 ### Cache Entry Structure

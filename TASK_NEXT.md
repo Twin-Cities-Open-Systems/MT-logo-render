@@ -206,6 +206,7 @@ Enhance MT-logo-render with advanced rendering capabilities, comprehensive valid
 ### Step 1: Font Integration
 
 <!-- hee-check:refs-off implementation plan: files to be written, not files that exist -->
+
 ```bash
 # Add font dependencies
 cargo add rusttype --features="default"
@@ -219,11 +220,13 @@ src/render/glyph.rs
 # Test font functionality
 cargo test --features font
 ```
+
 <!-- hee-check:refs-on -->
 
 ### Step 2: Advanced Patterns
 
 <!-- hee-check:refs-off implementation plan: files to be written, not files that exist -->
+
 ```bash
 # Implement pie pattern
 src/render/patterns/pie.rs
@@ -237,11 +240,13 @@ src/render/patterns/stripe.rs
 # Test pattern rendering
 cargo test --features patterns
 ```
+
 <!-- hee-check:refs-on -->
 
 ### Step 3: Validation Framework
 
 <!-- hee-check:refs-off implementation plan: files to be written, not files that exist -->
+
 ```bash
 # Enhance recipe validation
 src/recipe/validation.rs
@@ -252,6 +257,7 @@ src/security/validation.rs
 # Test validation
 cargo test --features validation
 ```
+
 <!-- hee-check:refs-on -->
 
 ### Step 4: Performance Optimization
