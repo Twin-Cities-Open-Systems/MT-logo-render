@@ -11,7 +11,7 @@ Define comprehensive testing strategy for the Rust render engine:
 
 ## Output
 
-- Update docs/TESTING.md with Rust-focused testing approach
+- Update docs/TESTING.md with Rust-focused testing approach <!-- hee-check:refs-ok the prompt asks for this file to be written -->
 - Define test coverage targets and quality gates
 - Document test data management and fixtures
 

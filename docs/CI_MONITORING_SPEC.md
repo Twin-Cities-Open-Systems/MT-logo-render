@@ -709,6 +709,8 @@ python scripts/auto_fix.py --pattern PAT-001 --context file.rs
 
 ### Coverage Commands
 
+<!-- hee-check:refs-off specification: scripts proposed here are not built -->
+
 ```bash
 # Analyze coverage
 python scripts/coverage_analyzer.py --input coverage/cobertura.xml
@@ -719,6 +721,8 @@ python scripts/test_generator.py --input src/ --coverage-target 100
 # Validate coverage
 python scripts/coverage_validator.py --threshold 95 --strict
 ```
+
+<!-- hee-check:refs-on -->
 
 ## Appendix B: Error Pattern Catalog
 

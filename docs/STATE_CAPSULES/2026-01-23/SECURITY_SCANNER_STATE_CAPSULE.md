@@ -240,7 +240,7 @@ When resuming work, follow these steps:
 
 - [Security Scanner Specification](docs/SECURITY.md)
 - [CI/CD Integration Guide](docs/GITHUB_CI_TROUBLESHOOTING.md)
-- [Security Patterns](docs/SECURITY_PATTERNS.md)
+- [Security Patterns](docs/SECURITY_PATTERNS.md) <!-- hee-check:refs-ok point-in-time capsule; this file was planned and never landed -->
 
 ### Tools
 
