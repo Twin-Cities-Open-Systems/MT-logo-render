@@ -4,18 +4,20 @@ Org governance is canonical in `human-execution-engine`'s
 `prompts/PROMPTING_RULES.md`. It is delivered to every session by the
 `SessionStart` hook installed from the `dotfiles` repo:
 
-    make claude-hooks
+```
+make claude-hooks
+```
 
 It is deliberately **not** `@import`-ed here. Measured 2026-08-31, with
 sentinel strings probed from real sessions:
 
-| mechanism | resolves? |
-|---|---|
-| `@import` whose path is inside this repo | yes |
-| `@import` whose path resolves outside this repo | **no** |
-| `.claude/rules/` symlink pointing outside this repo | **no** |
-| `@https://` or `@http://` URL | **no** |
-| `SessionStart` hook | yes |
+| mechanism                                           | resolves? |
+| --------------------------------------------------- | --------- |
+| `@import` whose path is inside this repo            | yes       |
+| `@import` whose path resolves outside this repo     | **no**    |
+| `.claude/rules/` symlink pointing outside this repo | **no**    |
+| `@https://` or `@http://` URL                       | **no**    |
+| `SessionStart` hook                                 | yes       |
 
 All three failures are **silent** -- they look like they worked. So an
 import line here would be decoration, not delivery.
