@@ -63,6 +63,7 @@ echo '{"shape": "square", "size": "128x128", "base_color": "red"}' | logo-render
 
 **Output Schema** (JSON):
 
+<!-- hee-check:refs-off example output: assets/logo/generated is build output, gitignored -->
 ```json
 {
   "requested_spec": {
@@ -90,6 +91,7 @@ echo '{"shape": "square", "size": "128x128", "base_color": "red"}' | logo-render
   "notes": []
 }
 ```
+<!-- hee-check:refs-on -->
 
 **Exit Codes**:
 
@@ -138,6 +140,7 @@ logo-render render --force '{"shape": "hex", "size": "256x256", "base_color": "p
 
 **Output Schema** (JSON):
 
+<!-- hee-check:refs-off example output: assets/logo/generated is build output, gitignored -->
 ```json
 {
   "requested_spec": {
@@ -177,6 +180,7 @@ logo-render render --force '{"shape": "hex", "size": "256x256", "base_color": "p
   "notes": []
 }
 ```
+<!-- hee-check:refs-on -->
 
 **Exit Codes**:
 
@@ -289,6 +293,7 @@ logo-render list --label "MT"
 
 **Output Schema** (JSON):
 
+<!-- hee-check:refs-off example output: assets/logo/generated is build output, gitignored -->
 ```json
 [
   {
@@ -325,6 +330,7 @@ logo-render list --label "MT"
   }
 ]
 ```
+<!-- hee-check:refs-on -->
 
 **Exit Codes**:
 

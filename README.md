@@ -131,7 +131,7 @@ logo-render doctor
 - [**📖 Specification**](docs/SPEC.md) - Complete requirements and acceptance criteria
 - [**🏗️ Architecture**](docs/ARCHITECTURE.md) - System design and technical decisions
 - [**🔌 CLI Reference**](docs/CLI_CONTRACT.md) - Command-line interface documentation
-- [**🧪 Testing Strategy**](docs/TESTING.md) - Quality assurance and test coverage
+- [**🧪 Testing Strategy**](docs/TESTING.md) - Quality assurance and test coverage <!-- hee-check:refs-ok docs/TESTING.md is not written yet; prompts/07-testing-implementation.md asks for it -->
 
 ### 🗺️ **Project Management**
 

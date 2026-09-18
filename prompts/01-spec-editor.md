@@ -12,7 +12,7 @@ Refine docs/SPEC.md into an implementation-ready specification with:
 ## Output
 
 - Update docs/SPEC.md
-- Add any necessary entries to docs/DECISIONS.md (open questions)
+- Add any necessary entries to docs/DECISIONS.md (open questions) <!-- hee-check:refs-ok the prompt asks for this file to be written -->
 
 ## Constraints
 

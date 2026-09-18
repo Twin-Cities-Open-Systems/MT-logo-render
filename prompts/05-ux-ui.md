@@ -11,7 +11,7 @@ Design the command-line user experience for the render engine:
 
 ## Output
 
-- Update docs/UX_UI.md with CLI design principles
+- Update docs/UX_UI.md with CLI design principles <!-- hee-check:refs-ok the prompt asks for this file to be written -->
 - Document error handling patterns
 - Specify progress reporting and logging levels
 

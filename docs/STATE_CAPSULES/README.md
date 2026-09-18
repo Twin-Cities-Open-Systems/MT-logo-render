@@ -170,6 +170,6 @@ cat "$LATEST_DATE"/*.md
 
 ### Getting Help
 
-- Refer to `docs/STATE_CAPSULE_GUIDE.md` for detailed guidance
+- Refer to `prompts/STATE_CAPSULE_GUIDE.md` for detailed guidance
 - Use the template in `docs/STATE_CAPSULE_TEMPLATE.md` as a reference
 - Check previous capsules for examples of good practices
