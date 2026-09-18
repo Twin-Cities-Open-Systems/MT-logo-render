@@ -1,7 +1,7 @@
 # MT-logo-render 🖼️
 
 [![CI/CD Pipeline](https://github.com/spencerbutler/MT-logo-render/actions/workflows/ci.yml/badge.svg)](https://github.com/spencerbutler/MT-logo-render/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Rust 1.70+](https://img.shields.io/badge/rust-1.70+-orange.svg)](https://www.rust-lang.org/)
 
 > **A Human Execution Engine (HEE) for deterministic logo asset generation**
@@ -234,7 +234,12 @@ logo-render render -f '{"shape": "triangle", "size": "32x16", "base_color": "cya
 
 ## 📄 License
 
-**MIT License** - see [LICENSE](LICENSE) file for details.
+**GNU General Public License v3.0** — see [LICENSE](LICENSE) for the full text.
+
+This repo previously carried an MIT badge pointing at a `LICENSE` file that did
+not exist, so it had no effective license at all and GitHub reported none. The
+org default is GPL-3.0 (operator, 2026-09-18); see
+https://github.com/Twin-Cities-Open-Systems/fleet-ops/issues/118.
 
 ## 🙏 Acknowledgments
 
